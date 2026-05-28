@@ -1,38 +1,46 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { SpinSeal } from "./Decor";
 
 export default function Reserve() {
+  const t = useTranslations("Reserve");
   const [party, setParty] = useState(2);
   const [time, setTime] = useState("19:30");
   const [submitted, setSubmitted] = useState(false);
-  const times = ["18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30"];
+  const times = [
+    "18:00",
+    "18:30",
+    "19:00",
+    "19:30",
+    "20:00",
+    "20:30",
+    "21:00",
+    "21:30",
+  ];
 
   return (
     <section className="section s-reserve" id="reserve">
       <div className="wrap">
         <div className="section-head">
-          <span>◆ 05 · Rezervări</span>
-          <span>Reservations</span>
+          <span>{t("kicker")}</span>
+          <span>{t("kickerRight")}</span>
         </div>
 
         <div className="reserve-row">
           <div>
             <h2 className="display reveal">
-              Save a
-              <br />
+              <span style={{ whiteSpace: "pre-line" }}>{t("titlePre")}</span>
               <span className="accent" style={{ fontStyle: "italic" }}>
-                chair.
+                {t("titleAccent")}
               </span>
             </h2>
             <p
               className="lead reveal d1"
               style={{ marginTop: 18, maxWidth: "32ch" }}
             >
-              We hold a few tables back for walk-ins each night, but the room
-              fills early on weekends. Book ahead — we&rsquo;ll keep the candle
-              lit.
+              {t("lead")}
             </p>
 
             {submitted ? (
@@ -45,21 +53,21 @@ export default function Reserve() {
                     margin: 0,
                   }}
                 >
-                  Mulțumim!
+                  {t("thanks")}
                 </p>
                 <p style={{ fontSize: 19, maxWidth: "40ch", marginTop: 10 }}>
-                  Your request for{" "}
-                  <strong>
-                    {party} {party === 1 ? "person" : "people"}
-                  </strong>{" "}
-                  at <strong>{time}</strong> is in. We&rsquo;ll confirm by email
-                  within the hour. <em>Pe curând.</em>
+                  {t.rich(party === 1 ? "confirmed_one" : "confirmed_other", {
+                    count: party,
+                    time,
+                    strong: (c) => <strong>{c}</strong>,
+                    em: (c) => <em>{c}</em>,
+                  })}
                 </p>
                 <button
                   className="reserve-submit"
                   onClick={() => setSubmitted(false)}
                 >
-                  Book another →
+                  {t("bookAnother")}
                 </button>
               </div>
             ) : (
@@ -80,27 +88,27 @@ export default function Reserve() {
               >
                 <div className="row2">
                   <label>
-                    Your name · numele
+                    {t("name")}
                     <input
                       className="field"
                       type="text"
                       required
-                      placeholder="Maria Popescu"
+                      placeholder={t("namePh")}
                     />
                   </label>
                   <label>
-                    Phone · telefon
+                    {t("phone")}
                     <input
                       className="field"
                       type="tel"
                       required
-                      placeholder="+40 ..."
+                      placeholder={t("phonePh")}
                     />
                   </label>
                 </div>
                 <div className="row2">
                   <label>
-                    Date · data
+                    {t("date")}
                     <input
                       className="field"
                       type="date"
@@ -109,7 +117,7 @@ export default function Reserve() {
                     />
                   </label>
                   <label>
-                    Party · persoane
+                    {t("party")}
                     <div className="chips">
                       {[1, 2, 3, 4, 5, 6, 8, 10].map((n) => (
                         <button
@@ -125,31 +133,31 @@ export default function Reserve() {
                   </label>
                 </div>
                 <label>
-                  Time · ora
+                  {t("time")}
                   <div className="chips">
-                    {times.map((t) => (
+                    {times.map((tm) => (
                       <button
                         type="button"
-                        key={t}
-                        className={`chip ${time === t ? "is-active" : ""}`}
-                        onClick={() => setTime(t)}
+                        key={tm}
+                        className={`chip ${time === tm ? "is-active" : ""}`}
+                        onClick={() => setTime(tm)}
                       >
-                        {t}
+                        {tm}
                       </button>
                     ))}
                   </div>
                 </label>
                 <label>
-                  Notes · note · allergies, occasions, anything we should know
+                  {t("notes")}
                   <input
                     className="field"
                     type="text"
-                    placeholder="Birthday for Andrei — please no candles"
+                    placeholder={t("notesPh")}
                   />
                 </label>
 
                 <button type="submit" className="reserve-submit">
-                  Reserve · rezervă →
+                  {t("submit")}
                 </button>
               </form>
             )}
@@ -161,19 +169,14 @@ export default function Reserve() {
               color="var(--ink)"
               size={140}
             />
-            <div className="stamp" style={{ marginTop: 30 }}>
-              Walk-ins
-              <br />
-              welcome.
+            <div
+              className="stamp"
+              style={{ marginTop: 30, whiteSpace: "pre-line" }}
+            >
+              {t("asideStamp")}
             </div>
-            <p>
-              Two seats are always kept at the counter for the brave and the
-              hungry — first come, served immediately, with a țuică on the
-              house.
-            </p>
-            <p style={{ marginTop: 22 }}>
-              For larger parties or last-minute miracles, call us.
-            </p>
+            <p>{t("asideP1")}</p>
+            <p style={{ marginTop: 22 }}>{t("asideP2")}</p>
             <a href="tel:+40212345678" className="tel">
               +40 21 234 56 78
             </a>

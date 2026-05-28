@@ -1,23 +1,4 @@
-const PRESS = [
-  {
-    stars: "★★★★★",
-    text: "The sarmale is a love letter written in cabbage and smoke. We did not stop eating.",
-    by: "The Guardian",
-    loc: "London",
-  },
-  {
-    stars: "★★★★★",
-    text: "An act of memory. Ibrik makes a Bucharest grandmother's table feel inevitable, even necessary.",
-    by: "Eater",
-    loc: "Best New Restaurants 2025",
-  },
-  {
-    stars: "★★★★★",
-    text: "A papanași so tender it briefly cured a hangover and a heartbreak in the same bite.",
-    by: "Time Out",
-    loc: "Critic's Pick",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const PRESS_MARQUEE = [
   "The Guardian",
@@ -31,18 +12,23 @@ const PRESS_MARQUEE = [
 ];
 
 export default function Press() {
+  const t = useTranslations("Press");
+  const quotes = [
+    { text: t("q1"), by: "The Guardian", loc: t("q1Loc") },
+    { text: t("q2"), by: "Eater", loc: t("q2Loc") },
+    { text: t("q3"), by: "Time Out", loc: t("q3Loc") },
+  ];
+
   return (
     <section className="section s-press">
       <div className="wrap">
         <div className="section-head">
-          <span>◆ 03 · Presa & Recenzii</span>
-          <span>What the critics wrote</span>
+          <span>{t("kicker")}</span>
+          <span>{t("kickerRight")}</span>
         </div>
 
-        <h2 className="display reveal">
-          They keep
-          <br />
-          coming back.
+        <h2 className="display reveal" style={{ whiteSpace: "pre-line" }}>
+          {t("title")}
         </h2>
       </div>
 
@@ -58,9 +44,9 @@ export default function Press() {
 
       <div className="wrap">
         <div className="press-quotes">
-          {PRESS.map((q) => (
+          {quotes.map((q) => (
             <div className="press-quote reveal" key={q.by}>
-              <div className="stars">{q.stars}</div>
+              <div className="stars">★★★★★</div>
               <p>&ldquo;{q.text}&rdquo;</p>
               <div className="by">
                 <span>{q.by}</span>

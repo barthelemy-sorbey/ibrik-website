@@ -1,31 +1,29 @@
+import { useTranslations } from "next-intl";
 import { ImageSlot } from "./Decor";
 
 export default function Location() {
+  const t = useTranslations("Location");
   return (
     <section className="section s-location" id="visit">
       <div className="wrap">
         <div className="section-head">
-          <span>◆ 06 · Vizitează-ne</span>
-          <span>Find the door</span>
+          <span>{t("kicker")}</span>
+          <span>{t("kickerRight")}</span>
         </div>
 
         <h2 className="display reveal">
-          Come{" "}
+          {t("titlePre")}
           <span className="accent" style={{ fontStyle: "italic" }}>
-            find
-          </span>{" "}
-          us.
+            {t("titleAccent")}
+          </span>
+          {t("titlePost")}
         </h2>
 
         <div className="loc-row" style={{ marginTop: 50 }}>
           <div className="loc-block reveal">
-            <h4>Address · Adresa</h4>
-            <div className="lines">
-              Strada Smârdan 14
-              <br />
-              Centrul Vechi, Bucharest
-              <br />
-              Romania · <span className="ro">România</span>
+            <h4>{t("addressTitle")}</h4>
+            <div className="lines" style={{ whiteSpace: "pre-line" }}>
+              {t("addressLines")}
             </div>
             <div
               style={{
@@ -37,36 +35,38 @@ export default function Location() {
               }}
             >
               <a
-                href="#"
+                href="https://maps.google.com/?q=Strada+Smârdan+14,+Bucharest"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ borderBottom: "1px solid", paddingBottom: 2 }}
               >
-                Open in maps →
+                {t("openInMaps")}
               </a>
             </div>
           </div>
 
           <div className="loc-block reveal d1">
-            <h4>Hours · Program</h4>
+            <h4>{t("hoursTitle")}</h4>
             <table className="hours-table">
               <tbody>
                 <tr className="closed">
-                  <td>Monday · luni</td>
-                  <td>Closed</td>
+                  <td>{t("monday")}</td>
+                  <td>{t("closed")}</td>
                 </tr>
                 <tr>
-                  <td>Tuesday — Thursday</td>
+                  <td>{t("tueThu")}</td>
                   <td>17:00 — 23:00</td>
                 </tr>
                 <tr>
-                  <td>Friday · vineri</td>
+                  <td>{t("friday")}</td>
                   <td>17:00 — 01:00</td>
                 </tr>
                 <tr>
-                  <td>Saturday · sâmbătă</td>
+                  <td>{t("saturday")}</td>
                   <td>12:00 — 01:00</td>
                 </tr>
                 <tr>
-                  <td>Sunday · duminică</td>
+                  <td>{t("sunday")}</td>
                   <td>12:00 — 22:00</td>
                 </tr>
               </tbody>
@@ -83,10 +83,7 @@ export default function Location() {
           }}
           className="reveal"
         >
-          <ImageSlot
-            placeholder="Map of Smârdan 14, Bucharest"
-            style={{ height: 380 }}
-          />
+          <ImageSlot placeholder={t("mapAlt")} style={{ height: 380 }} />
         </div>
       </div>
     </section>

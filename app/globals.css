@@ -88,6 +88,20 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 }
 .nav-cta:hover { background: currentColor; }
 .nav-cta:hover span { color: var(--ink); }
+.nav-right { display: flex; align-items: center; gap: 14px; }
+.locale-switcher {
+  display: inline-flex; align-items: center; gap: 2px;
+  font-family: var(--font-mono); text-transform: uppercase;
+  font-size: 11px; letter-spacing: 0.16em;
+}
+.locale-switcher .loc {
+  padding: 4px 6px; background: transparent; color: inherit;
+  border: none; cursor: pointer; opacity: 0.55;
+  transition: opacity .2s;
+}
+.locale-switcher .loc:hover:not(:disabled) { opacity: 1; }
+.locale-switcher .loc.is-active { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+.locale-switcher .loc + .loc { border-left: 1px solid currentColor; margin-left: 4px; padding-left: 10px; }
 @media (max-width: 900px) {
   .nav-links { display: none; }
   .nav { padding: 14px 22px; }
