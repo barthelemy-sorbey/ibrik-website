@@ -1,18 +1,26 @@
+import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
+import { Link } from "../../i18n/navigation";
+
 export default function Nav() {
+  const t = useTranslations("Nav");
   return (
     <nav className="nav">
-      <a href="#top" className="nav-mark">
+      <Link href="/#top" className="nav-mark">
         IBRIK
-      </a>
+      </Link>
       <div className="nav-links">
-        <a href="#about">Story</a>
-        <a href="#menu">Menu</a>
-        <a href="#events">Events</a>
-        <a href="#visit">Visit</a>
+        <Link href="/#about">{t("story")}</Link>
+        <Link href="/#menu">{t("menu")}</Link>
+        <Link href="/#events">{t("events")}</Link>
+        <Link href="/#visit">{t("visit")}</Link>
       </div>
-      <a href="#reserve" className="nav-cta">
-        <span>Reserve a table</span>
-      </a>
+      <div className="nav-right">
+        <LocaleSwitcher />
+        <Link href="/#reserve" className="nav-cta">
+          <span>{t("reserve")}</span>
+        </Link>
+      </div>
     </nav>
   );
 }

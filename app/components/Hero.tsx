@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { PinTag, Steam } from "./Decor";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   const wmRef = useRef<HTMLDivElement | null>(null);
   const [scroll, setScroll] = useState(0);
 
@@ -22,9 +24,9 @@ export default function Hero() {
     <header className="hero" id="top">
       <Steam />
       <div className="hero-meta">
-        <span>Bucharest · București — Romanian Kitchen</span>
+        <span>{t("meta")}</span>
         <span className="sep" />
-        <span>Est. MMXX · Open Tue–Sun</span>
+        <span>{t("metaRight")}</span>
       </div>
 
       <div
@@ -43,21 +45,19 @@ export default function Hero() {
       </div>
 
       <div className="hero-tagline" style={{ opacity: fade }}>
-        <PinTag>Kitchen</PinTag>
+        <PinTag>{t("tagline")}</PinTag>
       </div>
 
       <div className="hero-foot">
         <div className="blurb reveal in">
-          A small, loud, warm Romanian kitchen. Slow food from the Carpathians,
-          the Danube delta and somebody&rsquo;s <em>bunică</em>&rsquo;s back
-          garden — cooked the way it has always been cooked.
+          {t.rich("blurb", { em: (chunks) => <em>{chunks}</em> })}
         </div>
         <div className="since">
           MMXX
-          <small>Since · Din anul</small>
+          <small>{t("since")}</small>
         </div>
         <div className="scroll-cue">
-          <span>Scroll · derulează</span>
+          <span>{t("scroll")}</span>
           <div className="line" />
         </div>
       </div>
