@@ -35,7 +35,7 @@ export default function Location() {
               }}
             >
               <a
-                href="https://maps.google.com/?q=Strada+Smârdan+14,+Bucharest"
+                href="https://www.google.com/maps/place/Ibrik+Kitchen/@48.868745,2.3467575,17z"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ borderBottom: "1px solid", paddingBottom: 2 }}
@@ -50,24 +50,20 @@ export default function Location() {
             <table className="hours-table">
               <tbody>
                 <tr className="closed">
-                  <td>{t("monday")}</td>
+                  <td>{t("sundayClosed")}</td>
                   <td>{t("closed")}</td>
                 </tr>
                 <tr>
-                  <td>{t("tueThu")}</td>
-                  <td>17:00 — 23:00</td>
+                  <td>
+                    {t("weekRange")} · {t("lunch")}
+                  </td>
+                  <td>{t("lunchHours")}</td>
                 </tr>
                 <tr>
-                  <td>{t("friday")}</td>
-                  <td>17:00 — 01:00</td>
-                </tr>
-                <tr>
-                  <td>{t("saturday")}</td>
-                  <td>12:00 — 01:00</td>
-                </tr>
-                <tr>
-                  <td>{t("sunday")}</td>
-                  <td>12:00 — 22:00</td>
+                  <td>
+                    {t("weekRange")} · {t("dinner")}
+                  </td>
+                  <td>{t("dinnerHours")}</td>
                 </tr>
               </tbody>
             </table>
