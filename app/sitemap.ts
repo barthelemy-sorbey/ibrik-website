@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "../i18n/routing";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ibrik.ro";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ibrik.fr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const languages: Record<string, string> = {};
