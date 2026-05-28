@@ -27,7 +27,7 @@ const dmMono = DM_Mono({
 });
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://ibrik.ro";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ibrik.fr";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

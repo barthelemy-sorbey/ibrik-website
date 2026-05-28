@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Ibrik Kitchen — Cuisine roumaine, Bucarest",
-    "description": "Une petite cuisine roumaine dans la vieille ville de Bucarest. Sarmale, mămăligă, papanași, țuică et café à l'ibrik. Bun venit."
+    "title": "Ibrik Kitchen — Cuisine des Balkans, Paris Sentier",
+    "description": "Une cuisine des Balkans en plein Sentier, Paris 2. Classiques roumains, grecs, serbes et turcs rencontrent la bistronomie française. The Balkans are home to everyone."
   },
   "Nav": {
     "story": "Histoire",
@@ -12,24 +12,24 @@
     "switchTo": "EN"
   },
   "Hero": {
-    "meta": "Bucarest · București — Cuisine roumaine",
-    "metaRight": "Depuis MMXX · Ouvert du mar. au dim.",
+    "meta": "Paris · Sentier — Cuisine des Balkans",
+    "metaRight": "Depuis MMXIX · Ouvert du lun. au sam.",
     "tagline": "Cuisine",
-    "blurb": "Une petite cuisine roumaine, bruyante et chaleureuse. Cuisine lente des Carpates, du delta du Danube et du jardin de la <em>bunică</em> de quelqu'un — préparée comme on l'a toujours fait.",
+    "blurb": "Une petite cuisine balkanique, bruyante et chaleureuse, au cœur du Sentier. Cuisine lente des Carpates à l'Égée, du jardin de la <em>bunică</em> de quelqu'un — préparée comme on l'a toujours fait.",
     "since": "Depuis · Din anul",
     "scroll": "Défiler · derulează"
   },
   "About": {
     "kicker": "◆ 01 · Povestea noastră",
-    "kickerRight": "Notre histoire · depuis 2020",
+    "kickerRight": "Notre histoire · depuis 2019",
     "title": "Une cuisine\nde mémoire,\nfaite à la main.",
     "stamp": "poftă bună —",
-    "p1": "Ibrik est né l'année où le monde s'est arrêté, dans une seule pièce au-dessus d'une boulangerie de Bucarest, avec un <em>ibric</em> en cuivre, deux tabourets et un livre de recettes tenu par de la ficelle de cuisine. Nous cuisinions pour ceux qui nous manquaient.",
-    "p2": "Cinq ans plus tard, les recettes n'ont pas changé — des sarmale qui reposent toute la nuit, de la <em>mămăligă</em> tournée au poignet, de l'eau-de-vie de prune d'un cousin d'Argeș. Nous gardons toujours deux tabourets près de la porte, au cas où quelqu'un voudrait se réchauffer.",
-    "signature": "— Maria & Andrei, bucătari",
-    "photoCap1": "Maria & Andrei",
+    "p1": "Ibrik est né d'Ecaterina — ancienne docteure en droit fiscal, originaire de Bucarest et arrivée à Paris à six ans, qui a tout quitté pour cuisiner ce qui lui manquait. Ibrik Café a ouvert en 2018 ; Ibrik Kitchen, en plein Sentier, a suivi en 2019.",
+    "p2": "Ses recettes voyagent des Carpates à la mer Égée — sarmale, mititei et cevapcici, souvlaki, halloumi, papanași — cuisinées par des chefs primés avec une seule idée tranquille : <em>les Balkans sont la maison de tout le monde.</em>",
+    "signature": "— Cathy, fondatrice",
+    "photoCap1": "Cathy",
     "photoCap2": "L'ibric",
-    "photoAlt1": "Maria & Andrei en cuisine",
+    "photoAlt1": "Cathy dans la cuisine ouverte",
     "photoAlt2": "Ibric en cuivre sur le feu"
   },
   "Menu": {
@@ -115,7 +115,7 @@
     "titleAccent": "les vôtres.",
     "p1": "Il existe un mot roumain — <i>petrecere</i> — qui signifie à la fois une fête, un festin et l'art de \"passer le temps\". Nous sommes faits pour ça.",
     "p2": "Que vous soyez douze autour de la grande table ou soixante à occuper toute la salle, nous cuisinons comme nos familles cuisinent pour les leurs : beaucoup, en même temps, et si bien que personne ne part vraiment à l'heure.",
-    "enquire": "Demande · evenimente@ibrik.ro",
+    "enquire": "Contact · evenimente@ibrik.fr",
     "card1Name": "Masa mare",
     "card1Ro": "la grande table",
     "card1Meta": "12–24 convives · salle du fond · 3 services, à la famille",
@@ -146,7 +146,7 @@
     "name": "Votre nom · numele",
     "namePh": "Maria Popescu",
     "phone": "Téléphone · telefon",
-    "phonePh": "+40 ...",
+    "phonePh": "+33 ...",
     "date": "Date · data",
     "party": "Convives · persoane",
     "time": "Heure · ora",
@@ -156,7 +156,7 @@
     "asideStamp": "Sans réservation\nbienvenus.",
     "asideP1": "Deux places restent toujours au comptoir pour les courageux et les affamés — premier arrivé, servi sur-le-champ, avec un țuică offert.",
     "asideP2": "Pour les grandes tablées ou les miracles de dernière minute, appelez-nous.",
-    "tel": "+40 21 234 56 78"
+    "bookOnline": "Réserver en ligne via Zenchef →"
   },
   "Location": {
     "kicker": "◆ 06 · Vizitează-ne",
@@ -165,16 +165,17 @@
     "titleAccent": "nous",
     "titlePost": " trouver.",
     "addressTitle": "Adresse · Adresa",
-    "addressLines": "Strada Smârdan 14\nCentrul Vechi, Bucarest\nRoumanie · România",
+    "addressLines": "9 rue de Mulhouse\n75002 Paris · Sentier\nFrance",
     "openInMaps": "Ouvrir dans Maps →",
     "hoursTitle": "Horaires · Program",
-    "monday": "Lundi · luni",
     "closed": "Fermé",
-    "tueThu": "Mardi — Jeudi",
-    "friday": "Vendredi · vineri",
-    "saturday": "Samedi · sâmbătă",
-    "sunday": "Dimanche · duminică",
-    "mapAlt": "Plan de Smârdan 14, Bucarest"
+    "sundayClosed": "Dimanche · duminică",
+    "weekRange": "Lundi — Samedi",
+    "lunch": "Déjeuner · prânz",
+    "dinner": "Dîner · cină",
+    "lunchHours": "12:00 — 15:30",
+    "dinnerHours": "19:00 — 00:30",
+    "mapAlt": "Plan · 9 rue de Mulhouse, Paris 2"
   },
   "Footer": {
     "visit": "Nous trouver",
@@ -185,14 +186,14 @@
     "menuMains": "Plats",
     "menuSweets": "Desserts",
     "menuDrinks": "Boissons",
-    "follow1": "Instagram · @ibrikkitchen",
-    "follow2": "TikTok · @ibrik",
+    "follow1": "Instagram · @ibrikparis",
+    "follow2": "Facebook · ibrikkitchen",
     "follow3": "Newsletter",
     "care1": "Événements privés",
     "care2": "Cours de cuisine",
     "care3": "Cartes cadeaux",
     "care4": "Dossier de presse",
-    "copy": "© MMXXVI Ibrik Kitchen SRL · fait avec poftă à Bucarest",
-    "tag": "★ Roumain · Carpates · Slow"
+    "copy": "© MMXXVI Ibrik Kitchen · fait avec poftă à Paris",
+    "tag": "★ Balkans · des Carpates à l'Égée · Slow"
   }
 }

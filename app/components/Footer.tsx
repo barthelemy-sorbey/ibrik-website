@@ -10,10 +10,16 @@ export default function Footer() {
         <div className="row">
           <div className="col">
             <h5>{t("visit")}</h5>
-            <a>Strada Smârdan 14</a>
-            <a>Bucharest, RO</a>
-            <a>+40 21 234 56 78</a>
-            <a>bună@ibrik.ro</a>
+            <a
+              href="https://www.google.com/maps/place/Ibrik+Kitchen/@48.868745,2.3467575,17z"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              9 rue de Mulhouse
+            </a>
+            <a>75002 Paris · Sentier</a>
+            <a href="tel:+33170694250">+33 1 70 69 42 50</a>
+            <a href="mailto:bună@ibrik.fr">bună@ibrik.fr</a>
           </div>
           <div className="col">
             <h5>{t("menu")}</h5>

@@ -177,8 +177,26 @@ export default function Reserve() {
             </div>
             <p>{t("asideP1")}</p>
             <p style={{ marginTop: 22 }}>{t("asideP2")}</p>
-            <a href="tel:+40212345678" className="tel">
-              +40 21 234 56 78
+            <a href="tel:+33170694250" className="tel">
+              +33 1 70 69 42 50
+            </a>
+            <a
+              href="https://bookings.zenchef.com/results?rid=352129&pid=1001"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="zenchef-link"
+              style={{
+                display: "inline-block",
+                marginTop: 18,
+                fontFamily: "var(--font-mono)",
+                fontSize: 11,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                borderBottom: "1px solid",
+                paddingBottom: 2,
+              }}
+            >
+              {t("bookOnline")}
             </a>
           </aside>
         </div>

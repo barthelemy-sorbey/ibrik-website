@@ -53,7 +53,7 @@ export default function Hero() {
           {t.rich("blurb", { em: (chunks) => <em>{chunks}</em> })}
         </div>
         <div className="since">
-          MMXX
+          MMXIX
           <small>{t("since")}</small>
         </div>
         <div className="scroll-cue">
