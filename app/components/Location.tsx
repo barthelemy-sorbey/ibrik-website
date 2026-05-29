@@ -6,11 +6,6 @@ export default function Location() {
   return (
     <section className="section s-location" id="visit">
       <div className="wrap">
-        <div className="section-head">
-          <span>{t("kicker")}</span>
-          <span>{t("kickerRight")}</span>
-        </div>
-
         <h2 className="display reveal">
           {t("titlePre")}
           <span className="accent" style={{ fontStyle: "italic" }}>

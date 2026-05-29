@@ -54,11 +54,6 @@ export default function Menu() {
   return (
     <section className="section s-menu" id="menu">
       <div className="wrap">
-        <div className="section-head">
-          <span>{t("kicker")}</span>
-          <span>{t("kickerRight")}</span>
-        </div>
-
         <h2 className="display reveal">
           {t("titlePre")}
           <span className="accent" style={{ fontStyle: "italic" }}>

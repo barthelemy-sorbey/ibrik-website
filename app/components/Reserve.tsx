@@ -23,11 +23,6 @@ export default function Reserve() {
   return (
     <section className="section s-reserve" id="reserve">
       <div className="wrap">
-        <div className="section-head">
-          <span>{t("kicker")}</span>
-          <span>{t("kickerRight")}</span>
-        </div>
-
         <div className="reserve-row">
           <div>
             <h2 className="display reveal">
