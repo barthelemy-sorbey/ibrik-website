@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="col">
             <h5>{t("visit")}</h5>
             <a
-              href="https://www.google.com/maps/place/Ibrik+Kitchen/@48.868745,2.3467575,17z"
+              href="https://maps.app.goo.gl/M96VNxVcr9pbNgHx9"
               target="_blank"
               rel="noopener noreferrer"
             >

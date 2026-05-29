@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { ImageSlot } from "./Decor";
 
 export default function Location() {
   const t = useTranslations("Location");
@@ -35,7 +34,7 @@ export default function Location() {
               }}
             >
               <a
-                href="https://www.google.com/maps/place/Ibrik+Kitchen/@48.868745,2.3467575,17z"
+                href="https://maps.app.goo.gl/M96VNxVcr9pbNgHx9"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ borderBottom: "1px solid", paddingBottom: 2 }}
@@ -79,7 +78,16 @@ export default function Location() {
           }}
           className="reveal"
         >
-          <ImageSlot placeholder={t("mapAlt")} style={{ height: 380 }} />
+          <iframe
+            src="https://www.google.com/maps?q=Ibrik+Kitchen,+9+rue+de+Mulhouse,+75002+Paris&output=embed"
+            title={t("mapAlt")}
+            width="100%"
+            height="380"
+            style={{ border: 0, display: "block" }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
         </div>
       </div>
     </section>
