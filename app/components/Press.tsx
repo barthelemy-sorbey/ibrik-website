@@ -22,11 +22,6 @@ export default function Press() {
   return (
     <section className="section s-press">
       <div className="wrap">
-        <div className="section-head">
-          <span>{t("kicker")}</span>
-          <span>{t("kickerRight")}</span>
-        </div>
-
         <h2 className="display reveal" style={{ whiteSpace: "pre-line" }}>
           {t("title")}
         </h2>
