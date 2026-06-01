@@ -10,6 +10,7 @@ import Press from "../components/Press";
 import Events from "../components/Events";
 import Reserve from "../components/Reserve";
 import Location from "../components/Location";
+import Video from "../components/Video";
 import Footer from "../components/Footer";
 import Reveal from "../components/Reveal";
 
@@ -28,6 +29,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <Press />
       <Events />
       <Reserve />
+      <Video />
       <Location />
       <Footer />
     </>
