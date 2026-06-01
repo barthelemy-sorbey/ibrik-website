@@ -37,7 +37,13 @@ export default function Footer() {
           </div>
           <div className="col">
             <h5>{t("follow")}</h5>
-            <a>{t("follow1")}</a>
+            <a
+              href="https://www.instagram.com/ibrikparis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("follow1")}
+            </a>
             <a>{t("follow2")}</a>
             <a>{t("follow3")}</a>
           </div>

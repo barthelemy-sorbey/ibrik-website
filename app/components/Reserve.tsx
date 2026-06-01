@@ -193,6 +193,14 @@ export default function Reserve() {
             >
               {t("bookOnline")}
             </a>
+            <div
+              className="zc-widget-config"
+              data-restaurant="352129"
+              data-primary-color="0f4d33"
+              data-open="false"
+              data-pax="2"
+              style={{ marginTop: 18 }}
+            />
           </aside>
         </div>
       </div>

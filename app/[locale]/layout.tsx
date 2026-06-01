@@ -3,6 +3,7 @@ import { Bagel_Fat_One, Source_Serif_4, DM_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { routing } from "../../i18n/routing";
 import "../globals.css";
 
@@ -82,6 +83,11 @@ export default async function LocaleLayout({
     >
       <body suppressHydrationWarning>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <Script
+          id="zenchef-sdk"
+          src="https://sdk.zenchef.com/v1/sdk.min.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
