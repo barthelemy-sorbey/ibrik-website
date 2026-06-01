@@ -1,164 +1,64 @@
-"use client";
-
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { SpinSeal } from "./Decor";
 
 export default function Reserve() {
   const t = useTranslations("Reserve");
-  const [party, setParty] = useState(2);
-  const [time, setTime] = useState("19:30");
-  const [submitted, setSubmitted] = useState(false);
-  const times = [
-    "18:00",
-    "18:30",
-    "19:00",
-    "19:30",
-    "20:00",
-    "20:30",
-    "21:00",
-    "21:30",
-  ];
 
   return (
     <section className="section s-reserve" id="reserve">
       <div className="wrap">
         <div className="reserve-row">
-          <div>
+          <div className="reserve-main">
             <h2 className="display reveal">
               <span style={{ whiteSpace: "pre-line" }}>{t("titlePre")}</span>
               <span className="accent" style={{ fontStyle: "italic" }}>
                 {t("titleAccent")}
               </span>
             </h2>
-            <p
-              className="lead reveal d1"
-              style={{ marginTop: 18, maxWidth: "32ch" }}
-            >
+            <p className="lead reveal d1" style={{ marginTop: 18, maxWidth: "34ch" }}>
               {t("lead")}
             </p>
 
-            {submitted ? (
-              <div className="reserve-form reveal in" style={{ marginTop: 40 }}>
-                <p
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: 56,
-                    lineHeight: 1,
-                    margin: 0,
-                  }}
-                >
-                  {t("thanks")}
-                </p>
-                <p style={{ fontSize: 19, maxWidth: "40ch", marginTop: 10 }}>
-                  {t.rich(party === 1 ? "confirmed_one" : "confirmed_other", {
-                    count: party,
-                    time,
-                    strong: (c) => <strong>{c}</strong>,
-                    em: (c) => <em>{c}</em>,
-                  })}
-                </p>
-                <button
-                  className="reserve-submit"
-                  onClick={() => setSubmitted(false)}
-                >
-                  {t("bookAnother")}
-                </button>
-              </div>
-            ) : (
-              <form
-                className="reserve-form reveal d2"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSubmitted(true);
-                  window.scrollTo({
-                    top:
-                      e.currentTarget.getBoundingClientRect().top +
-                      window.scrollY -
-                      100,
-                    behavior: "smooth",
-                  });
-                }}
-                style={{ marginTop: 40 }}
+            <div className="reserve-online reveal d2">
+              <div className="reserve-eyebrow">{t("onlineEyebrow")}</div>
+              <a
+                href="https://bookings.zenchef.com/results?rid=352129&pid=1001"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="reserve-cta"
               >
-                <div className="row2">
-                  <label>
-                    {t("name")}
-                    <input
-                      className="field"
-                      type="text"
-                      required
-                      placeholder={t("namePh")}
-                    />
-                  </label>
-                  <label>
-                    {t("phone")}
-                    <input
-                      className="field"
-                      type="tel"
-                      required
-                      placeholder={t("phonePh")}
-                    />
-                  </label>
-                </div>
-                <div className="row2">
-                  <label>
-                    {t("date")}
-                    <input
-                      className="field"
-                      type="date"
-                      required
-                      defaultValue="2026-06-12"
-                    />
-                  </label>
-                  <label>
-                    {t("party")}
-                    <div className="chips">
-                      {[1, 2, 3, 4, 5, 6, 8, 10].map((n) => (
-                        <button
-                          type="button"
-                          key={n}
-                          className={`chip ${party === n ? "is-active" : ""}`}
-                          onClick={() => setParty(n)}
-                        >
-                          {n}
-                        </button>
-                      ))}
-                    </div>
-                  </label>
-                </div>
-                <label>
-                  {t("time")}
-                  <div className="chips">
-                    {times.map((tm) => (
-                      <button
-                        type="button"
-                        key={tm}
-                        className={`chip ${time === tm ? "is-active" : ""}`}
-                        onClick={() => setTime(tm)}
-                      >
-                        {tm}
-                      </button>
-                    ))}
-                  </div>
-                </label>
-                <label>
-                  {t("notes")}
-                  <input
-                    className="field"
-                    type="text"
-                    placeholder={t("notesPh")}
-                  />
-                </label>
+                {t("onlineCta")}
+                <span aria-hidden="true">→</span>
+              </a>
+              <div
+                className="zc-widget-config reserve-widget"
+                data-restaurant="352129"
+                data-primary-color="0f4d33"
+                data-open="false"
+                data-pax="2"
+              />
+            </div>
 
-                <button type="submit" className="reserve-submit">
-                  {t("submit")}
-                </button>
-              </form>
-            )}
+            <div className="reserve-divider reveal d3" aria-hidden="true">
+              <span>{t("or")}</span>
+            </div>
+
+            <div className="reserve-direct reveal d3">
+              <div className="reserve-eyebrow">{t("directEyebrow")}</div>
+              <div className="reserve-direct-grid">
+                <a href="tel:+33170694250" className="reserve-direct-link">
+                  <span className="reserve-direct-kind">{t("callLabel")}</span>
+                  <span className="reserve-direct-value">+33 1 70 69 42 50</span>
+                </a>
+                <a href="mailto:bună@ibrik.fr" className="reserve-direct-link">
+                  <span className="reserve-direct-kind">{t("emailLabel")}</span>
+                  <span className="reserve-direct-value">bună@ibrik.fr</span>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <aside className="reserve-aside reveal d3">
+          <aside className="reserve-aside reveal d4">
             <SpinSeal
               text="IBRIK KITCHEN · BUN VENIT · "
               color="var(--ink)"
@@ -171,36 +71,7 @@ export default function Reserve() {
               {t("asideStamp")}
             </div>
             <p>{t("asideP1")}</p>
-            <p style={{ marginTop: 22 }}>{t("asideP2")}</p>
-            <a href="tel:+33170694250" className="tel">
-              +33 1 70 69 42 50
-            </a>
-            <a
-              href="https://bookings.zenchef.com/results?rid=352129&pid=1001"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="zenchef-link"
-              style={{
-                display: "inline-block",
-                marginTop: 18,
-                fontFamily: "var(--font-mono)",
-                fontSize: 11,
-                letterSpacing: "0.18em",
-                textTransform: "uppercase",
-                borderBottom: "1px solid",
-                paddingBottom: 2,
-              }}
-            >
-              {t("bookOnline")}
-            </a>
-            <div
-              className="zc-widget-config"
-              data-restaurant="352129"
-              data-primary-color="0f4d33"
-              data-open="false"
-              data-pax="2"
-              style={{ marginTop: 18 }}
-            />
+            <p style={{ marginTop: 18 }}>{t("asideP2")}</p>
           </aside>
         </div>
       </div>
