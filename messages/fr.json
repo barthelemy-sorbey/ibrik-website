@@ -35,14 +35,8 @@
     "titleAccent": "entière",
     "titlePost": ".",
     "lead": "Un aperçu de notre carte — mezze, braises, mijotés et douceurs. Commandez trois plats pour deux. Restez pour le café.",
-    "foot": "Prix en € · TTC · service non inclus",
+    "foot": "Prix en € · TTC",
     "pdf": "Voir la carte complète →",
-    "cats": {
-      "starters": "Entrées",
-      "mains": "Plats",
-      "sweets": "Desserts",
-      "drinks": "Boissons"
-    },
     "tagSignature": "signature"
   },
   "Press": {
