@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import logo from "../../public/brand/ibrik-kitchen-logo.png";
-import { PinTag } from "./Decor";
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -46,9 +45,6 @@ export default function Hero() {
               priority
               sizes="(max-width: 900px) 88vw, 42vw"
             />
-          </div>
-          <div className="hero-tagline" style={{ opacity: fade }}>
-            <PinTag>{t("tagline")}</PinTag>
           </div>
         </div>
 
