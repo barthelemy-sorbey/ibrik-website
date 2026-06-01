@@ -550,45 +550,74 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   display: grid; grid-template-columns: 1.1fr 1fr; gap: 80px;
   align-items: start;
 }
-@media (max-width: 900px) { .reserve-row { grid-template-columns: 1fr; gap: 30px; } }
-.reserve-form { display: flex; flex-direction: column; gap: 18px; }
-.reserve-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.reserve-form label {
-  font-family: var(--font-mono); font-size: 10.5px;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  display: flex; flex-direction: column; gap: 8px;
+@media (max-width: 900px) { .reserve-row { grid-template-columns: 1fr; gap: 40px; } }
+
+.reserve-main { display: flex; flex-direction: column; }
+
+.reserve-eyebrow {
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
 }
-.reserve-form .field {
-  background: transparent;
-  border: 0; border-bottom: 1.5px solid var(--ink);
-  padding: 10px 0 8px;
-  font-family: var(--font-serif); font-size: 19px;
-  color: var(--ink);
-  letter-spacing: 0;
-  outline: none;
-}
-.reserve-form .field::placeholder { color: var(--ink-soft); opacity: .55; }
-.reserve-form .field:focus { border-bottom-color: var(--tomato); }
-.reserve-form .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
-.reserve-form .chip {
-  font-family: var(--font-mono); font-size: 12px;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  padding: 8px 14px; border: 1.5px solid var(--ink); border-radius: 999px;
-  background: transparent; transition: all .2s;
-}
-.reserve-form .chip.is-active { background: var(--ink); color: var(--cream); }
-.reserve-submit {
-  align-self: flex-start;
-  margin-top: 18px;
-  padding: 16px 32px;
+
+.reserve-online { margin-top: 38px; }
+.reserve-cta {
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 18px 30px;
   border-radius: 999px;
   background: var(--ink); color: var(--cream);
   font-family: var(--font-mono); font-size: 12px;
   letter-spacing: 0.22em; text-transform: uppercase;
-  display: inline-flex; align-items: center; gap: 10px;
-  transition: background .25s, transform .25s;
+  min-height: 44px;
+  transition: background .25s var(--ease-out), transform .25s var(--ease-out);
 }
-.reserve-submit:hover { background: var(--tomato); transform: translateX(4px); }
+.reserve-cta:hover,
+.reserve-cta:focus-visible { background: var(--tomato); transform: translateX(4px); }
+.reserve-cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+
+.reserve-widget { margin-top: 18px; }
+
+.reserve-divider {
+  display: flex; align-items: center; gap: 16px;
+  margin: 36px 0 28px;
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.reserve-divider::before,
+.reserve-divider::after {
+  content: ""; flex: 1; height: 1px;
+  background: currentColor; opacity: .35;
+}
+
+.reserve-direct-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+}
+@media (max-width: 600px) { .reserve-direct-grid { grid-template-columns: 1fr; gap: 18px; } }
+
+.reserve-direct-link {
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 4px 0 6px;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color .2s var(--ease-out), transform .2s var(--ease-out);
+  min-height: 44px;
+}
+.reserve-direct-link:hover,
+.reserve-direct-link:focus-visible { border-bottom-color: var(--ink); }
+.reserve-direct-link:focus-visible { outline: none; }
+.reserve-direct-kind {
+  font-family: var(--font-mono); font-size: 10.5px;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.reserve-direct-value {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3.2vw, 32px);
+  line-height: 1.05;
+  color: var(--ink);
+  word-break: break-word;
+}
 
 .reserve-aside { font-size: 17px; line-height: 1.55; }
 .reserve-aside .stamp {
@@ -597,13 +626,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   color: var(--cream-light);
   margin-bottom: 16px;
 }
-.reserve-aside p { margin: 0 0 14px; }
-.reserve-aside .tel {
-  font-family: var(--font-display); font-size: 32px;
-  color: var(--ink); letter-spacing: 0;
-  display: inline-block;
-  margin-top: 6px;
-}
+.reserve-aside p { margin: 0 0 14px; max-width: 32ch; }
 
 /* ---- VIDEO ---- */
 .s-video { background: var(--ink); color: var(--cream-light); }
