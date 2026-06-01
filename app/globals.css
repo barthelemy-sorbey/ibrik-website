@@ -339,7 +339,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 @media (max-width: 900px) { .s-about .row { grid-template-columns: 1fr; gap: 40px; } }
 
 /* ---- MENU ---- */
-.s-menu { background: var(--cream); color: var(--ink); }
+.s-menu { background: var(--cream-deep); color: var(--ink); }
 .s-menu h2.display .accent { color: var(--tomato); }
 .menu-tabs {
   display: flex; gap: 12px; margin-bottom: 40px;
