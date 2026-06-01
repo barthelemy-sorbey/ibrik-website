@@ -18,6 +18,10 @@
 
   --ease-out: cubic-bezier(.2, .8, .2, 1);
   --ease-in-out: cubic-bezier(.5, 0, .25, 1);
+
+  --dot-color: rgba(239, 169, 178, 0.45);
+  --dot-pattern: radial-gradient(circle, var(--dot-color) 1.5px, transparent 1.5px);
+  --dot-size: 48px 48px;
 }
 
 * { box-sizing: border-box; }
@@ -30,7 +34,10 @@ body {
   font-size: 17px;
   line-height: 1.55;
   color: var(--ink);
-  background: var(--cream);
+  background-color: var(--cream);
+  background-image: var(--dot-pattern);
+  background-size: var(--dot-size);
+  background-repeat: repeat;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -113,7 +120,10 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 .hero {
   position: relative;
   min-height: 100vh;
-  background: var(--cream);
+  background-color: var(--cream);
+  background-image: var(--dot-pattern);
+  background-size: var(--dot-size);
+  background-repeat: repeat;
   overflow: hidden;
   padding-top: 110px;
   isolation: isolate;
@@ -339,7 +349,13 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 @media (max-width: 900px) { .s-about .row { grid-template-columns: 1fr; gap: 40px; } }
 
 /* ---- MENU ---- */
-.s-menu { background: var(--cream-deep); color: var(--ink); }
+.s-menu {
+  background-color: var(--cream-deep);
+  background-image: var(--dot-pattern);
+  background-size: var(--dot-size);
+  background-repeat: repeat;
+  color: var(--ink);
+}
 .s-menu h2.display .accent { color: var(--tomato); }
 .menu-tabs {
   display: flex; gap: 12px; margin-bottom: 40px;
@@ -668,7 +684,14 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 }
 
 /* ---- LOCATION ---- */
-.s-location { background: var(--cream); color: var(--ink); padding-bottom: 0; }
+.s-location {
+  background-color: var(--cream);
+  background-image: var(--dot-pattern);
+  background-size: var(--dot-size);
+  background-repeat: repeat;
+  color: var(--ink);
+  padding-bottom: 0;
+}
 .s-location h2.display .accent { color: var(--green); }
 .loc-row {
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
@@ -811,7 +834,10 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 
 /* ============ MENUS PAGE ============ */
 .menus-page {
-  background: var(--cream);
+  background-color: var(--cream);
+  background-image: var(--dot-pattern);
+  background-size: var(--dot-size);
+  background-repeat: repeat;
   color: var(--ink);
   padding-top: 130px;
   padding-bottom: 80px;
