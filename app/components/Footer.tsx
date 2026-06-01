@@ -26,7 +26,7 @@ export default function Footer() {
             </a>
             <a>75002 Paris · Sentier</a>
             <a href="tel:+33170694250">+33 1 70 69 42 50</a>
-            <a href="mailto:bună@ibrik.fr">bună@ibrik.fr</a>
+            <a href="mailto:contact@ibrik.fr">contact@ibrik.fr</a>
           </div>
           <div className="col">
             <h5>{t("menu")}</h5>
@@ -44,15 +44,17 @@ export default function Footer() {
             >
               {t("follow1")}
             </a>
-            <a>{t("follow2")}</a>
-            <a>{t("follow3")}</a>
+            <a
+              href="https://www.facebook.com/ibrikkitchen/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("follow2")}
+            </a>
           </div>
           <div className="col">
             <h5>{t("careOf")}</h5>
             <a>{t("care1")}</a>
-            <a>{t("care2")}</a>
-            <a>{t("care3")}</a>
-            <a>{t("care4")}</a>
           </div>
         </div>
         <div className="bottom">
