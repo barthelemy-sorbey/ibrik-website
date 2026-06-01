@@ -1,12 +1,19 @@
 import { useTranslations } from "next-intl";
 import { Link } from "../../i18n/navigation";
+import LogoMark from "./LogoMark";
 
 export default function Footer() {
   const t = useTranslations("Footer");
   return (
     <footer className="foot">
       <div className="wrap">
-        <div className="big">IBRIK</div>
+        <div className="foot-logo">
+          <LogoMark
+            variant="cream"
+            height={140}
+            sizes="(max-width: 720px) 70vw, 400px"
+          />
+        </div>
         <div className="row">
           <div className="col">
             <h5>{t("visit")}</h5>
@@ -23,10 +30,10 @@ export default function Footer() {
           </div>
           <div className="col">
             <h5>{t("menu")}</h5>
-            <Link href="/#menu">{t("menuStarters")}</Link>
-            <Link href="/#menu">{t("menuMains")}</Link>
-            <Link href="/#menu">{t("menuSweets")}</Link>
-            <Link href="/#menu">{t("menuDrinks")}</Link>
+            <Link href="/menus#lunch">{t("menuStarters")}</Link>
+            <Link href="/menus#dinner">{t("menuMains")}</Link>
+            <Link href="/menus#saturday">{t("menuSweets")}</Link>
+            <Link href="/menus#saturday-drinks">{t("menuDrinks")}</Link>
           </div>
           <div className="col">
             <h5>{t("follow")}</h5>

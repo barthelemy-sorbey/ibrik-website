@@ -20,8 +20,6 @@
     "scroll": "Scroll · derulează"
   },
   "About": {
-    "kicker": "◆ 01 · Povestea noastră",
-    "kickerRight": "Our story · since 2019",
     "title": "A kitchen\nremembered\nby hand.",
     "stamp": "poftă bună —",
     "p1": "Ibrik began with Ecaterina — a tax lawyer from Bucharest who arrived in Paris at six, then quit law to cook the food she'd missed. Ibrik Café opened in 2018; Ibrik Kitchen, in the heart of the Sentier, followed in 2019.",
@@ -33,8 +31,6 @@
     "photoAlt2": "Copper ibric on the fire"
   },
   "Menu": {
-    "kicker": "◆ 02 · Meniu",
-    "kickerRight": "Updated weekly · with the market",
     "titlePre": "The ",
     "titleAccent": "full",
     "titlePost": " table.",
@@ -98,8 +94,6 @@
     "tagSignature": "signature"
   },
   "Press": {
-    "kicker": "◆ 03 · Presa & Recenzii",
-    "kickerRight": "What the critics wrote",
     "title": "They keep\ncoming back.",
     "q1": "The sarmale is a love letter written in cabbage and smoke. We did not stop eating.",
     "q1Loc": "London",
@@ -109,8 +103,6 @@
     "q3Loc": "Critic's Pick"
   },
   "Events": {
-    "kicker": "◆ 04 · Evenimente private",
-    "kickerRight": "Private events",
     "titlePre": "Gather\n",
     "titleAccent": "your people.",
     "p1": "There is a Romanian word — <i>petrecere</i> — that means a party, a feast, and the act of \"passing time\" all at once. We were built for it.",
@@ -134,8 +126,6 @@
     "card4Cap": "€95 / pers"
   },
   "Reserve": {
-    "kicker": "◆ 05 · Rezervări",
-    "kickerRight": "Reservations",
     "titlePre": "Save a\n",
     "titleAccent": "chair.",
     "lead": "We hold a few tables back for walk-ins each night, but the room fills early on weekends. Book ahead — we'll keep the candle lit.",
@@ -159,8 +149,6 @@
     "bookOnline": "Book online via Zenchef →"
   },
   "Location": {
-    "kicker": "◆ 06 · Vizitează-ne",
-    "kickerRight": "Find the door",
     "titlePre": "Come ",
     "titleAccent": "find",
     "titlePost": " us.",
@@ -177,14 +165,330 @@
     "dinnerHours": "19:00 — 00:30",
     "mapAlt": "Map · 9 rue de Mulhouse, Paris 2"
   },
+  "MenusPage": {
+    "metaTitle": "Menus — Ibrik Kitchen, Paris Sentier",
+    "metaDescription": "Lunch, dinner and Saturday lunch menus at Ibrik Kitchen, 9 rue de Mulhouse, Paris 2. Spring 2026 — Balkan cuisine, mezze, mains, sweets and drinks.",
+    "title": "Three menus,\none kitchen.",
+    "lead": "Weekday lunch with a quick mezze + main formula, a longer dinner that lingers, and a slower Saturday lunch with sarmale and the patronne's seven-hour lamb if you ask in time.",
+    "downloadPdf": "Download PDF →",
+    "vegLegend": "V — vegetarian",
+    "priceNote": "Prices in € · VAT included · service not included",
+    "askLabel": "Ask us",
+    "perPerson": "per person",
+    "minPeople": "min. {n}",
+    "supplement": "+{n}€",
+    "jumpTo": "Jump to",
+    "navLunch": "Lunch",
+    "navDinner": "Dinner",
+    "navSaturday": "Saturday",
+    "navDrinks": "Drinks",
+    "back": "← Back home",
+    "lunch": {
+      "label": "Lunch menu",
+      "subtitle": "Mon — Fri · 12:00 — 15:30",
+      "sectionMezze": "Mezze",
+      "sectionMains": "Mains",
+      "sectionDesserts": "Desserts",
+      "formulasTitle": "Lunch formulas",
+      "formulaMezzeMain": "Mezze + main",
+      "formulaMainDessert": "Main + dessert",
+      "formulaFull": "Mezze + main + dessert",
+      "items": {
+        "feta": {
+          "name": "Roasted feta",
+          "desc": "PDO feta baked in the oven, orange supreme, slow-roasted tomato, hazelnut, feta cream."
+        },
+        "brick_agneau": {
+          "name": "Lamb brick",
+          "desc": "Seven-hour lamb in crisp brick pastry with egg, jus, mint cream, espelette pepper, pomegranate."
+        },
+        "courgette": {
+          "name": "Zucchini fritter",
+          "desc": "Soft zucchini fritter with feta and grated cașcaval, lovage sauce, brined pepper."
+        },
+        "caviar_aubergines": {
+          "name": "Eggplant caviar",
+          "desc": "Eggplants charred over BBQ, onion, slow-roasted tomato."
+        },
+        "schnitzel": {
+          "name": "Schnitzel",
+          "desc": "Marinated breaded chicken, sliced potatoes, spring-onion biggy sauce, little salad."
+        },
+        "souvlaki": {
+          "name": "Souvlaki",
+          "desc": "Chicken thigh skewers, tzatziki, orzo (langue d'oiseau), zucchini and olives. Available veg with feta."
+        },
+        "avo_toast": {
+          "name": "BLKN Avo' Toast",
+          "desc": "Seasoned fresh cheese, avocado, ash-rolled sheep cheese, sharp tomato, egg, truffle shavings, on garlic-and-herb bread."
+        },
+        "poivron_farci": {
+          "name": "Stuffed pepper",
+          "desc": "Sweet pepper stuffed with pilaf, spiced tomato sauce, onion, crème fraîche, mustard pickles."
+        },
+        "mititei": {
+          "name": "Mititei",
+          "desc": "Skinless Angus beef skewers grilled over BBQ, baby potatoes, mustard sauce, olive-and-fennel vierge."
+        },
+        "daurade": {
+          "name": "Sea bream Danube-style",
+          "desc": "Whole sea bream cooked over BBQ, sharp pepper vierge, garlic and dill, roasted polenta."
+        },
+        "pistache": {
+          "name": "Pistachio cake (best-seller)",
+          "desc": "The Café's best-seller: Iranian pistachio cake, lemon-and-rose icing."
+        },
+        "cozonac": {
+          "name": "Cozonac (brioche)",
+          "desc": "The Romanian brioche, filled with walnuts and raisins, cognac."
+        },
+        "papanasi": {
+          "name": "Papanași",
+          "desc": "Small fresh-cheese doughnuts, sour cream, seasonal fruit coulis."
+        },
+        "pavlova": {
+          "name": "Pavlova, our way",
+          "desc": "Meringue, praline, yoghurt-and-vanilla ice cream, red berries."
+        }
+      }
+    },
+    "dinner": {
+      "label": "Dinner menu",
+      "subtitle": "Mon — Sat · 19:00 — 00:30 · Spring/Summer 2026",
+      "sectionBreadWine": "Bread & wine",
+      "sectionWildSharp": "Wild & sharp",
+      "sectionEmbers": "From the embers",
+      "sectionPatronne": "La patronne",
+      "sectionStewed": "Slow-cooked",
+      "sectionDulciuri": "Dulciuri · sweets",
+      "items": {
+        "lavash": {
+          "name": "Lavash",
+          "desc": "Golden flatbread, parsley butter with confit garlic, house tzatziki."
+        },
+        "thierry_breton": {
+          "name": "Bread by Thierry Breton",
+          "desc": "Natural sourdough, served warm with generous labneh."
+        },
+        "caviar_aubergines": {
+          "name": "Eggplant caviar",
+          "desc": "Charred eggplant, confit eggplant, sharp cherry tomato."
+        },
+        "kefta_courgette": {
+          "name": "Zucchini kefta",
+          "desc": "Lovage cream, grated cașcaval, teardrop pepper."
+        },
+        "feta_rotie": {
+          "name": "Roasted feta",
+          "desc": "Crunchy chicory, orange, hazelnut, sage cream."
+        },
+        "risoni": {
+          "name": "Risoni with fennel",
+          "desc": "Orzo, citrus and Kalamata olives, wild garlic, hard sheep cheese (Mitzithra)."
+        },
+        "mititei": {
+          "name": "Angus beef mititei",
+          "desc": "Hand-shaped, BBQ-grilled, fennel, olives, house mustard."
+        },
+        "souvlaki": {
+          "name": "Chicken souvlaki",
+          "desc": "Marinated thigh, onion, slow-roasted tomato, oregano cream."
+        },
+        "daurade_royale": {
+          "name": "Royal sea bream",
+          "desc": "Served whole, sharp pepper vierge, dill and garlic."
+        },
+        "os_moelle": {
+          "name": "Bone marrow",
+          "desc": "Fire-smoked, lemon glaze, wild garlic, crunch."
+        },
+        "epaule_agneau": {
+          "name": "Lamb shoulder, long marinade, seven-hour cook",
+          "desc": "Cathy's specialty. 52€ per person — minimum two people."
+        },
+        "borek_agneau": {
+          "name": "Confit lamb börek",
+          "desc": "Reduced jus, egg, mint cream."
+        },
+        "sarmale": {
+          "name": "Sarmale",
+          "desc": "Angus beef in brined cabbage leaf, roasted polenta, raw cream."
+        },
+        "poivron_farci": {
+          "name": "Stuffed pepper",
+          "desc": "Two rices, spiced tomato sauce, crème fraîche."
+        },
+        "pistache": {
+          "name": "The best-seller",
+          "desc": "Pistachio cake, rose and lemon icing."
+        },
+        "papanasi": {
+          "name": "Papanași",
+          "desc": "Romanian doughnuts, crème fraîche, red coulis, sesame."
+        },
+        "pavlova": {
+          "name": "Pavlova, revisited",
+          "desc": "Meringue, vanilla yoghurt ice cream, praline, fruits, mint."
+        },
+        "affogato": {
+          "name": "IBRIK Affogato",
+          "desc": "MOF coffee ice cream, IBRIK coffee."
+        }
+      },
+      "creditsTitle": "Merci",
+      "creditsLine": "Cheffe Cathy, Moutea, Cheffe Natasa, Richard, Chef Ruhni, Chef Juju, Titus, Shaï, Saidou, Noor, Elyes, Cornelis."
+    },
+    "saturday": {
+      "label": "Saturday lunch menu",
+      "subtitle": "Saturday · 12:00 — 15:30 · à la carte",
+      "sectionMezze": "Mezze",
+      "sectionMains": "Mains",
+      "sectionDesserts": "Desserts",
+      "sectionDrinks": "Drinks",
+      "drinksCold": "Cold drinks",
+      "drinksHot": "Coffee & hot drinks",
+      "drinksWines": "Wines",
+      "drinksWaters": "Waters",
+      "items": {
+        "feta": {
+          "name": "Roasted feta",
+          "desc": "PDO feta baked in the oven, orange supreme, slow-roasted tomato, hazelnut, feta cream."
+        },
+        "brick_agneau": {
+          "name": "Lamb brick",
+          "desc": "Seven-hour lamb in crisp brick pastry with egg, jus, mint cream, espelette pepper, pomegranate."
+        },
+        "courgette": {
+          "name": "Zucchini fritter",
+          "desc": "Soft zucchini fritter with feta and grated cașcaval, lovage sauce, brined pepper."
+        },
+        "caviar_aubergines": {
+          "name": "Eggplant caviar",
+          "desc": "Eggplants charred over BBQ, onion, slow-roasted tomato."
+        },
+        "schnitzel": {
+          "name": "Schnitzel",
+          "desc": "Marinated breaded chicken, sliced potatoes, spring-onion biggy sauce, little salad."
+        },
+        "souvlaki": {
+          "name": "Souvlaki",
+          "desc": "Chicken thigh skewers, tzatziki, orzo (langue d'oiseau), zucchini and olives. Available veg with feta."
+        },
+        "avo_toast": {
+          "name": "BLKN Avo' Toast",
+          "desc": "Seasoned fresh cheese, avocado, ash-rolled sheep cheese, sharp tomato, egg, truffle shavings, on garlic-and-herb bread."
+        },
+        "poivron_farci": {
+          "name": "Stuffed pepper",
+          "desc": "Sweet pepper stuffed with pilaf, spiced tomato sauce, onion, crème fraîche, mustard pickles."
+        },
+        "mititei": {
+          "name": "Mititei",
+          "desc": "Skinless Angus beef skewers grilled over BBQ, baby potatoes, mustard sauce, olive-and-fennel vierge."
+        },
+        "sarmale": {
+          "name": "Sarmale",
+          "desc": "Small fermented-cabbage parcels of Angus beef, roasted polenta, sour cream."
+        },
+        "daurade": {
+          "name": "Sea bream Danube-style",
+          "desc": "Whole sea bream cooked over BBQ, sharp pepper vierge, garlic and dill, roasted polenta."
+        },
+        "epaule_agneau": {
+          "name": "Seven-hour lamb shoulder",
+          "desc": "Cathy's specialty. Ask us :)"
+        },
+        "pistache": {
+          "name": "Pistachio cake (best-seller)",
+          "desc": "The Café's best-seller: Iranian pistachio cake, lemon-and-rose icing."
+        },
+        "cozonac": {
+          "name": "Cozonac (brioche)",
+          "desc": "The Romanian brioche, filled with walnuts and raisins, cognac."
+        },
+        "papanasi": {
+          "name": "Papanași",
+          "desc": "Small fresh-cheese doughnuts, sour cream, seasonal fruit coulis."
+        },
+        "pavlova": {
+          "name": "Pavlova, our way",
+          "desc": "Meringue, praline, yoghurt-and-vanilla ice cream, red berries."
+        },
+        "bissap": {
+          "name": "Bissap",
+          "desc": "Hibiscus and mint infusion."
+        },
+        "the_glace": {
+          "name": "Iced tea",
+          "desc": "House iced tea — recipe changes with the seasons."
+        },
+        "citronnade": {
+          "name": "Lemonade with coriander",
+          "desc": "Lemonade gently infused with coriander."
+        },
+        "framboise": {
+          "name": "Raspberry refresher",
+          "desc": "Like a lemonade — raspberry, basil, honey."
+        },
+        "biere": {
+          "name": "IBRIK beer",
+          "desc": "Special recipe, craft-brewed near Bucharest."
+        },
+        "cafe_glace": {
+          "name": "Iced coffee / iced latte",
+          "desc": "Double espresso with or without milk, Greek-style. 4€ / 6€."
+        },
+        "espresso": {
+          "name": "Espresso / long",
+          "desc": "Specialty coffee, roasted by TANAT in Paris."
+        },
+        "latte": {
+          "name": "Latte",
+          "desc": "Coffee, matcha or golden, with a good pour of milk."
+        },
+        "cafe_ibrik": {
+          "name": "IBRIK coffee",
+          "desc": "Traditional Balkan coffee. Prep time: 5–10 min."
+        },
+        "thes": {
+          "name": "Tea selection",
+          "desc": "Fine teas from Dammann Frères."
+        },
+        "the_menthe": {
+          "name": "Mint tea",
+          "desc": "Gunpowder green tea infused with fresh mint, sweet or not."
+        },
+        "choco": {
+          "name": "Hot chocolate",
+          "desc": "70% chocolate pistols melted into hot milk."
+        },
+        "vin_mois": {
+          "name": "Wine of the month",
+          "desc": "A wine we love this month."
+        },
+        "vins_carte": {
+          "name": "Wines by the list",
+          "desc": "Ask for the list — 40+ references."
+        },
+        "eau_plate": {
+          "name": "Still water",
+          "desc": "75cl · Thonon."
+        },
+        "eau_petillante": {
+          "name": "Sparkling water",
+          "desc": "75cl · Châtelon."
+        }
+      }
+    }
+  },
   "Footer": {
     "visit": "Visit",
     "menu": "Menu",
     "follow": "Follow",
     "careOf": "Care of",
-    "menuStarters": "Starters",
-    "menuMains": "Mains",
-    "menuSweets": "Sweets",
+    "menuStarters": "Lunch menu",
+    "menuMains": "Dinner menu",
+    "menuSweets": "Saturday lunch",
     "menuDrinks": "Drinks",
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",

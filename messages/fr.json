@@ -20,8 +20,6 @@
     "scroll": "Défiler · derulează"
   },
   "About": {
-    "kicker": "◆ 01 · Povestea noastră",
-    "kickerRight": "Notre histoire · depuis 2019",
     "title": "Une cuisine\nde mémoire,\nfaite à la main.",
     "stamp": "poftă bună —",
     "p1": "Ibrik est né d'Ecaterina — ancienne docteure en droit fiscal, originaire de Bucarest et arrivée à Paris à six ans, qui a tout quitté pour cuisiner ce qui lui manquait. Ibrik Café a ouvert en 2018 ; Ibrik Kitchen, en plein Sentier, a suivi en 2019.",
@@ -33,8 +31,6 @@
     "photoAlt2": "Ibric en cuivre sur le feu"
   },
   "Menu": {
-    "kicker": "◆ 02 · Meniu",
-    "kickerRight": "Mise à jour chaque semaine · au gré du marché",
     "titlePre": "La table ",
     "titleAccent": "entière",
     "titlePost": ".",
@@ -98,8 +94,6 @@
     "tagSignature": "signature"
   },
   "Press": {
-    "kicker": "◆ 03 · Presa & Recenzii",
-    "kickerRight": "Ce qu'en disent les critiques",
     "title": "Ils\nreviennent.",
     "q1": "Le sarmale est une lettre d'amour écrite au chou et à la fumée. Nous n'avons pas cessé de manger.",
     "q1Loc": "Londres",
@@ -109,8 +103,6 @@
     "q3Loc": "Choix de la critique"
   },
   "Events": {
-    "kicker": "◆ 04 · Evenimente private",
-    "kickerRight": "Événements privés",
     "titlePre": "Réunissez\n",
     "titleAccent": "les vôtres.",
     "p1": "Il existe un mot roumain — <i>petrecere</i> — qui signifie à la fois une fête, un festin et l'art de \"passer le temps\". Nous sommes faits pour ça.",
@@ -134,8 +126,6 @@
     "card4Cap": "95 € / pers"
   },
   "Reserve": {
-    "kicker": "◆ 05 · Rezervări",
-    "kickerRight": "Réservations",
     "titlePre": "Gardez une\n",
     "titleAccent": "place.",
     "lead": "Nous gardons quelques tables pour les passages chaque soir, mais la salle se remplit tôt le week-end. Réservez — nous laisserons la bougie allumée.",
@@ -159,8 +149,6 @@
     "bookOnline": "Réserver en ligne via Zenchef →"
   },
   "Location": {
-    "kicker": "◆ 06 · Vizitează-ne",
-    "kickerRight": "Trouvez la porte",
     "titlePre": "Venez ",
     "titleAccent": "nous",
     "titlePost": " trouver.",
@@ -177,14 +165,330 @@
     "dinnerHours": "19:00 — 00:30",
     "mapAlt": "Plan · 9 rue de Mulhouse, Paris 2"
   },
+  "MenusPage": {
+    "metaTitle": "Menus — Ibrik Kitchen, Paris Sentier",
+    "metaDescription": "Menus midi, dîner et samedi midi à Ibrik Kitchen, 9 rue de Mulhouse, Paris 2. Printemps 2026 — cuisine des Balkans, mezze, plats, douceurs et boissons.",
+    "title": "Trois menus,\nune cuisine.",
+    "lead": "Un déjeuner en semaine avec une formule mezze + plat, un dîner qui s'étire, et un samedi midi plus lent avec des sarmale et l'épaule d'agneau de 7h de la patronne — si vous le demandez à temps.",
+    "downloadPdf": "Télécharger le PDF →",
+    "vegLegend": "V — végétarien",
+    "priceNote": "Prix en € · TTC · service non inclus",
+    "askLabel": "Demandez-nous",
+    "perPerson": "par personne",
+    "minPeople": "min. {n}",
+    "supplement": "+{n}€",
+    "jumpTo": "Aller à",
+    "navLunch": "Midi",
+    "navDinner": "Soir",
+    "navSaturday": "Samedi",
+    "navDrinks": "Boissons",
+    "back": "← Retour à l'accueil",
+    "lunch": {
+      "label": "Menu midi",
+      "subtitle": "Lun — Ven · 12:00 — 15:30",
+      "sectionMezze": "Mezze",
+      "sectionMains": "Plats",
+      "sectionDesserts": "Desserts",
+      "formulasTitle": "Formules midi",
+      "formulaMezzeMain": "Mezze + plat",
+      "formulaMainDessert": "Plat + dessert",
+      "formulaFull": "Mezze + plat + dessert",
+      "items": {
+        "feta": {
+          "name": "Fêta au four",
+          "desc": "Fêta AOP rôtie au four, suprême d'orange, tomates confites, noisettes, crème de fêta."
+        },
+        "brick_agneau": {
+          "name": "Brick agneau",
+          "desc": "Brick agneau de 7h et œuf, jus de cuisson, crème de menthe, piment espelette, grenade."
+        },
+        "courgette": {
+          "name": "Beignet de courgette",
+          "desc": "Beignet fondant à la fêta, cașcaval râpé, sauce livèche, poivron en saumure."
+        },
+        "caviar_aubergines": {
+          "name": "Caviar d'aubergines",
+          "desc": "Aubergines brûlées au BBQ, oignons, tomates confites."
+        },
+        "schnitzel": {
+          "name": "Schnitzel",
+          "desc": "Volaille marinée en chapelure, pommes de terre tranchées, sauce biggy à la cébette, petite salade."
+        },
+        "souvlaki": {
+          "name": "Souvlaki",
+          "desc": "Brochettes de haut de cuisse de poulet, tzatziki, pâtes langue d'oiseau, courgettes et olives. Dispo en veg avec fêta."
+        },
+        "avo_toast": {
+          "name": "BLKN Avo' Toast",
+          "desc": "Fromage frais condimenté, avocat, brebis cendré, tomate acide, œuf, brisures de truffe, sur pain à l'ail et fines herbes."
+        },
+        "poivron_farci": {
+          "name": "Poivron farci",
+          "desc": "Farci au riz pilaf, sauce tomate épicée, oignon, crème fraîche, pickles de moutarde."
+        },
+        "mititei": {
+          "name": "Mititei",
+          "desc": "Brochettes de bœuf Angus au BBQ, pommes de terre grenaille, sauce moutarde, vierge d'olives et fenouil."
+        },
+        "daurade": {
+          "name": "Daurade façon Danube",
+          "desc": "Daurade entière, cuite au BBQ, vierge acidulée de poivron, ail et aneth, polenta rôtie."
+        },
+        "pistache": {
+          "name": "Gâteau à la pistache (best-seller)",
+          "desc": "Le best-seller du Café : gâteau à la pistache d'Iran, glaçage citron et rose."
+        },
+        "cozonac": {
+          "name": "Cozonac (brioche)",
+          "desc": "La brioche de Roumanie, garnie de noix et raisins secs, cognac."
+        },
+        "papanasi": {
+          "name": "Papanași",
+          "desc": "Petits beignets au fromage frais, crème aigre, coulis de fruits de saison."
+        },
+        "pavlova": {
+          "name": "Pavlova, revue",
+          "desc": "Meringue, pralin, glace au yaourt et vanille, fruits rouges."
+        }
+      }
+    },
+    "dinner": {
+      "label": "Menu dîner",
+      "subtitle": "Lun — Sam · 19:00 — 00:30 · Printemps/Été 2026",
+      "sectionBreadWine": "Du pain et du vin",
+      "sectionWildSharp": "Sauvages, acides",
+      "sectionEmbers": "La braise",
+      "sectionPatronne": "La patronne",
+      "sectionStewed": "Mijotés",
+      "sectionDulciuri": "Dulciuri · douceurs",
+      "items": {
+        "lavash": {
+          "name": "Lavash",
+          "desc": "Pain galette doré, beurre persillé à l'ail confit, tzatziki maison."
+        },
+        "thierry_breton": {
+          "name": "Pain de Thierry Breton",
+          "desc": "Levain naturel, servi chaud, labneh gourmand."
+        },
+        "caviar_aubergines": {
+          "name": "Caviar d'aubergines",
+          "desc": "Aubergines brûlées, aubergine confite, tomate cherry acidulée."
+        },
+        "kefta_courgette": {
+          "name": "Kefta de courgette",
+          "desc": "Crème livèche, cașcaval râpé, poivron goutte."
+        },
+        "feta_rotie": {
+          "name": "Fêta rôtie",
+          "desc": "Chicorée croquante, orange, noisettes, crème sauge."
+        },
+        "risoni": {
+          "name": "Risoni au fenouil",
+          "desc": "Riso, agrumes et olives de Kalamata, ail des ours, fromage dur de brebis (Mitzithra)."
+        },
+        "mititei": {
+          "name": "Mititei de bœuf Angus",
+          "desc": "Façonnés à la main, au BBQ, fenouil, olives, moutarde maison."
+        },
+        "souvlaki": {
+          "name": "Souvlaki de volaille",
+          "desc": "Haut de cuisse mariné, oignons, tomate confite, crème origan."
+        },
+        "daurade_royale": {
+          "name": "Daurade royale",
+          "desc": "Servie entière, vierge acidulée aux poivrons, aneth et ail."
+        },
+        "os_moelle": {
+          "name": "Os à moelle",
+          "desc": "Fumé au feu, glaise de citron, ail des ours, croustillant."
+        },
+        "epaule_agneau": {
+          "name": "Épaule d'agneau, longue marinade, cuisson de 7h",
+          "desc": "La spécialité de la patronne. 52€ par personne — minimum 2 personnes."
+        },
+        "borek_agneau": {
+          "name": "Börek d'agneau confit",
+          "desc": "Jus réduit, œuf, crème menthe."
+        },
+        "sarmale": {
+          "name": "Sarmale",
+          "desc": "Bœuf Angus en feuille de chou saumurée, polenta rôtie, crème crue."
+        },
+        "poivron_farci": {
+          "name": "Poivron farci",
+          "desc": "Deux riz, sauce tomate aux épices, crème fraîche."
+        },
+        "pistache": {
+          "name": "Le best-seller",
+          "desc": "Cake pistaches, glaçage rose et citron."
+        },
+        "papanasi": {
+          "name": "Papanași",
+          "desc": "Beignets roumains, crème fraîche, coulis rouge, sésame."
+        },
+        "pavlova": {
+          "name": "Pavlova revue",
+          "desc": "Meringue, glace yaourt vanillé, pralin, fruits, menthe."
+        },
+        "affogato": {
+          "name": "IBRIK Affogato",
+          "desc": "Glace au café du MOF, café IBRIK."
+        }
+      },
+      "creditsTitle": "Merci",
+      "creditsLine": "Cheffe Cathy, Moutea, Cheffe Natasa, Richard, Chef Ruhni, Chef Juju, Titus, Shaï, Saidou, Noor, Elyes, Cornelis."
+    },
+    "saturday": {
+      "label": "Menu samedi midi",
+      "subtitle": "Samedi · 12:00 — 15:30 · à la carte",
+      "sectionMezze": "Mezze",
+      "sectionMains": "Plats",
+      "sectionDesserts": "Desserts",
+      "sectionDrinks": "Boissons",
+      "drinksCold": "Boissons fraîches",
+      "drinksHot": "Cafés & boissons chaudes",
+      "drinksWines": "Vins",
+      "drinksWaters": "Eaux",
+      "items": {
+        "feta": {
+          "name": "Fêta au four",
+          "desc": "Fêta AOP rôtie au four, suprême d'orange, tomates confites, noisettes, crème de fêta."
+        },
+        "brick_agneau": {
+          "name": "Brick agneau",
+          "desc": "Brick agneau de 7h et œuf, jus de cuisson, crème de menthe, piment espelette, grenade."
+        },
+        "courgette": {
+          "name": "Beignet de courgette",
+          "desc": "Beignet fondant à la fêta, cașcaval râpé, sauce livèche, poivron en saumure."
+        },
+        "caviar_aubergines": {
+          "name": "Caviar d'aubergines",
+          "desc": "Aubergines brûlées au BBQ, oignons, tomates confites."
+        },
+        "schnitzel": {
+          "name": "Schnitzel",
+          "desc": "Volaille marinée en chapelure, pommes de terre tranchées, sauce biggy à la cébette, petite salade."
+        },
+        "souvlaki": {
+          "name": "Souvlaki",
+          "desc": "Brochettes de haut de cuisse de poulet, tzatziki, pâtes langue d'oiseau, courgettes et olives. Dispo en veg avec fêta."
+        },
+        "avo_toast": {
+          "name": "BLKN Avo' Toast",
+          "desc": "Fromage frais condimenté, avocat, brebis cendré, tomate acide, œuf, brisures de truffe, sur pain à l'ail et fines herbes."
+        },
+        "poivron_farci": {
+          "name": "Poivron farci",
+          "desc": "Farci au riz pilaf, sauce tomate épicée, oignon, crème fraîche, pickles de moutarde."
+        },
+        "mititei": {
+          "name": "Mititei",
+          "desc": "Brochettes de bœuf Angus au BBQ, pommes de terre grenaille, sauce moutarde, vierge d'olives et fenouil."
+        },
+        "sarmale": {
+          "name": "Sarmale",
+          "desc": "Petits farcis de feuille de chou fermenté, bœuf Angus, polenta rôtie, crème sure."
+        },
+        "daurade": {
+          "name": "Daurade façon Danube",
+          "desc": "Daurade entière, cuite au BBQ, vierge acidulée de poivron, ail et aneth, polenta rôtie."
+        },
+        "epaule_agneau": {
+          "name": "Épaule d'agneau de 7h",
+          "desc": "La spécialité de la patronne. Demandez-nous :)"
+        },
+        "pistache": {
+          "name": "Gâteau à la pistache (best-seller)",
+          "desc": "Le best-seller du Café : gâteau à la pistache d'Iran, glaçage citron et rose."
+        },
+        "cozonac": {
+          "name": "Cozonac (brioche)",
+          "desc": "La brioche de Roumanie, garnie de noix et raisins secs, cognac."
+        },
+        "papanasi": {
+          "name": "Papanași",
+          "desc": "Petits beignets au fromage frais, crème aigre, coulis de fruits de saison."
+        },
+        "pavlova": {
+          "name": "Pavlova, revue",
+          "desc": "Meringue, pralin, glace au yaourt et vanille, fruits rouges."
+        },
+        "bissap": {
+          "name": "Bissap",
+          "desc": "Délicieuse infusion de fleurs d'hibiscus et de menthe."
+        },
+        "the_glace": {
+          "name": "Thé glacé",
+          "desc": "Thé glacé maison — la recette change selon les saisons."
+        },
+        "citronnade": {
+          "name": "Citronnade citron, coriandre",
+          "desc": "Citronnade délicatement infusée à la coriandre, mélange surprenant."
+        },
+        "framboise": {
+          "name": "Framboise",
+          "desc": "Comme une citronnade mais à la framboise, basilic, miel."
+        },
+        "biere": {
+          "name": "Bière IBRIK",
+          "desc": "Recette spéciale, brassée à côté de Bucarest, bière artisanale."
+        },
+        "cafe_glace": {
+          "name": "Café / Latte glacé",
+          "desc": "Double espresso avec ou sans lait, à la façon grecque. 4€ / 6€."
+        },
+        "espresso": {
+          "name": "Espresso / allongé",
+          "desc": "Café de spécialité, torréfié par TANAT à Paris."
+        },
+        "latte": {
+          "name": "Latte",
+          "desc": "Café, matcha ou golden, avec une bonne dose de lait."
+        },
+        "cafe_ibrik": {
+          "name": "Café IBRIK",
+          "desc": "Café traditionnel des Balkans. Temps de préparation : 5–10 min."
+        },
+        "thes": {
+          "name": "Sélection des thés",
+          "desc": "Très beaux thés, de la maison Dammann Frères."
+        },
+        "the_menthe": {
+          "name": "Thé à la menthe",
+          "desc": "Thé vert gunpowder infusé à la menthe fraîche, avec ou sans sucre."
+        },
+        "choco": {
+          "name": "Chocolat chaud",
+          "desc": "Pistoles de chocolat 70% fondus dans du lait chaud."
+        },
+        "vin_mois": {
+          "name": "Vin du mois",
+          "desc": "Sélection d'un vin que nous aimons."
+        },
+        "vins_carte": {
+          "name": "Vins à la carte",
+          "desc": "Demandez la carte, plus de 40 références."
+        },
+        "eau_plate": {
+          "name": "Eau plate",
+          "desc": "75cl · Thonon."
+        },
+        "eau_petillante": {
+          "name": "Eau pétillante",
+          "desc": "75cl · Châtelon."
+        }
+      }
+    }
+  },
   "Footer": {
     "visit": "Nous trouver",
     "menu": "Carte",
     "follow": "Suivre",
     "careOf": "Voir aussi",
-    "menuStarters": "Entrées",
-    "menuMains": "Plats",
-    "menuSweets": "Desserts",
+    "menuStarters": "Menu midi",
+    "menuMains": "Menu dîner",
+    "menuSweets": "Samedi midi",
     "menuDrinks": "Boissons",
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",

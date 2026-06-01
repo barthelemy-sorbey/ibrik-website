@@ -80,7 +80,7 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${bagel.variable} ${sourceSerif.variable} ${dmMono.variable}`}
     >
-      <body>
+      <body suppressHydrationWarning>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

@@ -6,11 +6,6 @@ export default function About() {
   return (
     <section className="section s-about" id="about">
       <div className="wrap">
-        <div className="section-head">
-          <span>{t("kicker")}</span>
-          <span>{t("kickerRight")}</span>
-        </div>
-
         <div className="row">
           <div>
             <h2 className="display reveal" style={{ whiteSpace: "pre-line" }}>

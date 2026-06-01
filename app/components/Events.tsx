@@ -36,11 +36,6 @@ export default function Events() {
   return (
     <section className="section s-events" id="events">
       <div className="wrap">
-        <div className="section-head">
-          <span>{t("kicker")}</span>
-          <span>{t("kickerRight")}</span>
-        </div>
-
         <div className="events-row">
           <div>
             <h2 className="display reveal">

@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { PinTag, Steam } from "./Decor";
+import Image from "next/image";
+import logo from "../../public/brand/ibrik-kitchen-logo.png";
+import { PinTag } from "./Decor";
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -16,36 +18,55 @@ export default function Hero() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const letters = "IBRIK".split("");
   const parallax = Math.min(scroll * 0.35, 200);
   const fade = Math.max(0, 1 - scroll / 600);
 
   return (
     <header className="hero" id="top">
-      <Steam />
       <div className="hero-meta">
         <span>{t("meta")}</span>
         <span className="sep" />
         <span>{t("metaRight")}</span>
       </div>
 
-      <div
-        className="hero-wordmark"
-        ref={wmRef}
-        style={{
-          transform: `translateY(${-parallax * 0.3}px)`,
-          opacity: fade,
-        }}
-      >
-        <div className="ibrik" aria-label="IBRIK">
-          {letters.map((l, i) => (
-            <span key={i}>{l}</span>
-          ))}
+      <div className="hero-main">
+        <div className="hero-text-col">
+          <div
+            className="hero-wordmark"
+            ref={wmRef}
+            style={{
+              transform: `translateY(${-parallax * 0.3}px)`,
+              opacity: fade,
+            }}
+          >
+            <Image
+              src={logo}
+              alt="Ibrik Kitchen"
+              className="ibrik-logo"
+              priority
+              sizes="(max-width: 900px) 88vw, 42vw"
+            />
+          </div>
+          <div className="hero-tagline" style={{ opacity: fade }}>
+            <PinTag>{t("tagline")}</PinTag>
+          </div>
         </div>
-      </div>
 
-      <div className="hero-tagline" style={{ opacity: fade }}>
-        <PinTag>{t("tagline")}</PinTag>
+        <div className="hero-video-col">
+          <video
+            className="hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/brand/ibrik-hero-poster.jpg"
+            aria-hidden="true"
+            tabIndex={-1}
+          >
+            <source src="/brand/ibrik-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       <div className="hero-foot">
