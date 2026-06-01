@@ -6,7 +6,7 @@
   --ink: #15110b;
   --ink-soft: #2a241a;
   --green: #0f4d33;
-  --tomato: #e23a2c;
+  --tomato: #DC360B;
   --navy: #1b2c4e;
   --orange: #e58a44;
   --lilac: #c9b8e3;
@@ -203,6 +203,28 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   .hero-wordmark .ibrik-logo { max-width: 100%; }
 }
 .hero-wordmark.in .ibrik-logo { animation: dropIn 1.1s var(--ease-out) both; }
+
+.hero-brand-stack {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-reserve-cta {
+  display: inline-flex; align-items: center; gap: 14px;
+  margin-top: 8px;
+  padding: 18px 30px;
+  border-radius: 999px;
+  background: var(--tomato); color: var(--cream);
+  font-family: var(--font-mono); font-size: 12px;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  min-height: 44px;
+  transition: background .25s var(--ease-out), transform .25s var(--ease-out);
+}
+.hero-reserve-cta:hover,
+.hero-reserve-cta:focus-visible { background: var(--ink); transform: translateY(-2px); }
+.hero-reserve-cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 
 @keyframes dropIn {
   0% { transform: translateY(-12%); opacity: 0; }

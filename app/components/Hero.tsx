@@ -30,21 +30,32 @@ export default function Hero() {
 
       <div className="hero-main">
         <div className="hero-text-col">
-          <div
-            className="hero-wordmark"
-            ref={wmRef}
-            style={{
-              transform: `translateY(${-parallax * 0.3}px)`,
-              opacity: fade,
-            }}
-          >
-            <Image
-              src={logo}
-              alt="Ibrik Kitchen"
-              className="ibrik-logo"
-              priority
-              sizes="(max-width: 900px) 88vw, 42vw"
-            />
+          <div className="hero-brand-stack">
+            <div
+              className="hero-wordmark"
+              ref={wmRef}
+              style={{
+                transform: `translateY(${-parallax * 0.3}px)`,
+                opacity: fade,
+              }}
+            >
+              <Image
+                src={logo}
+                alt="Ibrik Kitchen"
+                className="ibrik-logo"
+                priority
+                sizes="(max-width: 900px) 88vw, 42vw"
+              />
+            </div>
+            <a
+              href="https://bookings.zenchef.com/results?rid=352129&pid=1001"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-reserve-cta"
+            >
+              {t("reserveCta")}
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
 
