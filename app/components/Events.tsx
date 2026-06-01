@@ -66,14 +66,15 @@ export default function Events() {
                 key={e.num}
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
-                <div className="num">{e.num}</div>
-                <div>
-                  <h4>
-                    {e.name}
-                    <span className="ro">— {e.ro}</span>
-                  </h4>
-                  <div className="meta">{e.meta}</div>
+                <div className="events-card__head">
+                  <span className="num">{e.num}</span>
+                  <span className="rule" aria-hidden="true" />
                 </div>
+                <h4>
+                  {e.name}
+                  <span className="ro"> — {e.ro}</span>
+                </h4>
+                <div className="meta">{e.meta}</div>
                 <div className="cap">{e.cap}</div>
               </div>
             ))}
