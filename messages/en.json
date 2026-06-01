@@ -148,6 +148,14 @@
     "asideP2": "For larger parties or last-minute miracles, call us.",
     "bookOnline": "Book online via Zenchef →"
   },
+  "Video": {
+    "titlePre": "Step into\n",
+    "titleAccent": "our world.",
+    "lead": "Our chef Cathy welcomes <strong>McFly & Carlito</strong> and <strong>Cyprien</strong> into the Ibrik kitchen and walks them through the gestures — sarmale, mămăligă, papanași. An hour of Romanian <em>petrecere</em>, the way it happens at home.",
+    "iframeTitle": "McFly & Carlito and Cyprien cooking Romanian food with Cathy at Ibrik",
+    "capLeft": "YouTube · McFly & Carlito",
+    "capRight": "Cathy · Cyprien · 2024"
+  },
   "Location": {
     "titlePre": "Come ",
     "titleAccent": "find",
