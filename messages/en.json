@@ -34,14 +34,8 @@
     "titleAccent": "full",
     "titlePost": " table.",
     "lead": "A taste of the carte — mezze, embers, slow-cooked, and sweets. Order three plates between two. Stay for coffee.",
-    "foot": "Prices in € · VAT included · service not included",
+    "foot": "Prices in € · VAT included",
     "pdf": "See the full menu →",
-    "cats": {
-      "starters": "Starters",
-      "mains": "Mains",
-      "sweets": "Sweets",
-      "drinks": "Drinks"
-    },
     "tagSignature": "signature"
   },
   "Press": {
