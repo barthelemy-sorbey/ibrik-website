@@ -63,16 +63,13 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   display: flex; align-items: center; justify-content: space-between;
   padding: 18px 40px;
-  mix-blend-mode: difference;
-  color: var(--cream);
-  pointer-events: none;
+  background: var(--cream-light);
+  border-bottom: 1px solid rgba(21, 17, 11, 0.08);
+  color: var(--ink);
 }
-.nav > * { pointer-events: auto; }
 .nav-mark {
   display: inline-flex;
   align-items: center;
-  isolation: isolate;
-  mix-blend-mode: normal;
 }
 .nav-mark img { display: block; }
 .nav-links {
@@ -96,7 +93,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   transition: background .25s, color .25s;
 }
 .nav-cta:hover { background: currentColor; }
-.nav-cta:hover span { color: var(--ink); }
+.nav-cta:hover span { color: var(--cream-light); }
 .nav-right { display: flex; align-items: center; gap: 14px; }
 .locale-switcher {
   display: inline-flex; align-items: center; gap: 2px;
