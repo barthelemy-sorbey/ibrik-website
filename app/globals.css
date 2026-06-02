@@ -324,7 +324,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   overflow: hidden;
 }
 .section h2.display {
-  font-size: clamp(64px, 11vw, 180px);
+  font-size: clamp(48px, 8vw, 135px);
   margin: 0 0 30px;
 }
 .section h2.display .accent { font-style: normal; }
