@@ -19,6 +19,29 @@
     "scroll": "Scroll · derulează",
     "reserveCta": "Reserve now"
   },
+  "CrystalBall": {
+    "eyebrow": "The Ibrik oracle",
+    "title": "Read\nyour future.",
+    "intro": "Rest your hand on the crystal ball. Somewhere, somebody's bunică has already put a pot on the fire for you.",
+    "idle": "Touch the ball… your delicious destiny awaits.",
+    "reveal": "I see… I see that very soon, you will come to taste",
+    "revealEnd": ".",
+    "cta": "Read my future",
+    "ctaReading": "The oracle reads the steam…",
+    "ctaAgain": "Read it again",
+    "dishes": [
+      "a smoky sarmale, rolled tight in its cabbage leaf",
+      "sizzling mititei, straight off the embers",
+      "a charcoal-grilled souvlaki",
+      "a still-warm papanași, crowned with cream and jam",
+      "a lamb shoulder, marinated and slow-cooked for seven hours",
+      "a roasted feta with honey and oregano",
+      "a spoonful of smoked aubergine caviar",
+      "a pistachio cake — our best-seller",
+      "a soft slice of house cozonac",
+      "a Danube-style sea bream, on a long Saturday"
+    ]
+  },
   "About": {
     "title": "A kitchen\nremembered\nby hand.",
     "stamp": "poftă bună —",
