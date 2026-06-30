@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
+import CrystalBall from "../components/CrystalBall";
 import About from "../components/About";
 import Menu from "../components/Menu";
 import Press from "../components/Press";
@@ -24,6 +25,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <Reveal />
       <Nav />
       <Hero />
+      <CrystalBall />
       <About />
       <Menu />
       <Press />

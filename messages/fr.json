@@ -19,6 +19,29 @@
     "scroll": "Défiler · derulează",
     "reserveCta": "Réserver maintenant"
   },
+  "CrystalBall": {
+    "eyebrow": "L'oracle d'Ibrik",
+    "title": "Lisez\nvotre avenir.",
+    "intro": "Posez la main sur la boule de cristal. La bunică de quelqu'un, quelque part, a déjà mis une casserole sur le feu pour vous.",
+    "idle": "Touchez la boule… votre destin gourmand vous attend.",
+    "reveal": "Je vois… je vois que très bientôt, vous viendrez déguster",
+    "revealEnd": ".",
+    "cta": "Lire mon avenir",
+    "ctaReading": "L'oracle consulte les vapeurs…",
+    "ctaAgain": "Relire mon avenir",
+    "dishes": [
+      "un sarmale fumé, roulé dans la feuille de chou",
+      "des mititei grésillants tout juste sortis de la braise",
+      "un souvlaki grillé au charbon",
+      "un papanași encore tiède, nappé de crème et de confiture",
+      "une épaule d'agneau marinée et cuite sept heures durant",
+      "une fêta rôtie au miel et à l'origan",
+      "un caviar d'aubergines fumé, à la cuillère",
+      "un gâteau à la pistache, notre best-seller",
+      "un cozonac moelleux, tranché à la maison",
+      "une daurade façon Danube, un samedi qui s'étire"
+    ]
+  },
   "About": {
     "title": "Une cuisine\nde mémoire,\nfaite à la main.",
     "stamp": "poftă bună —",
