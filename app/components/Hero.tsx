@@ -80,10 +80,6 @@ export default function Hero() {
         <div className="blurb reveal in">
           {t.rich("blurb", { em: (chunks) => <em>{chunks}</em> })}
         </div>
-        <div className="since">
-          MMXIX
-          <small>{t("since")}</small>
-        </div>
         <div className="scroll-cue">
           <span>{t("scroll")}</span>
           <div className="line" />

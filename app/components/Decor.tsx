@@ -1,4 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
+import Image, { type StaticImageData } from "next/image";
 
 export const PinTag = ({
   children,
@@ -95,5 +96,30 @@ export const ImageSlot = ({
 }) => (
   <div className="image-slot" style={style} role="img" aria-label={placeholder}>
     <span>{placeholder}</span>
+  </div>
+);
+
+export const Photo = ({
+  src,
+  alt,
+  sizes,
+  objectPosition,
+  style,
+}: {
+  src: StaticImageData;
+  alt: string;
+  sizes?: string;
+  objectPosition?: string;
+  style?: CSSProperties;
+}) => (
+  <div className="photo-frame" style={style}>
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      sizes={sizes}
+      placeholder="blur"
+      style={{ objectPosition }}
+    />
   </div>
 );
