@@ -1,10 +1,12 @@
 import Image, { type StaticImageData } from "next/image";
 import logoGreen from "../../public/brand/ibrik-kitchen-logo.png";
 import logoCream from "../../public/brand/ibrik-kitchen-logo-cream.png";
+import wordmark from "../../public/brand/ibrik-wordmark.png";
 
-const SOURCES: Record<"green" | "cream", StaticImageData> = {
+const SOURCES: Record<"green" | "cream" | "wordmark", StaticImageData> = {
   green: logoGreen,
   cream: logoCream,
+  wordmark,
 };
 
 type Props = {
@@ -13,7 +15,7 @@ type Props = {
   className?: string;
   priority?: boolean;
   sizes?: string;
-  variant?: "green" | "cream";
+  variant?: "green" | "cream" | "wordmark";
 };
 
 export default function LogoMark({

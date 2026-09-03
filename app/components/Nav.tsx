@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <nav className="nav">
       <Link href="/#top" className="nav-mark" aria-label="Ibrik Kitchen">
-        <LogoMark height={36} priority />
+        <LogoMark variant="wordmark" height={26} priority />
       </Link>
       <div className="nav-links">
         <Link href="/#about">{t("story")}</Link>
