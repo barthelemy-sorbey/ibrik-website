@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import { ImageSlot, Photo } from "./Decor";
+import { Photo } from "./Decor";
+import cathy from "../../public/brand/cathy.jpg";
 import copperIbrik from "../../public/brand/ibrik-copper.jpg";
 
 export default function About() {
@@ -24,8 +25,11 @@ export default function About() {
 
           <div className="pic-col reveal d2">
             <div className="photo-card">
-              <ImageSlot
-                placeholder={t("photoAlt1")}
+              <Photo
+                src={cathy}
+                alt={t("photoAlt1")}
+                sizes="(max-width: 900px) 100vw, 40vw"
+                objectPosition="center 25%"
                 style={{ height: 360 }}
               />
               <div className="cap">
