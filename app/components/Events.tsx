@@ -24,13 +24,6 @@ export default function Events() {
       meta: t("card3Meta"),
       cap: t("card3Cap"),
     },
-    {
-      num: "04",
-      name: t("card4Name"),
-      ro: t("card4Ro"),
-      meta: t("card4Meta"),
-      cap: t("card4Cap"),
-    },
   ];
 
   return (
@@ -45,17 +38,14 @@ export default function Events() {
             <div className="body reveal d1" style={{ marginTop: 24 }}>
               <p>{t.rich("p1", { i: (c) => <i>{c}</i> })}</p>
               <p>{t("p2")}</p>
-              <p
-                style={{
-                  marginTop: 28,
-                  fontFamily: "var(--font-mono)",
-                  letterSpacing: "0.18em",
-                  textTransform: "uppercase",
-                  fontSize: 11,
-                }}
-              >
-                {t("enquire")}
-              </p>
+              <div className="events-actions">
+                <a href="mailto:bureau@ibrik.fr" className="events-cta">
+                  {t("enquireCta")}
+                </a>
+                <a href="tel:+33170694250" className="events-phone">
+                  {t("phone")}
+                </a>
+              </div>
             </div>
           </div>
 

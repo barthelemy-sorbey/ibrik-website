@@ -228,14 +228,6 @@ export default async function MenusContent({ locale }: { locale: string }) {
             {t("lead")}
           </p>
 
-          <nav className="menus-jump" aria-label={t("jumpTo")}>
-            <span className="menus-jump-label">{t("jumpTo")} —</span>
-            <a href="#lunch">{t("navLunch")}</a>
-            <a href="#dinner">{t("navDinner")}</a>
-            <a href="#saturday">{t("navSaturday")}</a>
-            <a href="#saturday-drinks">{t("navDrinks")}</a>
-          </nav>
-
           <p className="menus-note">
             <span>{t("vegLegend")}</span>
             <span className="sep" aria-hidden="true">
@@ -245,6 +237,18 @@ export default async function MenusContent({ locale }: { locale: string }) {
           </p>
         </div>
       </header>
+
+      <div className="menus-jump-bar">
+        <div className="wrap">
+          <nav className="menus-jump" aria-label={t("jumpTo")}>
+            <span className="menus-jump-label">{t("jumpTo")} —</span>
+            <a href="#lunch">{t("navLunch")}</a>
+            <a href="#dinner">{t("navDinner")}</a>
+            <a href="#saturday">{t("navSaturday")}</a>
+            <a href="#saturday-drinks">{t("navDrinks")}</a>
+          </nav>
+        </div>
+      </div>
 
       <div className="wrap menus-wrap">
         {await renderMenu(LUNCH_MENU, locale)}

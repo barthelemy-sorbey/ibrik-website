@@ -75,7 +75,8 @@
     "titleAccent": "your people.",
     "p1": "There is a Romanian word — <i>petrecere</i> — that means a party, a feast, and the act of \"passing time\" all at once. We were built for it.",
     "p2": "Whether it's twelve around the long table or sixty taking the whole room, we cook the way our families cook for theirs: too much, all at once, and so good that nobody quite leaves on time.",
-    "enquire": "Enquire · evenimente@ibrik.fr",
+    "enquireCta": "Email bureau@ibrik.fr",
+    "phone": "+33 1 70 69 42 50",
     "card1Name": "Masa mare",
     "card1Ro": "the long table",
     "card1Meta": "12–24 guests · whole back room · 3 courses, family style",
@@ -87,11 +88,7 @@
     "card3Name": "Botez & Nuntă",
     "card3Ro": "christening & wedding",
     "card3Meta": "Catering off-site · sarmale by the hundred · țuică by the case",
-    "card3Cap": "By quote",
-    "card4Name": "Cooking masterclass",
-    "card4Ro": "stăm la bucătărie",
-    "card4Meta": "Saturdays · 4 hours · 8 hands at the counter · papanași included",
-    "card4Cap": "€95 / pers"
+    "card3Cap": "By quote"
   },
   "Reserve": {
     "titlePre": "Save a\n",

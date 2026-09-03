@@ -1,5 +1,6 @@
 /* ================ IBRIK KITCHEN ================ */
 :root {
+  --nav-h: 74px;
   --cream: #f6f1dd;
   --cream-light: #fbf7e8;
   --cream-deep: #ece2c2;
@@ -40,7 +41,7 @@ body {
   background-repeat: repeat;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -111,6 +112,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 @media (max-width: 900px) {
   .nav-links { display: none; }
   .nav { padding: 14px 22px; }
+  :root { --nav-h: 66px; }
 }
 
 /* ============ HERO ============ */
@@ -505,6 +507,40 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 }
 .events-row .body { font-size: 18px; line-height: 1.6; max-width: 50ch; }
 .events-row .body p { margin: 0 0 18px; }
+.events-actions {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+  margin-top: 28px;
+}
+.events-cta, .events-phone {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px;
+  padding: 15px 26px;
+  border-radius: 999px;
+  font-family: var(--font-mono); font-size: 12px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  transition: background .25s var(--ease-out), color .25s var(--ease-out),
+              border-color .25s var(--ease-out), transform .25s var(--ease-out);
+}
+.events-cta {
+  background: var(--cream-light); color: var(--ink);
+  border: 1px solid var(--cream-light);
+}
+.events-cta:hover, .events-cta:focus-visible {
+  background: var(--orange); border-color: var(--orange); transform: translateY(-2px);
+}
+.events-phone {
+  background: transparent; color: var(--cream-light);
+  border: 1px solid rgba(244, 232, 213, 0.5);
+}
+.events-phone:hover, .events-phone:focus-visible {
+  border-color: var(--cream-light);
+  background: rgba(244, 232, 213, 0.08);
+  transform: translateY(-2px);
+}
+.events-cta:focus-visible, .events-phone:focus-visible {
+  outline: 2px solid var(--cream-light); outline-offset: 4px;
+}
+
 .events-cards { display: flex; flex-direction: column; gap: 18px; }
 .events-card {
   position: relative;
@@ -855,9 +891,18 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 }
 .menus-hero { padding-bottom: 60px; }
 .menus-hero h1 { font-size: clamp(56px, 9vw, 132px); margin: 18px 0 0; }
+.menus-jump-bar {
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 20;
+  margin-top: 38px;
+  background: var(--cream-light);
+  border-top: 1px solid rgba(21, 17, 11, 0.08);
+  border-bottom: 1px solid rgba(21, 17, 11, 0.08);
+}
 .menus-jump {
   display: flex; flex-wrap: wrap; align-items: center; gap: 22px;
-  margin-top: 38px;
+  padding: 15px 0;
   font-family: var(--font-mono);
   font-size: 11.5px;
   letter-spacing: 0.16em;
@@ -886,7 +931,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 .menu-block {
   border-top: 1.5px solid var(--ink);
   padding-top: 40px;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 160px;
 }
 .menu-block-head {
   display: flex; align-items: baseline; justify-content: space-between; gap: 24px;
@@ -920,7 +965,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 .menu-block-pdf:hover { color: var(--tomato); }
 
 .menu-sections { display: grid; gap: 44px; }
-.menu-section { scroll-margin-top: 120px; }
+.menu-section { scroll-margin-top: 175px; }
 .menu-section-head {
   display: flex; align-items: baseline; gap: 14px;
   margin-bottom: 18px;
@@ -1023,7 +1068,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 }
 .menu-formulas li:last-child { border-bottom: 0; }
 
-.menu-drinks { margin-top: 50px; padding-top: 40px; border-top: 1px solid var(--ink); }
+.menu-drinks { margin-top: 50px; padding-top: 40px; border-top: 1px solid var(--ink); scroll-margin-top: 175px; }
 .menu-drinks-title {
   font-family: var(--font-display);
   font-size: clamp(32px, 4vw, 48px);
