@@ -75,7 +75,8 @@
     "titleAccent": "les vôtres.",
     "p1": "Il existe un mot roumain — <i>petrecere</i> — qui signifie à la fois une fête, un festin et l'art de \"passer le temps\". Nous sommes faits pour ça.",
     "p2": "Que vous soyez douze autour de la grande table ou soixante à occuper toute la salle, nous cuisinons comme nos familles cuisinent pour les leurs : beaucoup, en même temps, et si bien que personne ne part vraiment à l'heure.",
-    "enquire": "Contact · evenimente@ibrik.fr",
+    "enquireCta": "Écrire à bureau@ibrik.fr",
+    "phone": "+33 1 70 69 42 50",
     "card1Name": "Masa mare",
     "card1Ro": "la grande table",
     "card1Meta": "12–24 convives · salle du fond · 3 services, à la famille",
@@ -87,11 +88,7 @@
     "card3Name": "Botez & Nuntă",
     "card3Ro": "baptême & mariage",
     "card3Meta": "Traiteur · sarmale à la centaine · țuică à la caisse",
-    "card3Cap": "Sur devis",
-    "card4Name": "Cours de cuisine",
-    "card4Ro": "stăm la bucătărie",
-    "card4Meta": "Le samedi · 4 heures · 8 mains au piano · papanași inclus",
-    "card4Cap": "95 € / pers"
+    "card3Cap": "Sur devis"
   },
   "Reserve": {
     "titlePre": "Gardez une\n",
