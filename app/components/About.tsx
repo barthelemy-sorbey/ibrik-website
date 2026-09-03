@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import { ImageSlot } from "./Decor";
+import { ImageSlot, Photo } from "./Decor";
+import copperIbrik from "../../public/brand/ibrik-copper.jpg";
 
 export default function About() {
   const t = useTranslations("About");
@@ -33,8 +34,11 @@ export default function About() {
               </div>
             </div>
             <div className="photo-card">
-              <ImageSlot
-                placeholder={t("photoAlt2")}
+              <Photo
+                src={copperIbrik}
+                alt={t("photoAlt2")}
+                sizes="(max-width: 900px) 100vw, 40vw"
+                objectPosition="center 65%"
                 style={{ height: 240 }}
               />
               <div className="cap">
