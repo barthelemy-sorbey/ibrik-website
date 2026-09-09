@@ -34,7 +34,6 @@ export default function About() {
               />
               <div className="cap">
                 <span>{t("photoCap1")}</span>
-                <span>01 / 03</span>
               </div>
             </div>
             <div className="photo-card">
@@ -47,7 +46,6 @@ export default function About() {
               />
               <div className="cap">
                 <span>{t("photoCap2")}</span>
-                <span>02 / 03</span>
               </div>
             </div>
           </div>
