@@ -445,6 +445,16 @@
       }
     }
   },
+  "NotFound": {
+    "eyebrow": "Erreur 404 · pagina nu există",
+    "seal": "IBRIK KITCHEN · PAGINA NU EXISTĂ · ",
+    "titlePre": "Rien ne mijote\n",
+    "titleAccent": "par ici.",
+    "lead": "Cette page a quitté la cuisine — un vieux lien, une lettre de trop, ou un plat qu'on ne sert plus. La table reste mise de l'autre côté.",
+    "ctaHome": "Retour à table",
+    "ctaMenus": "Voir la carte",
+    "note": "Toujours faim ? Appelez-nous, on vous trouve une place."
+  },
   "Footer": {
     "visit": "Nous trouver",
     "menu": "Carte",
