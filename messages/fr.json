@@ -445,6 +445,27 @@
       }
     }
   },
+  "NotFound": {
+    "eyebrow": "Erreur 404 · pagina nu există",
+    "seal": "IBRIK KITCHEN · PAGINA NU EXISTĂ · ",
+    "titlePre": "Rien ne mijote\n",
+    "titleAccent": "par ici.",
+    "lead": "Cette page a quitté la cuisine — un vieux lien, une lettre de trop, ou un plat qu'on ne sert plus. La table reste mise de l'autre côté.",
+    "ctaHome": "Retour à table",
+    "ctaMenus": "Voir la carte",
+    "note": "Toujours faim ? Appelez-nous, on vous trouve une place."
+  },
+  "Error": {
+    "eyebrow": "Erreur 500 · ceva a ars",
+    "seal": "IBRIK KITCHEN · CEVA A ARS · ",
+    "titlePre": "Ça a\n",
+    "titleAccent": "brûlé.",
+    "lead": "La cuisine a fait tomber une casserole. Laissez-lui un instant et réessayez — si ça fume encore, appelez-nous, on prend votre table au téléphone.",
+    "ctaRetry": "Réessayer",
+    "ctaHome": "Retour à table",
+    "note": "Rien n'est perdu — votre table est toujours là.",
+    "digestLabel": "Référence pour la cuisine :"
+  },
   "Footer": {
     "visit": "Nous trouver",
     "menu": "Carte",
