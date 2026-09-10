@@ -73,20 +73,20 @@
     "eyebrow": "Le midi · la prânz",
     "titlePre": "Le déjeuner\n",
     "titleAccent": "à prix doux.",
-    "lead": "Deux façons de déjeuner balkanique dans le Sentier sans y laisser le budget. Du lundi au samedi, de 12h00 à 15h30.",
+    "lead": "Deux offres réservées à nos voisins du Sentier, pour déjeuner balkanique sans y laisser le budget. Du lundi au samedi, de 12h00 à 15h30.",
     "neighbours": {
       "name": "Voisins de bureau",
       "ro": "vecinii",
       "desc": "Vous travaillez dans le quartier ? Dites-le-nous en arrivant et repartez avec 10% de remise sur votre déjeuner, toute la semaine.",
-      "terms": "Sur place · au déjeuner · lun — sam"
+      "terms": "Voisins · sur place · au déjeuner · lun — sam"
     },
     "secondService": {
       "name": "Second service",
       "ro": "al doilea serviciu",
-      "desc": "Passez à table à 13h30, quand la salle respire et que la cuisine a le temps. C'est 20% de remise sur votre déjeuner.",
-      "terms": "Sur place · à partir de 13h30 · lun — sam"
+      "desc": "Voisins du quartier, passez à table à 13h30, quand la salle respire et que la cuisine a le temps. C'est 20% de remise sur votre déjeuner.",
+      "terms": "Voisins · sur place · à partir de 13h30 · lun — sam"
     },
-    "note": "Formule mezze + plat à 25 € — soit 20 € au second service. Offres non cumulables.",
+    "note": "Offres réservées aux voisins de bureau · non cumulables. Formule mezze + plat à 25 € — soit 20 € au second service.",
     "cta": "Voir la carte du midi →"
   },
   "Press": {
@@ -221,7 +221,7 @@
     },
     "lunchDeals": {
       "q": "Y a-t-il des offres le midi chez Ibrik Kitchen ?",
-      "a": "Oui, deux offres au déjeuner, du lundi au samedi. Les personnes qui travaillent dans le quartier du Sentier bénéficient de 10% de remise sur leur déjeuner. Tout le monde bénéficie de 20% de remise en s'installant au second service, à partir de 13h30. Les deux offres ne se cumulent pas : c'est soit 10%, soit 20%. La formule mezze + plat est à 25 €, soit 20 € au second service."
+      "a": "Oui, deux offres au déjeuner, du lundi au samedi, réservées aux personnes qui travaillent dans le quartier du Sentier. Nos voisins de bureau bénéficient de 10% de remise sur leur déjeuner, et de 20% de remise en s'installant au second service, à partir de 13h30. Les deux offres ne se cumulent pas : c'est soit 10%, soit 20%. La formule mezze + plat est à 25 €, soit 20 € au second service."
     },
     "vegetarian": {
       "q": "Y a-t-il des plats végétariens à la carte ?",

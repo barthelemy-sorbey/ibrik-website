@@ -1664,7 +1664,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 
 /* ============ OFFERS ============ */
 .s-offers { background: var(--tomato); color: var(--cream-light); }
-.s-offers h2.display { color: var(--cream-light); }
+.s-offers h2.display { color: var(--cream-light); line-height: 1.14; }
 .s-offers h2.display .accent { color: var(--ink); font-style: italic; }
 .s-offers .lead { color: var(--cream-light); opacity: .92; max-width: 40ch; }
 
