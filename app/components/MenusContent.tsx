@@ -9,11 +9,10 @@ import {
 } from "../lib/menus-data";
 
 // Self-hosted from public/menus so the links survive changes on ibrik.fr.
-// Saturday lunch shares the midi card until it gets a sheet of its own.
 const MENU_PDF: Record<MenuData["id"], string> = {
   lunch: "/menus/ibrik-menu-midi-printemps-2026.pdf",
   dinner: "/menus/ibrik-menu-soir-printemps-2026.pdf",
-  saturday: "/menus/ibrik-menu-midi-printemps-2026.pdf",
+  saturday: "/menus/ibrik-menu-samedi-midi-printemps-2026.pdf",
 };
 
 function priceForItem(section: MenuSectionData, item: MenuItemData): number | null {
