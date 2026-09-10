@@ -8,13 +8,12 @@ import {
   type MenuSectionData,
 } from "../lib/menus-data";
 
+// Self-hosted from public/menus so the links survive changes on ibrik.fr.
+// Saturday lunch shares the midi card until it gets a sheet of its own.
 const MENU_PDF: Record<MenuData["id"], string> = {
-  lunch:
-    "https://ibrik.fr/wp-content/uploads/2025/03/Menus-midisoir-Printemps-2025.pdf",
-  dinner:
-    "https://ibrik.fr/wp-content/uploads/2025/03/Menus-midisoir-Printemps-2025.pdf",
-  saturday:
-    "https://ibrik.fr/wp-content/uploads/2025/03/Menus-midisoir-Printemps-2025.pdf",
+  lunch: "/menus/ibrik-menu-midi-printemps-2026.pdf",
+  dinner: "/menus/ibrik-menu-soir-printemps-2026.pdf",
+  saturday: "/menus/ibrik-menu-midi-printemps-2026.pdf",
 };
 
 function priceForItem(section: MenuSectionData, item: MenuItemData): number | null {
