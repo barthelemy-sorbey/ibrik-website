@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-const PRESS_MARQUEE = [
+const PRESS_NAMES = [
   "The Guardian",
   "Eater",
   "Time Out",
@@ -27,10 +27,10 @@ export default function Press() {
         </h2>
       </div>
 
-      <div className="press-marquee">
-        <div className="press-track">
-          {PRESS_MARQUEE.concat(PRESS_MARQUEE).map((p, i) => (
-            <span className="press-logo" key={i}>
+      <div className="press-band">
+        <div className="wrap press-band-inner">
+          {PRESS_NAMES.map((p) => (
+            <span className="press-logo" key={p}>
               {p}
             </span>
           ))}
