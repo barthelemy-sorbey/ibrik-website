@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Link } from "../../i18n/navigation";
 import logo from "../../public/brand/ibrik-kitchen-logo.png";
 
 export default function Hero() {
@@ -47,15 +48,21 @@ export default function Hero() {
                 sizes="(max-width: 900px) 88vw, 42vw"
               />
             </div>
-            <a
-              href="https://bookings.zenchef.com/results?rid=352129&pid=1001"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-reserve-cta"
-            >
-              {t("reserveCta")}
-              <span aria-hidden="true">→</span>
-            </a>
+            <div className="hero-ctas">
+              <a
+                href="https://bookings.zenchef.com/results?rid=352129&pid=1001"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-reserve-cta"
+              >
+                {t("reserveCta")}
+                <span aria-hidden="true">→</span>
+              </a>
+              <Link href="/menus" className="hero-menus-cta">
+                {t("menusCta")}
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
         </div>
 

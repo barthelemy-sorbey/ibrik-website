@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
 import LogoMark from "./LogoMark";
+import MobileMenu from "./MobileMenu";
 import { Link } from "../../i18n/navigation";
 
 export default function Nav() {
@@ -13,6 +14,7 @@ export default function Nav() {
       <div className="nav-links">
         <Link href="/#about">{t("story")}</Link>
         <Link href="/menus">{t("menu")}</Link>
+        <Link href="/#offers">{t("offers")}</Link>
         <Link href="/#events">{t("events")}</Link>
         <Link href="/#visit">{t("visit")}</Link>
       </div>
@@ -22,6 +24,7 @@ export default function Nav() {
           <span>{t("reserve")}</span>
         </Link>
       </div>
+      <MobileMenu />
     </nav>
   );
 }

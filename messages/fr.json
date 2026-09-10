@@ -9,14 +9,22 @@
     "events": "Événements",
     "visit": "Nous trouver",
     "reserve": "Réserver une table",
-    "switchTo": "EN"
+    "switchTo": "EN",
+    "offers": "Offres",
+    "gallery": "Galerie",
+    "faq": "FAQ",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "menuLabel": "Navigation principale",
+    "language": "Langue"
   },
   "Hero": {
     "meta": "Paris · Sentier — Cuisine des Balkans",
     "metaRight": "Ouvert du lun. au sam.",
     "blurb": "Une cuisine balkanique, bruyante et chaleureuse, au cœur du Sentier. Cuisine lente des Carpates à l'Égée, du jardin de la <em>bunică</em> de quelqu'un — préparée comme on l'a toujours fait.",
     "scroll": "Défiler · derulează",
-    "reserveCta": "Réserver maintenant"
+    "reserveCta": "Réserver maintenant",
+    "menusCta": "Voir la carte"
   },
   "CrystalBall": {
     "eyebrow": "L'oracle d'Ibrik",
@@ -60,6 +68,26 @@
     "foot": "Prix en € · TTC",
     "pdf": "Voir la carte complète →",
     "tagSignature": "signature"
+  },
+  "Offers": {
+    "eyebrow": "Le midi · la prânz",
+    "titlePre": "Le déjeuner\n",
+    "titleAccent": "à prix doux.",
+    "lead": "Deux façons de déjeuner balkanique dans le Sentier sans y laisser le budget. Du lundi au samedi, de 12h00 à 15h30.",
+    "neighbours": {
+      "name": "Voisins de bureau",
+      "ro": "vecinii",
+      "desc": "Vous travaillez dans le quartier ? Dites-le-nous en arrivant et repartez avec 10% de remise sur votre déjeuner, toute la semaine.",
+      "terms": "Sur place · au déjeuner · lun — sam"
+    },
+    "secondService": {
+      "name": "Second service",
+      "ro": "al doilea serviciu",
+      "desc": "Passez à table à 13h30, quand la salle respire et que la cuisine a le temps. C'est 20% de remise sur votre déjeuner.",
+      "terms": "Sur place · à partir de 13h30 · lun — sam"
+    },
+    "note": "Formule mezze + plat à 25 € — soit 20 € au second service. Offres non cumulables.",
+    "cta": "Voir la carte du midi →"
   },
   "Press": {
     "title": "Ils\nreviennent.",
@@ -112,6 +140,45 @@
     "capLeft": "YouTube · McFly & Carlito",
     "capRight": "Cathy · Cyprien · 2024"
   },
+  "Gallery": {
+    "eyebrow": "En cuisine · în bucătărie",
+    "titlePre": "Dans la\n",
+    "titleAccent": "chaleur.",
+    "lead": "La braise, la mămăligă, le pass à l'heure du coup de feu. Des images prises dans notre cuisine du Sentier.",
+    "instagram": "Suivre @ibrikparis",
+    "pass": {
+      "alt": "Cathy, fondatrice d'Ibrik, dresse une assiette au pass de la cuisine",
+      "cap": "Le pass"
+    },
+    "brigade": {
+      "alt": "Deux chefs de la brigade Ibrik dressent les assiettes côte à côte",
+      "cap": "La brigade"
+    },
+    "copper": {
+      "alt": "Ibrik en cuivre posé sur le feu pour le café des Balkans",
+      "cap": "Le café ibrik"
+    },
+    "mamaliga": {
+      "alt": "Semoule de maïs versée dans une casserole pour la mămăligă",
+      "cap": "Mămăligă"
+    },
+    "polenta": {
+      "alt": "Mămăligă dorée coulée dans un bac de service",
+      "cap": "Polenta rôtie"
+    },
+    "fish": {
+      "alt": "Daurade entière au romarin, prête à passer sur la braise",
+      "cap": "Daurade, romarin"
+    },
+    "embers": {
+      "alt": "Charbon de bois disposé sur le grill du restaurant",
+      "cap": "La braise"
+    },
+    "grill": {
+      "alt": "Le grill préparé avant le service du soir",
+      "cap": "Avant service"
+    }
+  },
   "Location": {
     "titlePre": "Venez ",
     "titleAccent": "nous",
@@ -128,6 +195,54 @@
     "lunchHours": "12:00 — 15:30",
     "dinnerHours": "19:00 — 00:30",
     "mapAlt": "Plan · 9 rue de Mulhouse, Paris 2"
+  },
+  "Faq": {
+    "eyebrow": "Bon à savoir · întrebări",
+    "title": "Vos questions,\nnos réponses.",
+    "lead": "Adresse, horaires, réservations, offres du midi et plats à ne pas manquer — tout ce qu'on nous demande le plus souvent.",
+    "more": "Une question qui n'est pas là ?",
+    "moreMenus": "Voir toute la carte →",
+    "morePhone": "Appeler le restaurant →",
+    "where": {
+      "q": "Où se trouve Ibrik Kitchen ?",
+      "a": "Ibrik Kitchen se trouve au 9 rue de Mulhouse, 75002 Paris, dans le quartier du Sentier. Le restaurant est à deux minutes à pied du métro Sentier (ligne 3) et à cinq minutes de Bonne Nouvelle (lignes 8 et 9) et de Réaumur — Sébastopol (lignes 3 et 4). Téléphone : +33 1 70 69 42 50."
+    },
+    "hours": {
+      "q": "Quels sont les horaires d'Ibrik Kitchen ?",
+      "a": "Ibrik Kitchen est ouvert du lundi au samedi : le déjeuner de 12h00 à 15h30, le dîner de 19h00 à 00h30. Le restaurant est fermé le dimanche."
+    },
+    "cuisine": {
+      "q": "Quel type de cuisine sert Ibrik Kitchen ?",
+      "a": "Ibrik Kitchen sert une cuisine des Balkans — roumaine, grecque, serbe et turque — préparée avec les techniques de la bistronomie française. Les plats signatures sont les sarmale (feuilles de chou farcies au bœuf Angus), les mititei grillés à la braise, le souvlaki de volaille, l'épaule d'agneau marinée et cuite sept heures, et les papanași en dessert."
+    },
+    "booking": {
+      "q": "Faut-il réserver une table chez Ibrik ?",
+      "a": "La réservation est recommandée, surtout le soir et le samedi. Vous pouvez réserver en ligne via Zenchef, par téléphone au +33 1 70 69 42 50 ou par e-mail à bună@ibrik.fr. La salle paraît souvent complète alors qu'elle ne l'est pas : appelez-nous, il reste presque toujours une table."
+    },
+    "lunchDeals": {
+      "q": "Y a-t-il des offres le midi chez Ibrik Kitchen ?",
+      "a": "Oui, deux offres au déjeuner, du lundi au samedi. Les personnes qui travaillent dans le quartier du Sentier bénéficient de 10% de remise sur leur déjeuner. Tout le monde bénéficie de 20% de remise en s'installant au second service, à partir de 13h30. Les deux offres ne se cumulent pas : c'est soit 10%, soit 20%. La formule mezze + plat est à 25 €, soit 20 € au second service."
+    },
+    "vegetarian": {
+      "q": "Y a-t-il des plats végétariens à la carte ?",
+      "a": "Oui, à chaque service. Côté mezze : caviar d'aubergines fumé au barbecue, fêta rôtie au miel et aux noisettes, beignet de courgette à la fêta, risoni au fenouil. Côté plats : poivron farci au riz pilaf, BLKN Avo' Toast, et le souvlaki en version végétarienne à la fêta. Les plats végétariens sont signalés par un V sur la carte."
+    },
+    "budget": {
+      "q": "Quel budget prévoir pour un repas ?",
+      "a": "Le midi, les formules vont de 25 € (mezze + plat, ou plat + dessert) à 33 € (mezze + plat + dessert). Le soir, à la carte : mezze de 11 à 17 €, plats de 14 à 33 €, desserts de 11 à 14 €. Comptez 40 à 55 € par personne, hors boissons."
+    },
+    "groups": {
+      "q": "Peut-on venir en groupe ou privatiser le restaurant ?",
+      "a": "Oui. La grande table — masa mare — accueille 12 à 24 convives à partir de 58 € par personne, en trois services servis à la famille. Le restaurant entier se privatise jusqu'à 60 personnes à partir de 4 200 €. Ibrik assure aussi le traiteur pour les baptêmes et les mariages. Écrivez à bureau@ibrik.fr ou appelez le +33 1 70 69 42 50."
+    },
+    "chef": {
+      "q": "Qui est derrière Ibrik Kitchen ?",
+      "a": "Ecaterina, que tout le monde appelle Cathy. Née à Bucarest, arrivée à Paris à six ans, ancienne docteure en droit fiscal, elle a tout quitté pour cuisiner ce qui lui manquait. Elle a ouvert Ibrik Café en 2018, puis Ibrik Kitchen dans le Sentier en 2019. La cuisine est tenue par une brigade de chefs primés."
+    },
+    "order": {
+      "q": "Que commander pour une première visite ?",
+      "a": "Comptez trois plats pour deux, à partager. Commencez par le caviar d'aubergines fumé et la fêta rôtie, continuez avec les sarmale ou les mititei sortis de la braise, et finissez par le gâteau à la pistache — le best-seller de la maison — avec un café IBRIK préparé à la balkanique, qui demande 5 à 10 minutes."
+    }
   },
   "MenusPage": {
     "metaTitle": "Menus — Ibrik Kitchen, Paris Sentier",
