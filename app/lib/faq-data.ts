@@ -5,13 +5,16 @@
  */
 export const FAQ_IDS = [
   "where",
+  "romanian",
   "hours",
   "cuisine",
+  "wine",
   "booking",
   "vegetarian",
   "budget",
   "groups",
   "chef",
+  "cafe",
   "order",
 ] as const;
 

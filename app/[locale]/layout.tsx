@@ -78,7 +78,7 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       url: canonical,
-      siteName: "Ibrik Kitchen",
+      siteName: "IBRIK KITCHEN",
       locale: locale === "fr" ? "fr_FR" : "en_GB",
       type: "website",
     },

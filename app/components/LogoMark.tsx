@@ -19,7 +19,7 @@ type Props = {
 };
 
 export default function LogoMark({
-  alt = "Ibrik Kitchen",
+  alt = "IBRIK KITCHEN",
   height = 32,
   className,
   priority = false,

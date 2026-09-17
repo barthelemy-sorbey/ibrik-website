@@ -282,6 +282,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   text-transform: uppercase; letter-spacing: 0.16em;
   color: var(--ink-soft);
 }
+.hero-meta .hero-title { margin: 0; font: inherit; letter-spacing: inherit; }
 .hero-meta .sep { flex: 1; height: 1px; background: currentColor; opacity: .35; margin: 0 18px; align-self: center; }
 @media (max-width: 900px) { .hero-meta { padding: 0 22px; flex-wrap: wrap; gap: 8px; } .hero-meta .sep { display: none; } }
 
