@@ -5,6 +5,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { routing } from "../../i18n/routing";
 import "../globals.css";
 
@@ -100,6 +101,7 @@ export default async function LocaleLayout({
     >
       <body suppressHydrationWarning>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <Analytics />
         <Script
           id="zenchef-sdk"
           src="https://sdk.zenchef.com/v1/sdk.min.js"
