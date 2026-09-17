@@ -102,7 +102,7 @@
   "Reserve": {
     "titlePre": "Book\n",
     "titleAccent": "a table.",
-    "lead": "Everyone is welcome. Even if the table is full, ask us: we can nearly always find you a seat.",
+    "lead": "Everyone is welcome.",
     "onlineEyebrow": "Online · online",
     "onlineCta": "Book via Zenchef",
     "or": "or",
@@ -112,7 +112,7 @@
     "takeawayEyebrow": "Takeaway · la pachet",
     "takeawayText": "Eating at home tonight? The whole menu is also available to take away — drop by or give us a call to order.",
     "asideStamp": "Always\na seat.",
-    "asideP1": "Looks full? Call anyway: there is nearly always room for you.",
+    "asideP1": "Looks full? Call anyway: we will always find you a seat.",
     "asideP2": "Large parties, last minute, a birthday nobody planned: tell us, we'll make it work."
   },
   "Video": {
