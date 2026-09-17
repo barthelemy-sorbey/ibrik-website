@@ -63,6 +63,7 @@ export default function Hero() {
                 <span aria-hidden="true">→</span>
               </Link>
             </div>
+            <p className="hero-takeaway">{t("takeaway")}</p>
           </div>
         </div>
 

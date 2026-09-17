@@ -26,14 +26,13 @@ export default function Footer() {
             </a>
             <a>75002 Paris · Sentier</a>
             <a href="tel:+33170694250">+33 1 70 69 42 50</a>
-            <a href="mailto:contact@ibrik.fr">contact@ibrik.fr</a>
+            <a href="mailto:bureau@ibrik.fr">bureau@ibrik.fr</a>
           </div>
           <div className="col">
             <h5>{t("menu")}</h5>
             <Link href="/menus#lunch">{t("menuStarters")}</Link>
             <Link href="/menus#dinner">{t("menuMains")}</Link>
             <Link href="/menus#saturday">{t("menuSweets")}</Link>
-            <Link href="/menus#saturday-drinks">{t("menuDrinks")}</Link>
           </div>
           <div className="col">
             <h5>{t("follow")}</h5>

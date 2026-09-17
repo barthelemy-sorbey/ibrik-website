@@ -150,13 +150,6 @@ const SECTION_LABEL: Record<string, string> = {
   "saturday.desserts": "saturday.sectionDesserts",
 };
 
-const DRINKS_LABEL: Record<string, string> = {
-  cold: "saturday.drinksCold",
-  hot: "saturday.drinksHot",
-  wines: "saturday.drinksWines",
-  waters: "saturday.drinksWaters",
-};
-
 async function renderMenu(menu: MenuData, locale: string) {
   const t = await getTranslations(`MenusPage.${menu.id}`);
   const tPage = await getTranslations("MenusPage");
@@ -188,19 +181,6 @@ async function renderMenu(menu: MenuData, locale: string) {
       </div>
 
       {menu.id === "lunch" && (await renderLunchFormulas(locale))}
-
-      {menu.drinks && (
-        <section className="menu-drinks" id={`${menu.id}-drinks`}>
-          <h3 className="menu-drinks-title">{t("sectionDrinks")}</h3>
-          <div className="menu-drinks-grid">
-            {await Promise.all(
-              menu.drinks.map((section) =>
-                renderSection(menu.id, section, DRINKS_LABEL[section.id], locale),
-              ),
-            )}
-          </div>
-        </section>
-      )}
 
       {menu.id === "dinner" && (
         <footer className="menu-block-credits">
@@ -243,7 +223,6 @@ export default async function MenusContent({ locale }: { locale: string }) {
             <a href="#lunch">{t("navLunch")}</a>
             <a href="#dinner">{t("navDinner")}</a>
             <a href="#saturday">{t("navSaturday")}</a>
-            <a href="#saturday-drinks">{t("navDrinks")}</a>
           </nav>
         </div>
       </div>

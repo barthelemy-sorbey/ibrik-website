@@ -83,13 +83,6 @@ const SECTION_KEY_BY_MENU: Record<string, Record<string, string>> = {
   },
 };
 
-const DRINKS_KEY: Record<string, string> = {
-  cold: "drinksCold",
-  hot: "drinksHot",
-  wines: "drinksWines",
-  waters: "drinksWaters",
-};
-
 function buildMenuJsonLd(menu: MenuData, tMenu: ItemTranslator, name: string) {
   const buildSection = (section: MenuSectionData, label: string) => ({
     "@type": "MenuSection",
@@ -122,14 +115,6 @@ function buildMenuJsonLd(menu: MenuData, tMenu: ItemTranslator, name: string) {
     const label = labelKey ? tMenu(labelKey) : s.id;
     return buildSection(s, label);
   });
-
-  if (menu.drinks) {
-    for (const d of menu.drinks) {
-      const labelKey = DRINKS_KEY[d.id];
-      const label = labelKey ? tMenu(labelKey) : d.id;
-      sections.push(buildSection(d, label));
-    }
-  }
 
   return {
     "@type": "Menu",

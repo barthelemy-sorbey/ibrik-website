@@ -332,6 +332,12 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   margin-top: 8px;
 }
 .hero-ctas .hero-reserve-cta { margin-top: 0; }
+.hero-takeaway {
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: center;
+}
 .hero-menus-cta {
   display: inline-flex; align-items: center; gap: 14px;
   padding: 18px 30px;
@@ -798,6 +804,13 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   word-break: break-word;
 }
 
+.reserve-takeaway {
+  margin-top: 28px;
+  font-size: 17px; line-height: 1.55;
+  max-width: 44ch;
+}
+.reserve-takeaway .reserve-eyebrow { display: block; }
+
 .reserve-aside { font-size: 17px; line-height: 1.55; }
 .reserve-aside .stamp {
   display: inline-block;
@@ -1193,15 +1206,6 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   border-bottom: 1px dashed rgba(21, 17, 11, 0.25);
 }
 .menu-formulas li:last-child { border-bottom: 0; }
-
-.menu-drinks { margin-top: 50px; padding-top: 40px; border-top: 1px solid var(--ink); scroll-margin-top: 175px; }
-.menu-drinks-title {
-  font-family: var(--font-display);
-  font-size: clamp(32px, 4vw, 48px);
-  margin: 0 0 30px;
-  color: var(--green);
-}
-.menu-drinks-grid { display: grid; gap: 36px; }
 
 .menu-block-credits {
   margin-top: 50px;

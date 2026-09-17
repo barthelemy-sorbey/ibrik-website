@@ -23,7 +23,8 @@
     "blurb": "A Romanian and Balkan restaurant in the Sentier, Paris 2nd. Chef Cathy Paraschiv cooks the food of the Balkans: a crossroads between East and West, between memory and hospitality.",
     "scroll": "Scroll · derulează",
     "reserveCta": "Book a table",
-    "menusCta": "See the menu"
+    "menusCta": "See the menu",
+    "takeaway": "Eat in or take away · la pachet"
   },
   "CrystalBall": {
     "eyebrow": "A touch of mystery",
@@ -108,6 +109,8 @@
     "directEyebrow": "Or get in touch · scrieți-ne",
     "callLabel": "Call · sunați",
     "emailLabel": "Email · scrieți",
+    "takeawayEyebrow": "Takeaway · la pachet",
+    "takeawayText": "Eating at home tonight? The whole menu is also available to take away — drop by or give us a call to order.",
     "asideStamp": "Always\na seat.",
     "asideP1": "Looks full? Call anyway: there is nearly always room for you.",
     "asideP2": "Large parties, last minute, a birthday nobody planned: tell us, we'll make it work."
@@ -205,7 +208,7 @@
     },
     "booking": {
       "q": "Do I need to book at IBRIK KITCHEN?",
-      "a": "It is a good idea, especially for dinner and on Saturdays. Book online through Zenchef, by phone on +33 1 70 69 42 50, or by email at bună@ibrik.fr. The room often looks full when it isn't: call, there is nearly always a table."
+      "a": "It is a good idea, especially for dinner and on Saturdays. Book online through Zenchef, by phone on +33 1 70 69 42 50, or by email at bureau@ibrik.fr. The room often looks full when it isn't: call, there is nearly always a table."
     },
     "vegetarian": {
       "q": "Are there vegetarian dishes on the menu?",
@@ -248,7 +251,6 @@
     "navLunch": "Lunch",
     "navDinner": "Dinner",
     "navSaturday": "Saturday",
-    "navDrinks": "Drinks",
     "back": "← Back home",
     "lunch": {
       "label": "Lunch menu",
@@ -411,11 +413,6 @@
       "sectionMezze": "Mezze",
       "sectionMains": "Mains",
       "sectionDesserts": "Desserts",
-      "sectionDrinks": "Drinks",
-      "drinksCold": "Cold drinks",
-      "drinksHot": "Coffee & hot drinks",
-      "drinksWines": "Wines",
-      "drinksWaters": "Waters",
       "items": {
         "feta": {
           "name": "Roasted feta",
@@ -481,69 +478,9 @@
           "name": "Pavlova, our way",
           "desc": "Meringue, praline, yoghurt-and-vanilla ice cream, red berries."
         },
-        "bissap": {
-          "name": "Bissap",
-          "desc": "Hibiscus and mint infusion."
-        },
-        "the_glace": {
-          "name": "Iced tea",
-          "desc": "House iced tea — recipe changes with the seasons."
-        },
-        "citronnade": {
-          "name": "Lemonade with coriander",
-          "desc": "Lemonade gently infused with coriander."
-        },
-        "framboise": {
-          "name": "Raspberry refresher",
-          "desc": "Like a lemonade — raspberry, basil, honey."
-        },
-        "biere": {
-          "name": "IBRIK beer",
-          "desc": "Special recipe, craft-brewed near Bucharest."
-        },
-        "cafe_glace": {
-          "name": "Iced coffee / iced latte",
-          "desc": "Double espresso with or without milk, Greek-style. 4€ / 6€."
-        },
-        "espresso": {
-          "name": "Espresso / long",
-          "desc": "Specialty coffee, roasted by TANAT in Paris."
-        },
-        "latte": {
-          "name": "Latte",
-          "desc": "Coffee, matcha or golden, with a good pour of milk."
-        },
         "cafe_ibrik": {
           "name": "IBRIK coffee",
           "desc": "Traditional Balkan coffee. Prep time: 5–10 min."
-        },
-        "thes": {
-          "name": "Tea selection",
-          "desc": "Fine teas from Dammann Frères."
-        },
-        "the_menthe": {
-          "name": "Mint tea",
-          "desc": "Gunpowder green tea infused with fresh mint, sweet or not."
-        },
-        "choco": {
-          "name": "Hot chocolate",
-          "desc": "70% chocolate pistols melted into hot milk."
-        },
-        "vin_mois": {
-          "name": "Wine of the month",
-          "desc": "A wine we love, chosen each month."
-        },
-        "vins_carte": {
-          "name": "Wines by the list",
-          "desc": "40+ references, including natural wines from Eastern Europe. Ask for the list."
-        },
-        "eau_plate": {
-          "name": "Still water",
-          "desc": "75cl · Thonon."
-        },
-        "eau_petillante": {
-          "name": "Sparkling water",
-          "desc": "75cl · Châtelon."
         }
       }
     }
@@ -577,7 +514,6 @@
     "menuStarters": "Lunch menu",
     "menuMains": "Dinner menu",
     "menuSweets": "Saturday lunch",
-    "menuDrinks": "Drinks",
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",
     "care1": "Private events",
