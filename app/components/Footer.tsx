@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <div className="row">
           <div className="col">
-            <h5>{t("visit")}</h5>
+            <h2>{t("visit")}</h2>
             <a
               href="https://maps.app.goo.gl/M96VNxVcr9pbNgHx9"
               target="_blank"
@@ -29,13 +29,13 @@ export default function Footer() {
             <a href="mailto:bureau@ibrik.fr">bureau@ibrik.fr</a>
           </div>
           <div className="col">
-            <h5>{t("menu")}</h5>
+            <h2>{t("menu")}</h2>
             <Link href="/menus#lunch">{t("menuStarters")}</Link>
             <Link href="/menus#dinner">{t("menuMains")}</Link>
             <Link href="/menus#saturday">{t("menuSweets")}</Link>
           </div>
           <div className="col">
-            <h5>{t("follow")}</h5>
+            <h2>{t("follow")}</h2>
             <a
               href="https://www.instagram.com/ibrikparis/"
               target="_blank"
@@ -52,7 +52,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="col">
-            <h5>{t("careOf")}</h5>
+            <h2>{t("careOf")}</h2>
             <a>{t("care1")}</a>
           </div>
         </div>

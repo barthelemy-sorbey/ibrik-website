@@ -3,7 +3,7 @@
 # IBRIK KITCHEN — site vitrine
 
 Site du restaurant **IBRIK KITCHEN**, cuisine des Balkans de la cheffe Cathy
-Paraschiv, 9 rue de Mulhouse, 75002 Paris (Sentier). Production : https://www.ibrik.fr.
+Paraschiv, 9 rue de Mulhouse, 75002 Paris (Sentier). Production : https://ibrik.fr (domaine apex ; `www` redirige en 301 via OVH, HTTP seulement).
 
 ## Contexte métier
 
