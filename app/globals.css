@@ -1206,15 +1206,6 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 }
 .menu-formulas li:last-child { border-bottom: 0; }
 
-.menu-drinks { margin-top: 50px; padding-top: 40px; border-top: 1px solid var(--ink); scroll-margin-top: 175px; }
-.menu-drinks-title {
-  font-family: var(--font-display);
-  font-size: clamp(32px, 4vw, 48px);
-  margin: 0 0 30px;
-  color: var(--green);
-}
-.menu-drinks-grid { display: grid; gap: 36px; }
-
 .menu-block-credits {
   margin-top: 50px;
   padding-top: 24px;

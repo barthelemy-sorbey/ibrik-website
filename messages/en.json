@@ -224,7 +224,7 @@
   },
   "MenusPage": {
     "metaTitle": "Menus — Ibrik Kitchen, Paris Sentier",
-    "metaDescription": "Lunch, dinner and Saturday lunch menus at Ibrik Kitchen, 9 rue de Mulhouse, Paris 2. Spring 2026 — Balkan cuisine, mezze, mains, sweets and drinks.",
+    "metaDescription": "Lunch, dinner and Saturday lunch menus at Ibrik Kitchen, 9 rue de Mulhouse, Paris 2. Spring 2026 — Balkan cuisine, mezze, mains and sweets.",
     "title": "Three menus,\none kitchen.",
     "lead": "Weekday lunch with a quick mezze + main formula, a longer dinner that lingers, and a slower Saturday lunch with sarmale and the patronne's seven-hour lamb if you ask in time.",
     "downloadPdf": "Download PDF →",
@@ -238,7 +238,6 @@
     "navLunch": "Lunch",
     "navDinner": "Dinner",
     "navSaturday": "Saturday",
-    "navDrinks": "Drinks",
     "back": "← Back home",
     "lunch": {
       "label": "Lunch menu",
@@ -401,11 +400,6 @@
       "sectionMezze": "Mezze",
       "sectionMains": "Mains",
       "sectionDesserts": "Desserts",
-      "sectionDrinks": "Drinks",
-      "drinksCold": "Cold drinks",
-      "drinksHot": "Coffee & hot drinks",
-      "drinksWines": "Wines",
-      "drinksWaters": "Waters",
       "items": {
         "feta": {
           "name": "Roasted feta",
@@ -471,69 +465,9 @@
           "name": "Pavlova, our way",
           "desc": "Meringue, praline, yoghurt-and-vanilla ice cream, red berries."
         },
-        "bissap": {
-          "name": "Bissap",
-          "desc": "Hibiscus and mint infusion."
-        },
-        "the_glace": {
-          "name": "Iced tea",
-          "desc": "House iced tea — recipe changes with the seasons."
-        },
-        "citronnade": {
-          "name": "Lemonade with coriander",
-          "desc": "Lemonade gently infused with coriander."
-        },
-        "framboise": {
-          "name": "Raspberry refresher",
-          "desc": "Like a lemonade — raspberry, basil, honey."
-        },
-        "biere": {
-          "name": "IBRIK beer",
-          "desc": "Special recipe, craft-brewed near Bucharest."
-        },
-        "cafe_glace": {
-          "name": "Iced coffee / iced latte",
-          "desc": "Double espresso with or without milk, Greek-style. 4€ / 6€."
-        },
-        "espresso": {
-          "name": "Espresso / long",
-          "desc": "Specialty coffee, roasted by TANAT in Paris."
-        },
-        "latte": {
-          "name": "Latte",
-          "desc": "Coffee, matcha or golden, with a good pour of milk."
-        },
         "cafe_ibrik": {
           "name": "IBRIK coffee",
           "desc": "Traditional Balkan coffee. Prep time: 5–10 min."
-        },
-        "thes": {
-          "name": "Tea selection",
-          "desc": "Fine teas from Dammann Frères."
-        },
-        "the_menthe": {
-          "name": "Mint tea",
-          "desc": "Gunpowder green tea infused with fresh mint, sweet or not."
-        },
-        "choco": {
-          "name": "Hot chocolate",
-          "desc": "70% chocolate pistols melted into hot milk."
-        },
-        "vin_mois": {
-          "name": "Wine of the month",
-          "desc": "A wine we love this month."
-        },
-        "vins_carte": {
-          "name": "Wines by the list",
-          "desc": "Ask for the list — 40+ references."
-        },
-        "eau_plate": {
-          "name": "Still water",
-          "desc": "75cl · Thonon."
-        },
-        "eau_petillante": {
-          "name": "Sparkling water",
-          "desc": "75cl · Châtelon."
         }
       }
     }
@@ -567,7 +501,6 @@
     "menuStarters": "Lunch menu",
     "menuMains": "Dinner menu",
     "menuSweets": "Saturday lunch",
-    "menuDrinks": "Drinks",
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",
     "care1": "Private events",

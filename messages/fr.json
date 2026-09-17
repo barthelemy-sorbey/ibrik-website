@@ -224,7 +224,7 @@
   },
   "MenusPage": {
     "metaTitle": "Menus — Ibrik Kitchen, Paris Sentier",
-    "metaDescription": "Menus midi, dîner et samedi midi à Ibrik Kitchen, 9 rue de Mulhouse, Paris 2. Printemps 2026 — cuisine des Balkans, mezze, plats, douceurs et boissons.",
+    "metaDescription": "Menus midi, dîner et samedi midi à Ibrik Kitchen, 9 rue de Mulhouse, Paris 2. Printemps 2026 — cuisine des Balkans, mezze, plats et douceurs.",
     "title": "Trois menus,\nune cuisine.",
     "lead": "Un déjeuner en semaine avec une formule mezze + plat, un dîner qui s'étire, et un samedi midi plus lent avec des sarmale et l'épaule d'agneau de 7h de la patronne — si vous le demandez à temps.",
     "downloadPdf": "Télécharger le PDF →",
@@ -238,7 +238,6 @@
     "navLunch": "Midi",
     "navDinner": "Soir",
     "navSaturday": "Samedi",
-    "navDrinks": "Boissons",
     "back": "← Retour à l'accueil",
     "lunch": {
       "label": "Menu midi",
@@ -401,11 +400,6 @@
       "sectionMezze": "Mezze",
       "sectionMains": "Plats",
       "sectionDesserts": "Desserts",
-      "sectionDrinks": "Boissons",
-      "drinksCold": "Boissons fraîches",
-      "drinksHot": "Cafés & boissons chaudes",
-      "drinksWines": "Vins",
-      "drinksWaters": "Eaux",
       "items": {
         "feta": {
           "name": "Fêta au four",
@@ -471,69 +465,9 @@
           "name": "Pavlova, revue",
           "desc": "Meringue, pralin, glace au yaourt et vanille, fruits rouges."
         },
-        "bissap": {
-          "name": "Bissap",
-          "desc": "Délicieuse infusion de fleurs d'hibiscus et de menthe."
-        },
-        "the_glace": {
-          "name": "Thé glacé",
-          "desc": "Thé glacé maison — la recette change selon les saisons."
-        },
-        "citronnade": {
-          "name": "Citronnade citron, coriandre",
-          "desc": "Citronnade délicatement infusée à la coriandre, mélange surprenant."
-        },
-        "framboise": {
-          "name": "Framboise",
-          "desc": "Comme une citronnade mais à la framboise, basilic, miel."
-        },
-        "biere": {
-          "name": "Bière IBRIK",
-          "desc": "Recette spéciale, brassée à côté de Bucarest, bière artisanale."
-        },
-        "cafe_glace": {
-          "name": "Café / Latte glacé",
-          "desc": "Double espresso avec ou sans lait, à la façon grecque. 4€ / 6€."
-        },
-        "espresso": {
-          "name": "Espresso / allongé",
-          "desc": "Café de spécialité, torréfié par TANAT à Paris."
-        },
-        "latte": {
-          "name": "Latte",
-          "desc": "Café, matcha ou golden, avec une bonne dose de lait."
-        },
         "cafe_ibrik": {
           "name": "Café IBRIK",
           "desc": "Café traditionnel des Balkans. Temps de préparation : 5–10 min."
-        },
-        "thes": {
-          "name": "Sélection des thés",
-          "desc": "Très beaux thés, de la maison Dammann Frères."
-        },
-        "the_menthe": {
-          "name": "Thé à la menthe",
-          "desc": "Thé vert gunpowder infusé à la menthe fraîche, avec ou sans sucre."
-        },
-        "choco": {
-          "name": "Chocolat chaud",
-          "desc": "Pistoles de chocolat 70% fondus dans du lait chaud."
-        },
-        "vin_mois": {
-          "name": "Vin du mois",
-          "desc": "Sélection d'un vin que nous aimons."
-        },
-        "vins_carte": {
-          "name": "Vins à la carte",
-          "desc": "Demandez la carte, plus de 40 références."
-        },
-        "eau_plate": {
-          "name": "Eau plate",
-          "desc": "75cl · Thonon."
-        },
-        "eau_petillante": {
-          "name": "Eau pétillante",
-          "desc": "75cl · Châtelon."
         }
       }
     }
@@ -567,7 +501,6 @@
     "menuStarters": "Menu midi",
     "menuMains": "Menu dîner",
     "menuSweets": "Samedi midi",
-    "menuDrinks": "Boissons",
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",
     "care1": "Événements privés",
