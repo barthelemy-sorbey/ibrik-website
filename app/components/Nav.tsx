@@ -8,7 +8,7 @@ export default function Nav() {
   const t = useTranslations("Nav");
   return (
     <nav className="nav">
-      <Link href="/#top" className="nav-mark" aria-label="Ibrik Kitchen">
+      <Link href="/#top" className="nav-mark" aria-label="IBRIK KITCHEN">
         <LogoMark variant="wordmark" height={26} priority />
       </Link>
       <div className="nav-links">

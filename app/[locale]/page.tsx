@@ -19,6 +19,7 @@ import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Reveal from "../components/Reveal";
 import { FAQ_IDS } from "../lib/faq-data";
+import { buildRestaurantJsonLd } from "../lib/restaurant-jsonld";
 
 export default async function Home({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
@@ -26,6 +27,11 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   setRequestLocale(locale);
 
   const tFaq = await getTranslations("Faq");
+  const tMeta = await getTranslations("Metadata");
+
+  const restaurantJsonLd = buildRestaurantJsonLd({
+    description: tMeta("description"),
+  });
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -60,6 +66,11 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd) }}
       />
     </>
   );

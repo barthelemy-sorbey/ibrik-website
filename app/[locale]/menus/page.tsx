@@ -14,9 +14,7 @@ import {
   type MenuItemData,
   type MenuSectionData,
 } from "../../lib/menus-data";
-
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ibrik.fr";
+import { SITE_URL, buildRestaurantJsonLd } from "../../lib/restaurant-jsonld";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -45,7 +43,7 @@ export async function generateMetadata({
       title: t("metaTitle"),
       description: t("metaDescription"),
       url: canonical,
-      siteName: "Ibrik Kitchen",
+      siteName: "IBRIK KITCHEN",
       locale: locale === "fr" ? "fr_FR" : "en_GB",
       type: "website",
     },
@@ -137,65 +135,8 @@ export default async function MenusPage({
   const tDinner = await getTranslations("MenusPage.dinner");
   const tSaturday = await getTranslations("MenusPage.saturday");
 
-  const restaurantJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "@id": `${SITE_URL}/#restaurant`,
-    name: "Ibrik Kitchen",
+  const restaurantJsonLd = buildRestaurantJsonLd({
     description: tPage("metaDescription"),
-    url: SITE_URL,
-    telephone: "+33170694250",
-    image: `${SITE_URL}/brand/logo.svg`,
-    priceRange: "€€",
-    servesCuisine: [
-      "Balkan",
-      "Romanian",
-      "Greek",
-      "Serbian",
-      "Mediterranean",
-    ],
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "9 rue de Mulhouse",
-      postalCode: "75002",
-      addressLocality: "Paris",
-      addressRegion: "Île-de-France",
-      addressCountry: "FR",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 48.86867230,
-      longitude: 2.3465837,
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
-        opens: "12:00",
-        closes: "15:30",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
-        opens: "19:00",
-        closes: "00:30",
-      },
-    ],
-    acceptsReservations: true,
     hasMenu: [
       buildMenuJsonLd(LUNCH_MENU, tLunch as ItemTranslator, tLunch("label")),
       buildMenuJsonLd(
@@ -209,16 +150,7 @@ export default async function MenusPage({
         tSaturday("label"),
       ),
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.6",
-      reviewCount: 990,
-    },
-    sameAs: [
-      "https://www.instagram.com/ibrikparis",
-      "https://www.facebook.com/ibrikkitchen",
-    ],
-  };
+  });
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -227,7 +159,7 @@ export default async function MenusPage({
       {
         "@type": "ListItem",
         position: 1,
-        name: "Ibrik Kitchen",
+        name: "IBRIK KITCHEN",
         item: locale === routing.defaultLocale ? `${SITE_URL}/` : `${SITE_URL}/${locale}`,
       },
       {

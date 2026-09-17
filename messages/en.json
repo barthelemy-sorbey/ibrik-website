@@ -1,11 +1,11 @@
 {
   "Metadata": {
-    "title": "Ibrik Kitchen — Balkan Kitchen, Paris Sentier",
-    "description": "A Balkan kitchen in the Sentier, Paris 2. Romanian, Greek, Serbian and Turkish classics meet French bistronomy. The Balkans are home to everyone."
+    "title": "IBRIK KITCHEN — Romanian & Balkan restaurant, Paris 2nd",
+    "description": "Chef Cathy Paraschiv's Balkan cooking in Paris 2nd: sarmale, mici, papanasi and natural wines from Eastern Europe. Book your table."
   },
   "Nav": {
-    "story": "Story",
-    "menu": "Menu",
+    "story": "The story",
+    "menu": "The menu",
     "events": "Events",
     "visit": "Visit",
     "reserve": "Reserve a table",
@@ -18,55 +18,56 @@
     "language": "Language"
   },
   "Hero": {
-    "meta": "Paris · Sentier — Balkan Kitchen",
-    "metaRight": "Open Mon–Sat",
-    "blurb": "A loud, warm Balkan kitchen in the Sentier. Slow food from the Carpathians to the Aegean, from somebody's <em>bunică</em>'s back garden — cooked the way it has always been cooked.",
+    "meta": "IBRIK KITCHEN, Balkan cooking in Paris",
+    "metaRight": "9 rue de Mulhouse · Paris 2nd · Mon — Sat",
+    "blurb": "A Romanian and Balkan restaurant in the Sentier, Paris 2nd. Chef Cathy Paraschiv cooks the food of the Balkans: a crossroads between East and West, between memory and hospitality.",
     "scroll": "Scroll · derulează",
-    "reserveCta": "Reserve now",
+    "reserveCta": "Book a table",
     "menusCta": "See the menu",
     "takeaway": "Eat in or take away · la pachet"
   },
   "CrystalBall": {
-    "eyebrow": "The Ibrik oracle",
-    "title": "Read\nyour future.",
-    "intro": "Rest your hand on the crystal ball. Somewhere, somebody's bunică has already put a pot on the fire for you.",
-    "idle": "Touch the ball… your delicious destiny awaits.",
-    "reveal": "I see… I see that very soon, you will come to taste",
+    "eyebrow": "A touch of mystery",
+    "title": "Read\nthe future.",
+    "intro": "In the Balkans, grandmothers read the future in coffee grounds, at the bottom of the ibrik. Here, the crystal ball takes over. Rest your hand on it.",
+    "idle": "Touch the ball. It already knows what's coming to your table.",
+    "reveal": "I see… soon, on your table,",
     "revealEnd": ".",
     "cta": "Read my future",
-    "ctaReading": "The oracle reads the steam…",
-    "ctaAgain": "Read it again",
+    "ctaReading": "The ball clouds over…",
+    "ctaAgain": "Read again",
     "dishes": [
-      "a smoky sarmale, rolled tight in its cabbage leaf",
-      "sizzling mititei, straight off the embers",
-      "a charcoal-grilled souvlaki",
-      "a still-warm papanași, crowned with cream and jam",
-      "a lamb shoulder, marinated and slow-cooked for seven hours",
-      "a roasted feta with honey and oregano",
-      "a spoonful of smoked aubergine caviar",
-      "a pistachio cake — our best-seller",
-      "a soft slice of house cozonac",
+      "sarmale, rolled in brined cabbage leaves",
+      "mici, straight off the embers",
+      "a chicken souvlaki, charcoal-grilled",
+      "warm papanasi, crème fraîche and red coulis",
+      "a lamb shoulder, long marinade, seven hours on the heat",
+      "a roasted feta, orange and hazelnuts",
+      "a spoonful of charred aubergine caviar",
+      "a slice of pistachio cake, rose and lemon icing",
+      "a slice of cozonac, walnuts and raisins",
       "a Danube-style sea bream, on a long Saturday"
     ]
   },
   "About": {
-    "title": "A kitchen\nremembered\nby hand.",
+    "title": "Balkan\ncooking.",
     "stamp": "poftă bună —",
-    "p1": "Ibrik began with Ecaterina, known to everyone as Cathy. She left Bucharest at six, when her parents fled the dictatorship to start over in France. After years in tax law, she answered an older calling and began cooking the food she'd missed. The name comes from her grandmother: the <em>ibrik</em>, the little copper pot she brewed coffee in, and at the bottom of which she claimed to read the future. Ibrik Café opened in 2018; Ibrik Kitchen, in the heart of the Sentier, followed in 2019.",
-    "p2": "Her cooking treats the Balkans as a crossroads rather than a border: sarmale descend from Turkish dolma, mămăligă answers polenta, coffee comes from Istanbul. From the Carpathians to the Aegean, a direct hand inherited from her painter father — strip away the superfluous until only the essential remains — and one quiet idea: <em>the Balkans are home to everyone.</em>",
-    "signature": "— Cathy, fondatrice",
+    "p1": "“IBRIK KITCHEN is not just a restaurant. It is a way of living, a way of being that breaks free of convention so that everyone can feel like themselves — the way we are in the Balkans.”",
+    "p2": "Ecaterina Paraschiv, known to everyone as Cathy, left Bucharest at six, when her parents fled the dictatorship to start over in France. After years in tax law, she answered an older calling and began cooking the food she'd missed. The name comes from her grandmother: the <em>ibrik</em>, the little copper pot she brewed coffee in, and at the bottom of which she claimed to read the future. IBRIK, the café in the 9th, opened in 2018; IBRIK KITCHEN, on rue de Mulhouse, followed in 2019. She is the one cooking, and the place looks like her.",
+    "signature": "— Cathy Paraschiv, chef",
     "photoCap1": "Cathy",
     "photoCap2": "The ibrik",
-    "photoAlt1": "Cathy in the open kitchen",
-    "photoAlt2": "Copper ibrik on the fire"
+    "photoAlt1": "Chef Cathy Paraschiv in the kitchen at IBRIK KITCHEN, Paris 2nd",
+    "photoAlt2": "Copper ibrik on the flame for Balkan coffee, IBRIK KITCHEN, Paris 2nd",
+    "p3": "Her cooking treats the Balkans as a crossroads rather than a border: <em>sarmale</em> descend from Turkish dolma, <em>mamaliga</em> answers polenta, coffee comes from Istanbul. The recipes of mothers and grandmothers — <em>mici</em>, <em>papanasi</em> — are reworked with a direct hand inherited from her painter father: strip away the superfluous until only the essential remains. With natural wines from Eastern Europe, and one quiet idea: <em>the Balkans are home to everyone.</em>"
   },
   "Menu": {
-    "titlePre": "The ",
-    "titleAccent": "full",
-    "titlePost": " table.",
-    "lead": "A taste of the carte — mezze, embers, slow-cooked, and sweets. Order three plates between two. Stay for coffee.",
+    "titlePre": "Our dishes: ",
+    "titleAccent": "sarmale, mici, papanasi",
+    "titlePost": ".",
+    "lead": "The recipes of mothers and grandmothers, reworked with finesse: mezze, embers, slow-cooked, sweets. Three plates between two, shared. IBRIK coffee to finish.",
     "foot": "Prices in € · VAT included",
-    "pdf": "See the full menu →",
+    "pdf": "The full menu →",
     "tagSignature": "signature"
   },
   "Press": {
@@ -79,15 +80,15 @@
     "q3Loc": "Critic's Pick"
   },
   "Events": {
-    "titlePre": "Gather\n",
-    "titleAccent": "your people.",
-    "p1": "There is a Romanian word — <i>petrecere</i> — that means a party, a feast, and the act of \"passing time\" all at once. We were built for it.",
-    "p2": "Whether it's twelve around the long table or sixty taking the whole room, we cook the way our families cook for theirs: too much, all at once, and so good that nobody quite leaves on time.",
+    "titlePre": "Welcoming you\n",
+    "titleAccent": "as if at home.",
+    "p1": "In Romanian, <i>petrecere</i> means a party, a feast and the time spent together, all at once. That is how we welcome people.",
+    "p2": "Twelve around the long table or sixty across the whole room: we cook the way Balkan families cook for their own. Plenty, all at once, and nobody quite leaves on time.",
     "enquireCta": "Email bureau@ibrik.fr",
     "phone": "+33 1 70 69 42 50",
     "card1Name": "Masa mare",
     "card1Ro": "the long table",
-    "card1Meta": "12–24 guests · whole back room · 3 courses, family style",
+    "card1Meta": "12–24 guests · back room · 3 courses, shared",
     "card1Cap": "From €58 / pers",
     "card2Name": "Buyout",
     "card2Ro": "all of us",
@@ -95,13 +96,13 @@
     "card2Cap": "From €4 200",
     "card3Name": "Botez & Nuntă",
     "card3Ro": "christening & wedding",
-    "card3Meta": "Catering off-site · sarmale by the hundred · țuică by the case",
+    "card3Meta": "Off-site catering · sarmale by the hundred · țuică by the case",
     "card3Cap": "By quote"
   },
   "Reserve": {
-    "titlePre": "Save a\n",
-    "titleAccent": "chair.",
-    "lead": "Everyone is welcome — people often assume the room is full when it isn't. Just ask, we'll find you a table.",
+    "titlePre": "Book\n",
+    "titleAccent": "a table.",
+    "lead": "Everyone is welcome. The room often looks full; it rarely is. Ask — there is nearly always a table.",
     "onlineEyebrow": "Online · online",
     "onlineCta": "Book via Zenchef",
     "or": "or",
@@ -111,14 +112,14 @@
     "takeawayEyebrow": "Takeaway · la pachet",
     "takeawayText": "Eating at home tonight? The whole menu is also available to take away — drop by or give us a call to order.",
     "asideStamp": "Always\na seat.",
-    "asideP1": "Looks busy? It often does — there's almost always room for one more. Call without hesitating.",
-    "asideP2": "Large parties, last-minute, surprise birthdays: tell us and we'll make it work."
+    "asideP1": "Looks full? Call anyway: there is nearly always room for you.",
+    "asideP2": "Large parties, last minute, a birthday nobody planned: tell us, we'll make it work."
   },
   "Video": {
-    "titlePre": "Step into\n",
-    "titleAccent": "our world.",
-    "lead": "Our chef Cathy welcomes <strong>McFly & Carlito</strong> and <strong>Cyprien</strong> into the Ibrik kitchen and walks them through the gestures — sarmale, mămăligă, papanași. An hour of Romanian <em>petrecere</em>, the way it happens at home.",
-    "iframeTitle": "McFly & Carlito and Cyprien cooking Romanian food with Cathy at Ibrik",
+    "titlePre": "In Cathy's\n",
+    "titleAccent": "kitchen.",
+    "lead": "Cathy Paraschiv welcomes <strong>McFly & Carlito</strong> and <strong>Cyprien</strong> into the IBRIK KITCHEN kitchen and passes on the gestures: <em>sarmale</em>, <em>mamaliga</em>, <em>papanasi</em>. An hour of Romanian <em>petrecere</em>, the way it happens at home.",
+    "iframeTitle": "McFly & Carlito and Cyprien cooking Romanian food with Cathy Paraschiv at IBRIK KITCHEN",
     "capLeft": "YouTube · McFly & Carlito",
     "capRight": "Cathy · Cyprien · 2024"
   },
@@ -126,45 +127,45 @@
     "eyebrow": "In the kitchen · în bucătărie",
     "titlePre": "Inside the\n",
     "titleAccent": "heat.",
-    "lead": "Embers, mămăligă, and the pass at full tilt. Shot in our kitchen in the Sentier.",
+    "lead": "Embers, mamaliga, the pass in the rush. Shot in our kitchen in the Sentier, Paris 2nd.",
     "instagram": "Follow @ibrikparis",
     "pass": {
-      "alt": "Cathy, Ibrik's founder, plating a dish at the kitchen pass",
+      "alt": "Chef Cathy Paraschiv plating at the pass, IBRIK KITCHEN, Paris 2nd",
       "cap": "The pass"
     },
     "brigade": {
-      "alt": "Two Ibrik chefs plating side by side during service",
+      "alt": "Two cooks plating side by side at IBRIK KITCHEN, Paris 2nd",
       "cap": "The brigade"
     },
     "copper": {
-      "alt": "Copper ibrik on the flame for Balkan coffee",
+      "alt": "Copper ibrik on the flame for Balkan coffee, IBRIK KITCHEN, Paris 2nd",
       "cap": "The ibrik"
     },
     "mamaliga": {
-      "alt": "Cornmeal poured into a pot to make mămăligă",
-      "cap": "Mămăligă"
+      "alt": "Cornmeal poured into a pot for mamaliga, IBRIK KITCHEN, Paris 2nd",
+      "cap": "Mamaliga"
     },
     "polenta": {
-      "alt": "Golden mămăligă poured into a service tray",
+      "alt": "Golden mamaliga poured into a service tray, IBRIK KITCHEN, Paris 2nd",
       "cap": "Roasted polenta"
     },
     "fish": {
-      "alt": "Whole sea bream with rosemary, ready for the embers",
+      "alt": "Whole sea bream with rosemary before the embers, IBRIK KITCHEN, Paris 2nd",
       "cap": "Bream, rosemary"
     },
     "embers": {
-      "alt": "Charcoal laid out on the restaurant grill",
+      "alt": "Charcoal laid on the grill at IBRIK KITCHEN, Paris 2nd",
       "cap": "The embers"
     },
     "grill": {
-      "alt": "The grill prepared ahead of evening service",
+      "alt": "The IBRIK KITCHEN grill ready for evening service, Paris 2nd",
       "cap": "Before service"
     }
   },
   "Location": {
-    "titlePre": "Come ",
-    "titleAccent": "find",
-    "titlePost": " us.",
+    "titlePre": "Find us ",
+    "titleAccent": "in Paris 2nd",
+    "titlePost": ".",
     "addressTitle": "Address · Adresa",
     "addressLines": "9 rue de Mulhouse\n75002 Paris · Sentier\nFrance",
     "openInMaps": "Open in maps →",
@@ -176,57 +177,69 @@
     "dinner": "Dinner · cină",
     "lunchHours": "12:00 — 15:30",
     "dinnerHours": "19:00 — 00:30",
-    "mapAlt": "Map · 9 rue de Mulhouse, Paris 2"
+    "mapAlt": "Map · IBRIK KITCHEN, 9 rue de Mulhouse, Paris 2nd"
   },
   "Faq": {
     "eyebrow": "Good to know · întrebări",
     "title": "Your questions,\nanswered.",
-    "lead": "Address, opening hours, bookings, vegetarian dishes and what to order — the things people ask us most.",
+    "lead": "Address, hours, booking, vegetarian dishes, what to order: the questions people ask us most.",
     "more": "Something we haven't covered?",
     "moreMenus": "See the full menu →",
     "morePhone": "Call the restaurant →",
     "where": {
-      "q": "Where is Ibrik Kitchen?",
-      "a": "Ibrik Kitchen is at 9 rue de Mulhouse, 75002 Paris, in the Sentier district. It is a two-minute walk from Sentier metro station (line 3) and five minutes from Bonne Nouvelle (lines 8 and 9) and Réaumur — Sébastopol (lines 3 and 4). Phone: +33 1 70 69 42 50."
+      "q": "Where is IBRIK KITCHEN?",
+      "a": "IBRIK KITCHEN is at 9 rue de Mulhouse, 75002 Paris, in the Sentier. Two minutes on foot from Sentier metro (line 3), five from Bonne Nouvelle (lines 8 and 9) and Réaumur — Sébastopol (lines 3 and 4). Phone: +33 1 70 69 42 50."
+    },
+    "romanian": {
+      "q": "Where can I eat Romanian food in Paris?",
+      "a": "At IBRIK KITCHEN, 9 rue de Mulhouse, Paris 2nd. Chef Cathy Paraschiv, who came from Romania as a child, cooks the Romanian and Balkan recipes of mothers and grandmothers: sarmale, mici, mamaliga, papanasi. The restaurant is open Monday to Saturday, lunch and dinner."
     },
     "hours": {
-      "q": "What are Ibrik Kitchen's opening hours?",
-      "a": "Ibrik Kitchen is open Monday to Saturday: lunch from 12:00 to 15:30, dinner from 19:00 to 00:30. The restaurant is closed on Sundays."
+      "q": "What are IBRIK KITCHEN's opening hours?",
+      "a": "IBRIK KITCHEN is open Monday to Saturday: lunch from 12:00 to 15:30, dinner from 19:00 to 00:30. Closed on Sundays."
     },
     "cuisine": {
-      "q": "What kind of food does Ibrik Kitchen serve?",
-      "a": "Ibrik Kitchen serves Balkan food — Romanian, Greek, Serbian and Turkish — cooked with French bistronomy technique. The signature dishes are sarmale (cabbage leaves stuffed with Angus beef), mititei grilled over embers, chicken souvlaki, lamb shoulder marinated and cooked for seven hours, and papanași for dessert."
+      "q": "What kind of food does IBRIK KITCHEN serve?",
+      "a": "Balkan food: Romanian first, and with it the Greek, Serbian, Turkish and Ottoman heritage that meets in the region. The recipes of mothers and grandmothers are reworked with finesse, bistronomy-style. To try: sarmale (brined cabbage stuffed with Angus beef), mici grilled over embers, chicken souvlaki, seven-hour lamb shoulder, and papanasi for dessert."
+    },
+    "wine": {
+      "q": "Is there a Balkan restaurant with natural wine in Paris?",
+      "a": "Yes: IBRIK KITCHEN serves natural wines from Eastern Europe, chosen to go with Balkan food. The wine list runs to more than 40 references, with a wine of the month."
     },
     "booking": {
-      "q": "Do I need to book a table at Ibrik?",
-      "a": "Booking is recommended, especially for dinner and on Saturdays. You can book online through Zenchef, by phone on +33 1 70 69 42 50, or by email at bureau@ibrik.fr. The room often looks full when it is not — call us, there is nearly always a table left."
+      "q": "Do I need to book at IBRIK KITCHEN?",
+      "a": "It is a good idea, especially for dinner and on Saturdays. Book online through Zenchef, by phone on +33 1 70 69 42 50, or by email at bureau@ibrik.fr. The room often looks full when it isn't: call, there is nearly always a table."
     },
     "vegetarian": {
       "q": "Are there vegetarian dishes on the menu?",
-      "a": "Yes, at every service. Mezze: barbecue-smoked aubergine caviar, feta roasted with honey and hazelnuts, courgette fritter with feta, fennel risoni. Mains: pepper stuffed with pilaf rice, BLKN Avo' Toast, and souvlaki in a vegetarian version with feta. Vegetarian dishes are marked with a V on the menu."
+      "a": "Yes, at every service. Mezze: charred aubergine caviar, roasted feta, courgette fritter with feta, fennel risoni. Mains: pepper stuffed with pilaf rice, BLKN Avo' Toast, and a vegetarian souvlaki with feta. Vegetarian dishes are marked V on the menu."
     },
     "budget": {
       "q": "How much does a meal cost?",
       "a": "At lunch, set menus run from €25 (mezze + main, or main + dessert) to €33 (mezze + main + dessert). At dinner, à la carte: mezze €11 to €17, mains €14 to €33, desserts €11 to €14. Expect €40 to €55 per person, before drinks."
     },
     "groups": {
-      "q": "Can we come as a group or hire the whole restaurant?",
-      "a": "Yes. The big table — masa mare — seats 12 to 24 guests from €58 per person, served family-style across three courses. The whole restaurant can be hired for up to 60 people from €4,200. Ibrik also caters christenings and weddings. Write to bureau@ibrik.fr or call +33 1 70 69 42 50."
+      "q": "Can we come as a group or hire the restaurant?",
+      "a": "Yes. The long table, masa mare, seats 12 to 24 guests from €58 per person, three courses to share. The whole restaurant can be hired for up to 60 people from €4,200. IBRIK KITCHEN also caters christenings and weddings. Write to bureau@ibrik.fr or call +33 1 70 69 42 50."
     },
     "chef": {
-      "q": "Who is behind Ibrik Kitchen?",
-      "a": "Ecaterina, known to everyone as Cathy. Born in Bucharest, in Paris since she was six, a former doctor of tax law who left it all to cook what she missed. She opened Ibrik Café in 2018, then Ibrik Kitchen in the Sentier in 2019. The kitchen is run by a brigade of award-winning chefs."
+      "q": "Who is the chef at IBRIK KITCHEN?",
+      "a": "Cathy Paraschiv, born Ecaterina. She left Bucharest at six, when her parents fled the dictatorship, and built a career in tax law before leaving it to cook the food of her roots. She opened IBRIK, the café in the 9th, in 2018, then IBRIK KITCHEN, the restaurant on rue de Mulhouse, in 2019. She is the one cooking, and the place looks like her."
+    },
+    "cafe": {
+      "q": "Are IBRIK KITCHEN and the IBRIK café the same place?",
+      "a": "No. IBRIK KITCHEN is the restaurant, at 9 rue de Mulhouse, Paris 2nd: lunch and dinner, Monday to Saturday. IBRIK is the café, in the 9th arrondissement. Two separate addresses, from the same chef, Cathy Paraschiv."
     },
     "order": {
       "q": "What should I order on a first visit?",
-      "a": "Three dishes for two, shared. Start with the smoked aubergine caviar and the roasted feta, move on to the sarmale or the mititei straight off the embers, and finish with the pistachio cake — the house best-seller — and an IBRIK coffee brewed Balkan-style, which takes 5 to 10 minutes."
+      "a": "Three plates for two, shared. Aubergine caviar and roasted feta to start, sarmale or mici off the embers next, pistachio cake to finish. And an IBRIK coffee brewed Balkan-style, in the ibrik: allow 5 to 10 minutes."
     }
   },
   "MenusPage": {
-    "metaTitle": "Menus — Ibrik Kitchen, Paris Sentier",
-    "metaDescription": "Lunch, dinner and Saturday lunch menus at Ibrik Kitchen, 9 rue de Mulhouse, Paris 2. Spring 2026 — Balkan cuisine, mezze, mains and sweets.",
-    "title": "Three menus,\none kitchen.",
-    "lead": "Weekday lunch with a quick mezze + main formula, a longer dinner that lingers, and a slower Saturday lunch with sarmale and the patronne's seven-hour lamb if you ask in time.",
+    "metaTitle": "The menu — Balkan cooking · IBRIK KITCHEN Paris 2nd",
+    "metaDescription": "Sarmale, mici, mamaliga, papanasi: Balkan recipes reworked, with natural wines from Eastern Europe. The menu at IBRIK KITCHEN, Romanian restaurant in Paris.",
+    "title": "Three menus,\none Balkan kitchen.",
+    "lead": "Weekday lunch, with its set menus. Dinner, which takes its time. Saturday lunch, slower, with sarmale and the patronne's seven-hour lamb shoulder, if you ask in time.",
     "downloadPdf": "Download PDF →",
     "vegLegend": "V — vegetarian",
     "priceNote": "Prices in € · VAT included · service not included",
@@ -292,14 +305,14 @@
         },
         "pistache": {
           "name": "Pistachio cake (best-seller)",
-          "desc": "The Café's best-seller: Iranian pistachio cake, lemon-and-rose icing."
+          "desc": "IBRIK's best-seller: Iranian pistachio cake, lemon-and-rose icing."
         },
         "cozonac": {
           "name": "Cozonac (brioche)",
           "desc": "The Romanian brioche, filled with walnuts and raisins, cognac."
         },
         "papanasi": {
-          "name": "Papanași",
+          "name": "Papanasi",
           "desc": "Small fresh-cheese doughnuts, sour cream, seasonal fruit coulis."
         },
         "pavlova": {
@@ -379,7 +392,7 @@
           "desc": "Pistachio cake, rose and lemon icing."
         },
         "papanasi": {
-          "name": "Papanași",
+          "name": "Papanasi",
           "desc": "Romanian doughnuts, crème fraîche, red coulis, sesame."
         },
         "pavlova": {
@@ -447,18 +460,18 @@
         },
         "epaule_agneau": {
           "name": "Seven-hour lamb shoulder",
-          "desc": "Cathy's specialty. Ask us :)"
+          "desc": "The patronne's specialty. Ask for it in time."
         },
         "pistache": {
           "name": "Pistachio cake (best-seller)",
-          "desc": "The Café's best-seller: Iranian pistachio cake, lemon-and-rose icing."
+          "desc": "IBRIK's best-seller: Iranian pistachio cake, lemon-and-rose icing."
         },
         "cozonac": {
           "name": "Cozonac (brioche)",
           "desc": "The Romanian brioche, filled with walnuts and raisins, cognac."
         },
         "papanasi": {
-          "name": "Papanași",
+          "name": "Papanasi",
           "desc": "Small fresh-cheese doughnuts, sour cream, seasonal fruit coulis."
         },
         "pavlova": {
@@ -504,7 +517,7 @@
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",
     "care1": "Private events",
-    "copy": "© MMXXVI Ibrik Kitchen · made with poftă in Paris",
-    "tag": "★ Balkan · Carpathian to Aegean · Slow"
+    "copy": "© MMXXVI IBRIK KITCHEN · made with poftă in Paris",
+    "tag": "Balkan cooking · Paris 2nd"
   }
 }

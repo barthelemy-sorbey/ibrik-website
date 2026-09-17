@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <header className="hero" id="top">
       <div className="hero-meta">
-        <span>{t("meta")}</span>
+        <h1 className="hero-title">{t("meta")}</h1>
         <span className="sep" />
         <span>{t("metaRight")}</span>
       </div>
@@ -42,7 +42,7 @@ export default function Hero() {
             >
               <Image
                 src={logo}
-                alt="Ibrik Kitchen"
+                alt="IBRIK KITCHEN"
                 className="ibrik-logo"
                 priority
                 sizes="(max-width: 900px) 88vw, 42vw"

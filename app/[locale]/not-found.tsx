@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import OopsScreen from "../components/OopsScreen";
 
-export const metadata = { title: "404 — Ibrik Kitchen" };
+export const metadata = { title: "404 — IBRIK KITCHEN" };
 
 export default async function NotFound() {
   const t = await getTranslations("NotFound");

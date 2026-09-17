@@ -17,6 +17,7 @@ export default function About() {
             <div className="body reveal d2" style={{ marginTop: 30 }}>
               <p>{t.rich("p1", { em: (c) => <em>{c}</em> })}</p>
               <p>{t.rich("p2", { em: (c) => <em>{c}</em> })}</p>
+              <p>{t.rich("p3", { em: (c) => <em>{c}</em> })}</p>
               <p style={{ fontStyle: "italic", marginTop: 24 }}>
                 {t("signature")}
               </p>

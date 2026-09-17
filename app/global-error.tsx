@@ -14,7 +14,7 @@ export default function GlobalError({
   return (
     <html lang="en">
       <body>
-        <title>500 — Ibrik Kitchen</title>
+        <title>500 — IBRIK KITCHEN</title>
         <section className="section s-oops s-oops--bare">
           <div className="wrap">
             <div className="oops-row">
