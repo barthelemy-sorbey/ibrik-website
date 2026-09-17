@@ -3,7 +3,7 @@ import { routing } from "../../i18n/routing";
 
 /**
  * Canonical origin of the site. Production answers on the apex domain
- * (www.ibrik.fr does not resolve), so canonicals, hreflang, sitemap and
+ * (www.ibrik.fr is only an OVH 301 to it), so canonicals, hreflang, sitemap and
  * JSON-LD must all point here — not to the preview host a build runs on.
  */
 export const SITE_URL = "https://ibrik.fr";
