@@ -10,7 +10,6 @@
     "visit": "Visit",
     "reserve": "Reserve a table",
     "switchTo": "FR",
-    "offers": "Offers",
     "gallery": "Gallery",
     "faq": "FAQ",
     "openMenu": "Open menu",
@@ -68,26 +67,6 @@
     "foot": "Prices in € · VAT included",
     "pdf": "See the full menu →",
     "tagSignature": "signature"
-  },
-  "Offers": {
-    "eyebrow": "Lunch · la prânz",
-    "titlePre": "Lunch for\n",
-    "titleAccent": "less.",
-    "lead": "Two offers for our Sentier neighbours, to eat Balkan without blowing the budget. Monday to Saturday, 12:00 — 15:30.",
-    "neighbours": {
-      "name": "Office neighbours",
-      "ro": "vecinii",
-      "desc": "Work in the neighbourhood? Tell us when you arrive and take 10% off your lunch, any day of the week.",
-      "terms": "Neighbours · dine in · lunch · Mon — Sat"
-    },
-    "secondService": {
-      "name": "Second sitting",
-      "ro": "al doilea serviciu",
-      "desc": "Neighbours, sit down at 13:30, when the room breathes and the kitchen has time. That is 20% off your lunch.",
-      "terms": "Neighbours · dine in · from 13:30 · Mon — Sat"
-    },
-    "note": "Offers for office neighbours only · cannot be combined. The mezze + main set lunch is €25 — €20 at the second sitting.",
-    "cta": "See the lunch menu →"
   },
   "Press": {
     "title": "They keep\ncoming back.",
@@ -199,7 +178,7 @@
   "Faq": {
     "eyebrow": "Good to know · întrebări",
     "title": "Your questions,\nanswered.",
-    "lead": "Address, opening hours, bookings, lunch offers and what to order — the things people ask us most.",
+    "lead": "Address, opening hours, bookings, vegetarian dishes and what to order — the things people ask us most.",
     "more": "Something we haven't covered?",
     "moreMenus": "See the full menu →",
     "morePhone": "Call the restaurant →",
@@ -218,10 +197,6 @@
     "booking": {
       "q": "Do I need to book a table at Ibrik?",
       "a": "Booking is recommended, especially for dinner and on Saturdays. You can book online through Zenchef, by phone on +33 1 70 69 42 50, or by email at bună@ibrik.fr. The room often looks full when it is not — call us, there is nearly always a table left."
-    },
-    "lunchDeals": {
-      "q": "Are there any lunch offers at Ibrik Kitchen?",
-      "a": "Yes, two lunch offers, Monday to Saturday, for people who work in the Sentier neighbourhood. Office neighbours get 10% off their lunch, and 20% off by sitting down at the second sitting, from 13:30. The two offers do not combine: it is either 10% or 20%. The mezze + main set lunch is €25, so €20 at the second sitting."
     },
     "vegetarian": {
       "q": "Are there vegetarian dishes on the menu?",

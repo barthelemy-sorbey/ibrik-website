@@ -10,7 +10,6 @@
     "visit": "Nous trouver",
     "reserve": "Réserver une table",
     "switchTo": "EN",
-    "offers": "Offres",
     "gallery": "Galerie",
     "faq": "FAQ",
     "openMenu": "Ouvrir le menu",
@@ -68,26 +67,6 @@
     "foot": "Prix en € · TTC",
     "pdf": "Voir la carte complète →",
     "tagSignature": "signature"
-  },
-  "Offers": {
-    "eyebrow": "Le midi · la prânz",
-    "titlePre": "Le déjeuner\n",
-    "titleAccent": "à prix doux.",
-    "lead": "Deux offres réservées à nos voisins du Sentier, pour déjeuner balkanique sans y laisser le budget. Du lundi au samedi, de 12h00 à 15h30.",
-    "neighbours": {
-      "name": "Voisins de bureau",
-      "ro": "vecinii",
-      "desc": "Vous travaillez dans le quartier ? Dites-le-nous en arrivant et repartez avec 10% de remise sur votre déjeuner, toute la semaine.",
-      "terms": "Voisins · sur place · au déjeuner · lun — sam"
-    },
-    "secondService": {
-      "name": "Second service",
-      "ro": "al doilea serviciu",
-      "desc": "Voisins du quartier, passez à table à 13h30, quand la salle respire et que la cuisine a le temps. C'est 20% de remise sur votre déjeuner.",
-      "terms": "Voisins · sur place · à partir de 13h30 · lun — sam"
-    },
-    "note": "Offres réservées aux voisins de bureau · non cumulables. Formule mezze + plat à 25 € — soit 20 € au second service.",
-    "cta": "Voir la carte du midi →"
   },
   "Press": {
     "title": "Ils\nreviennent.",
@@ -199,7 +178,7 @@
   "Faq": {
     "eyebrow": "Bon à savoir · întrebări",
     "title": "Vos questions,\nnos réponses.",
-    "lead": "Adresse, horaires, réservations, offres du midi et plats à ne pas manquer — tout ce qu'on nous demande le plus souvent.",
+    "lead": "Adresse, horaires, réservations, carte végétarienne et plats à ne pas manquer — tout ce qu'on nous demande le plus souvent.",
     "more": "Une question qui n'est pas là ?",
     "moreMenus": "Voir toute la carte →",
     "morePhone": "Appeler le restaurant →",
@@ -218,10 +197,6 @@
     "booking": {
       "q": "Faut-il réserver une table chez Ibrik ?",
       "a": "La réservation est recommandée, surtout le soir et le samedi. Vous pouvez réserver en ligne via Zenchef, par téléphone au +33 1 70 69 42 50 ou par e-mail à bună@ibrik.fr. La salle paraît souvent complète alors qu'elle ne l'est pas : appelez-nous, il reste presque toujours une table."
-    },
-    "lunchDeals": {
-      "q": "Y a-t-il des offres le midi chez Ibrik Kitchen ?",
-      "a": "Oui, deux offres au déjeuner, du lundi au samedi, réservées aux personnes qui travaillent dans le quartier du Sentier. Nos voisins de bureau bénéficient de 10% de remise sur leur déjeuner, et de 20% de remise en s'installant au second service, à partir de 13h30. Les deux offres ne se cumulent pas : c'est soit 10%, soit 20%. La formule mezze + plat est à 25 €, soit 20 € au second service."
     },
     "vegetarian": {
       "q": "Y a-t-il des plats végétariens à la carte ?",
