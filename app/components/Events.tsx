@@ -60,10 +60,10 @@ export default function Events() {
                   <span className="num">{e.num}</span>
                   <span className="rule" aria-hidden="true" />
                 </div>
-                <h4>
+                <h3>
                   {e.name}
                   <span className="ro"> — {e.ro}</span>
-                </h4>
+                </h3>
                 <div className="meta">{e.meta}</div>
                 <div className="cap">{e.cap}</div>
               </div>

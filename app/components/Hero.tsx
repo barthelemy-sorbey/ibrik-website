@@ -1,13 +1,19 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { preload } from "react-dom";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "../../i18n/navigation";
 import logo from "../../public/brand/ibrik-kitchen-logo.png";
 
+const HERO_POSTER = "/brand/ibrik-hero-poster.webp";
+
 export default function Hero() {
   const t = useTranslations("Hero");
+  // The poster is the hero's largest paint: let the browser fetch it with the
+  // HTML instead of discovering it once the <video> is parsed.
+  preload(HERO_POSTER, { as: "image", fetchPriority: "high" });
   const wmRef = useRef<HTMLDivElement | null>(null);
   const [scroll, setScroll] = useState(0);
 
@@ -75,7 +81,7 @@ export default function Hero() {
             loop
             playsInline
             preload="metadata"
-            poster="/brand/ibrik-hero-poster.jpg"
+            poster={HERO_POSTER}
             aria-hidden="true"
             tabIndex={-1}
           >

@@ -7,7 +7,7 @@
   --ink: #15110b;
   --ink-soft: #2a241a;
   --green: #0f4d33;
-  --tomato: #DC360B;
+  --tomato: #C9300A; /* darkened from #DC360B for AA contrast with cream */
   --navy: #1b2c4e;
   --orange: #e58a44;
   --lilac: #c9b8e3;
@@ -699,7 +699,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   flex: 1; height: 1px;
   background: rgba(244, 232, 213, 0.25);
 }
-.events-card h4 {
+.events-card h3 {
   margin: 0;
   font-family: var(--font-serif);
   font-size: 24px; line-height: 1.2; font-weight: 500;
@@ -725,7 +725,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   .events-row { grid-template-columns: 1fr; gap: 30px; }
   .events-card { padding: 22px 22px 20px; }
   .events-card .num { font-size: 38px; }
-  .events-card h4 { font-size: 21px; }
+  .events-card h3 { font-size: 21px; }
 }
 
 /* ---- RESERVE ---- */
@@ -874,7 +874,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   margin-bottom: 80px;
 }
 @media (max-width: 900px) { .loc-row { grid-template-columns: 1fr; gap: 30px; } }
-.loc-block h4 {
+.loc-block h3 {
   margin: 0 0 14px;
   font-family: var(--font-mono); font-size: 11px;
   letter-spacing: 0.22em; text-transform: uppercase;
@@ -916,7 +916,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   padding-top: 30px;
 }
 @media (max-width: 900px) { .foot .row { grid-template-columns: 1fr 1fr; } }
-.foot .col h5 {
+.foot .col h2 {
   margin: 0 0 12px;
   font-family: var(--font-mono); font-size: 11px;
   letter-spacing: 0.22em; text-transform: uppercase;
@@ -929,7 +929,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   display: flex; justify-content: space-between; align-items: center;
   font-family: var(--font-mono); font-size: 10.5px;
   letter-spacing: 0.18em; text-transform: uppercase;
-  color: rgba(246,241,221,.45);
+  color: rgba(246,241,221,.6);
   flex-wrap: wrap; gap: 10px;
 }
 
