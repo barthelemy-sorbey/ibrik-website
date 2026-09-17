@@ -1131,17 +1131,26 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
-.menu-item { position: relative; }
+/* /menus: stacked name → price → description. Overrides the homepage
+   .menu-item grid, which squeezed each text into a narrow column. */
+.menu-section-grid .menu-item {
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 0 0 22px;
+  align-items: stretch;
+}
 .menu-item-head {
-  display: flex; align-items: baseline; justify-content: space-between;
-  gap: 16px; margin-bottom: 4px;
+  display: flex; flex-direction: column; align-items: flex-start;
+  gap: 4px;
+  padding-right: 22px; /* room for the signature star */
 }
 .menu-item-name {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 1.25;
   margin: 0;
   letter-spacing: -0.005em;
+  text-wrap: balance;
 }
 .menu-item-veg {
   font-family: var(--font-mono);
@@ -1154,7 +1163,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   font-family: var(--font-mono);
   font-size: 13px;
   letter-spacing: 0.04em;
-  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 .menu-item-price small {
   font-size: 10px; opacity: 0.65;
@@ -1167,14 +1176,14 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   letter-spacing: 0;
 }
 .menu-item-desc {
-  font-size: 14.5px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.55;
   margin: 0;
   opacity: 0.78;
   max-width: 50ch;
 }
 .menu-item-tag {
-  position: absolute; top: -2px; right: -16px;
+  position: absolute; top: 0; right: 0;
   color: var(--tomato);
   font-size: 14px;
 }
@@ -1229,7 +1238,6 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   .menus-page { padding-top: 100px; }
   .menu-block-head { flex-direction: column; align-items: flex-start; gap: 12px; }
   .menu-block-pdf { font-size: 10.5px; }
-  .menu-item-tag { right: 0; }
 }
 
 /* ============ ORACLE / CRYSTAL BALL ============ */
