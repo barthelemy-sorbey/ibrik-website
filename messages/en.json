@@ -23,7 +23,8 @@
     "blurb": "A loud, warm Balkan kitchen in the Sentier. Slow food from the Carpathians to the Aegean, from somebody's <em>bunică</em>'s back garden — cooked the way it has always been cooked.",
     "scroll": "Scroll · derulează",
     "reserveCta": "Reserve now",
-    "menusCta": "See the menu"
+    "menusCta": "See the menu",
+    "takeaway": "Eat in or take away · la pachet"
   },
   "CrystalBall": {
     "eyebrow": "The Ibrik oracle",
@@ -107,6 +108,8 @@
     "directEyebrow": "Or get in touch · scrieți-ne",
     "callLabel": "Call · sunați",
     "emailLabel": "Email · scrieți",
+    "takeawayEyebrow": "Takeaway · la pachet",
+    "takeawayText": "Eating at home tonight? The whole menu is also available to take away — drop by or give us a call to order.",
     "asideStamp": "Always\na seat.",
     "asideP1": "Looks busy? It often does — there's almost always room for one more. Call without hesitating.",
     "asideP2": "Large parties, last-minute, surprise birthdays: tell us and we'll make it work."
