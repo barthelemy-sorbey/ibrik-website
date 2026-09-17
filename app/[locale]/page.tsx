@@ -7,7 +7,6 @@ import Hero from "../components/Hero";
 import CrystalBall from "../components/CrystalBall";
 import About from "../components/About";
 import Menu from "../components/Menu";
-import Offers from "../components/Offers";
 import Press from "../components/Press";
 import Events from "../components/Events";
 import Reserve from "../components/Reserve";
@@ -48,7 +47,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <Hero />
       <About />
       <Menu />
-      <Offers />
       <Press />
       <Events />
       <Reserve />

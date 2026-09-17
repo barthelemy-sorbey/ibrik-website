@@ -8,7 +8,6 @@ export const FAQ_IDS = [
   "hours",
   "cuisine",
   "booking",
-  "lunchDeals",
   "vegetarian",
   "budget",
   "groups",

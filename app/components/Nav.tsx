@@ -14,7 +14,6 @@ export default function Nav() {
       <div className="nav-links">
         <Link href="/#about">{t("story")}</Link>
         <Link href="/menus">{t("menu")}</Link>
-        <Link href="/#offers">{t("offers")}</Link>
         <Link href="/#events">{t("events")}</Link>
         <Link href="/#visit">{t("visit")}</Link>
       </div>

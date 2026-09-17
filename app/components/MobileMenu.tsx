@@ -8,7 +8,6 @@ import LocaleSwitcher from "./LocaleSwitcher";
 const LINKS = [
   { href: "/#about", key: "story" },
   { href: "/menus", key: "menu" },
-  { href: "/#offers", key: "offers" },
   { href: "/#events", key: "events" },
   // { href: "/#gallery", key: "gallery" }, // hidden while the gallery is off
   { href: "/#faq", key: "faq" },
