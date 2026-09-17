@@ -18,7 +18,6 @@ export type MenuData = {
   id: "lunch" | "dinner" | "saturday";
   sections: MenuSectionData[];
   formulas?: { id: string; price: number }[];
-  drinks?: MenuSectionData[];
 };
 
 export const LUNCH_MENU: MenuData = {
@@ -153,44 +152,6 @@ export const SATURDAY_MENU: MenuData = {
         { id: "cozonac" },
         { id: "papanasi" },
         { id: "pavlova", supplement: 3 },
-      ],
-    },
-  ],
-  drinks: [
-    {
-      id: "cold",
-      items: [
-        { id: "bissap", price: 5.5 },
-        { id: "the_glace", price: 5.5 },
-        { id: "citronnade", price: 5.5 },
-        { id: "framboise", price: 6 },
-        { id: "biere", price: 8 },
-        { id: "cafe_glace", price: 4 },
-      ],
-    },
-    {
-      id: "hot",
-      items: [
-        { id: "espresso", price: 3.5 },
-        { id: "latte", price: 5.5 },
-        { id: "cafe_ibrik", price: 6.5, tags: ["signature"] },
-        { id: "thes", price: 5.5 },
-        { id: "the_menthe", price: 6 },
-        { id: "choco", price: 6 },
-      ],
-    },
-    {
-      id: "wines",
-      items: [
-        { id: "vin_mois", price: 8.5 },
-        { id: "vins_carte", ask: true },
-      ],
-    },
-    {
-      id: "waters",
-      items: [
-        { id: "eau_plate", price: 7 },
-        { id: "eau_petillante", price: 9 },
       ],
     },
   ],

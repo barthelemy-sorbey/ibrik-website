@@ -33,7 +33,6 @@ export default function Footer() {
             <Link href="/menus#lunch">{t("menuStarters")}</Link>
             <Link href="/menus#dinner">{t("menuMains")}</Link>
             <Link href="/menus#saturday">{t("menuSweets")}</Link>
-            <Link href="/menus#saturday-drinks">{t("menuDrinks")}</Link>
           </div>
           <div className="col">
             <h5>{t("follow")}</h5>
