@@ -50,9 +50,9 @@ export default function Reserve() {
                   <span className="reserve-direct-kind">{t("callLabel")}</span>
                   <span className="reserve-direct-value">+33 1 70 69 42 50</span>
                 </a>
-                <a href="mailto:bună@ibrik.fr" className="reserve-direct-link">
+                <a href="mailto:bureau@ibrik.fr" className="reserve-direct-link">
                   <span className="reserve-direct-kind">{t("emailLabel")}</span>
-                  <span className="reserve-direct-value">bună@ibrik.fr</span>
+                  <span className="reserve-direct-value">bureau@ibrik.fr</span>
                 </a>
               </div>
             </div>
