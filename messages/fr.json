@@ -53,13 +53,13 @@
     "title": "Une cuisine\ndes Balkans.",
     "stamp": "poftă bună —",
     "p1": "« IBRIK KITCHEN n'est pas seulement un restaurant, il est l'incarnation d'une façon de vivre, une façon d'être qui s'affranchit des codes pour permettre à toutes et à tous de se sentir soi — tels que nous sommes dans les Balkans. »",
-    "p2": "Cathy Paraschiv est arrivée de Roumanie enfant, quand sa famille fuyait la dictature. Ancienne juriste, elle a quitté le droit pour la cuisine : un retour aux origines, et une transmission. Après IBRIK, le café du 9e, elle ouvre IBRIK KITCHEN rue de Mulhouse. C'est elle qui cuisine, et la maison lui ressemble.",
+    "p2": "Ecaterina Paraschiv, que tout le monde appelle Cathy, quitte Bucarest à six ans, quand ses parents fuient la dictature pour refaire leur vie en France. Après des années dans le droit fiscal, elle écoute un appel plus ancien et se met à cuisiner ce qui lui manquait. Le nom vient de sa grand-mère : l'<em>ibrik</em>, ce petit pot de cuivre où elle préparait le café, et au fond duquel elle prétendait lire l'avenir. IBRIK, le café du 9e, ouvre en 2018 ; IBRIK KITCHEN, rue de Mulhouse, suit en 2019. C'est elle qui cuisine, et la maison lui ressemble.",
     "signature": "— Cathy Paraschiv, cheffe",
     "photoCap1": "Cathy",
     "photoCap2": "L'ibrik",
     "photoAlt1": "La cheffe Cathy Paraschiv dans la cuisine d'IBRIK KITCHEN, Paris 2e",
     "photoAlt2": "Ibrik en cuivre sur le feu pour le café des Balkans, IBRIK KITCHEN, Paris 2e",
-    "p3": "Ses recettes sont celles des mères et des grands-mères — <em>sarmale</em>, <em>mici</em>, <em>mamaliga</em>, <em>papanasi</em> — retravaillées avec finesse et servies avec des vins naturels d'Europe de l'Est. Les Balkans ne sont pas une frontière mais un passage : l'Orient y entre dans l'Occident, et la cuisine en garde la carte."
+    "p3": "Sa cuisine voit les Balkans comme un carrefour plutôt qu'une frontière : les <em>sarmale</em> descendent des dolma turcs, la <em>mamaliga</em> répond à la polenta, le café arrive d'Istanbul. Les recettes des mères et des grands-mères — <em>mici</em>, <em>papanasi</em> — y sont retravaillées d'un geste direct, hérité de son père peintre : retirer le superflu jusqu'à l'essentiel. Avec des vins naturels d'Europe de l'Est, et une idée tranquille : <em>les Balkans sont la maison de tout le monde.</em>"
   },
   "Menu": {
     "titlePre": "Nos plats : ",
@@ -224,7 +224,7 @@
     },
     "chef": {
       "q": "Qui est la cheffe d'IBRIK KITCHEN ?",
-      "a": "Cathy Paraschiv. Arrivée de Roumanie enfant, quand sa famille fuyait la dictature, ancienne juriste, elle a quitté le droit pour cuisiner les recettes de ses origines. Elle a d'abord ouvert IBRIK, le café du 9e, puis IBRIK KITCHEN, le restaurant de la rue de Mulhouse. C'est elle qui cuisine, et la maison lui ressemble."
+      "a": "Cathy Paraschiv, de son prénom Ecaterina. Elle quitte Bucarest à six ans, quand ses parents fuient la dictature, puis fait carrière dans le droit fiscal avant de tout quitter pour cuisiner les recettes de ses origines. Elle ouvre IBRIK, le café du 9e, en 2018, puis IBRIK KITCHEN, le restaurant de la rue de Mulhouse, en 2019. C'est elle qui cuisine, et la maison lui ressemble."
     },
     "cafe": {
       "q": "IBRIK KITCHEN et le café IBRIK, est-ce la même adresse ?",
