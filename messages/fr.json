@@ -24,7 +24,8 @@
     "blurb": "Une cuisine balkanique, bruyante et chaleureuse, au cœur du Sentier. Cuisine lente des Carpates à l'Égée, du jardin de la <em>bunică</em> de quelqu'un — préparée comme on l'a toujours fait.",
     "scroll": "Défiler · derulează",
     "reserveCta": "Réserver maintenant",
-    "menusCta": "Voir la carte"
+    "menusCta": "Voir la carte",
+    "takeaway": "Sur place ou à emporter · la pachet"
   },
   "CrystalBall": {
     "eyebrow": "L'oracle d'Ibrik",
@@ -128,6 +129,8 @@
     "directEyebrow": "Ou écrivez-nous · scrieți-ne",
     "callLabel": "Appelez · sunați",
     "emailLabel": "Écrivez · scrieți",
+    "takeawayEyebrow": "À emporter · la pachet",
+    "takeawayText": "Envie de manger chez vous ? Toute la carte est aussi à emporter — passez au restaurant ou appelez-nous pour commander.",
     "asideStamp": "Toujours\nune place.",
     "asideP1": "La salle a l'air pleine ? Ça arrive souvent — on a presque toujours de quoi vous installer. Appelez sans hésiter.",
     "asideP2": "Grandes tablées, dernière minute, anniversaires improvisés : dites-le-nous, on s'arrange."

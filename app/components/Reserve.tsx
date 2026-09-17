@@ -55,6 +55,10 @@ export default function Reserve() {
                   <span className="reserve-direct-value">bună@ibrik.fr</span>
                 </a>
               </div>
+              <p className="reserve-takeaway">
+                <span className="reserve-eyebrow">{t("takeawayEyebrow")}</span>
+                {t("takeawayText")}
+              </p>
             </div>
           </div>
 
