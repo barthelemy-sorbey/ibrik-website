@@ -102,7 +102,7 @@
   "Reserve": {
     "titlePre": "Réserver\n",
     "titleAccent": "une table.",
-    "lead": "Tout le monde est le bienvenu. Même si la salle est pleine, demandez-nous, on vous trouve presque toujours une place.",
+    "lead": "Tout le monde est la bienvenue.",
     "onlineEyebrow": "En ligne · online",
     "onlineCta": "Réserver via Zenchef",
     "or": "ou",
@@ -112,7 +112,7 @@
     "takeawayEyebrow": "À emporter · la pachet",
     "takeawayText": "Envie de manger chez vous ? Toute la carte est aussi à emporter — passez au restaurant ou appelez-nous pour commander.",
     "asideStamp": "Toujours\nune place.",
-    "asideP1": "La salle a l'air pleine ? Appelez quand même : il y a presque toujours de quoi vous installer.",
+    "asideP1": "La salle a l'air pleine ? Appelez quand même : on vous trouve toujours une place.",
     "asideP2": "Grandes tablées, dernière minute, anniversaire improvisé : dites-le-nous, on s'arrange."
   },
   "Video": {
