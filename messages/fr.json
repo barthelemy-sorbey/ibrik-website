@@ -89,11 +89,11 @@
     "card1Name": "Masa mare",
     "card1Ro": "la grande table",
     "card1Meta": "12–24 convives · salle du fond · 3 services à partager",
-    "card1Cap": "Dès 58 € / pers",
+    "card1Cap": "Sur devis",
     "card2Name": "Privatisation",
     "card2Ro": "tous ensemble",
     "card2Meta": "Jusqu'à 60 convives · restaurant entier · carte sur mesure avec la cuisine",
-    "card2Cap": "Dès 4 200 €",
+    "card2Cap": "Sur devis",
     "card3Name": "Botez & Nuntă",
     "card3Ro": "baptême & mariage",
     "card3Meta": "Traiteur · sarmale par centaines · țuică à la caisse",
@@ -221,7 +221,7 @@
     },
     "groups": {
       "q": "Peut-on venir en groupe ou privatiser le restaurant ?",
-      "a": "Oui. La grande table, masa mare, reçoit 12 à 24 convives dès 58 € par personne, en trois services à partager. Le restaurant entier se privatise jusqu'à 60 personnes, dès 4 200 €. IBRIK KITCHEN cuisine aussi pour les baptêmes et les mariages. Écrivez à bureau@ibrik.fr ou appelez le +33 1 70 69 42 50."
+      "a": "Oui. La grande table, masa mare, reçoit 12 à 24 convives, en trois services à partager. Le restaurant entier se privatise jusqu'à 60 personnes. IBRIK KITCHEN cuisine aussi pour les baptêmes et les mariages. Écrivez à bureau@ibrik.fr ou appelez le +33 1 70 69 42 50."
     },
     "chef": {
       "q": "Qui est la cheffe d'IBRIK KITCHEN ?",
