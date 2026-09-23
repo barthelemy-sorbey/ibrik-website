@@ -217,7 +217,7 @@
     },
     "budget": {
       "q": "How much does a meal cost?",
-      "a": "At lunch, set menus run from €25 (mezze + main, or main + dessert) to €33 (mezze + main + dessert). At dinner, à la carte: mezze €11 to €17, mains €14 to €33, desserts €11 to €14. Expect €40 to €55 per person, before drinks."
+      "a": "At lunch, set menus run from €25 (mezze + main, or main + dessert) to €33 (mezze + main + dessert). At dinner, à la carte: mezze €11 to €17, mains €14 to €33, desserts €11 to €14. Expect €40 to €55 per person."
     },
     "groups": {
       "q": "Can we come as a group or hire the restaurant?",
