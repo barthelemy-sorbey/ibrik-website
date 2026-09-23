@@ -13,6 +13,7 @@
   --lilac: #c9b8e3;
   --pink: #f0a4a0;
   --sky: #b7d9f5;
+  --green-deep: #0c4129; /* panneaux posés sur le motif vert */
   --orange-deep: #8f4a10; /* orange lisible sur crème (AA), le clair reste au motif */
 
   --font-display: var(--font-formula-condensed), "Bowlby One", Impact, sans-serif;
@@ -518,12 +519,22 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   line-height: 1;
   color: var(--orange);
 }
-.s-about .body { font-size: 18px; line-height: 1.65; max-width: 52ch; }
+.s-about .body {
+  font-size: 18px; line-height: 1.65;
+  max-width: 52ch;
+  background: var(--green-deep);
+  border: 1px solid rgba(143, 188, 168, 0.22);
+  border-radius: 4px;
+  padding: 32px 34px 30px;
+}
 .s-about .body p { margin: 0 0 18px; }
+.s-about .body p:last-child { margin-bottom: 0; }
 .s-about .body em { color: var(--orange); font-style: italic; }
 .s-about .pic-col { display: flex; flex-direction: column; gap: 22px; }
 .s-about .photo-card {
   border: 1.5px solid var(--cream-light);
+  background: var(--green-deep);
+  border-radius: 4px;
   padding: 10px;
 }
 .s-about .photo-card .cap {
@@ -535,7 +546,10 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   padding-top: 8px;
   opacity: .7;
 }
-@media (max-width: 900px) { .s-about .row { grid-template-columns: 1fr; gap: 40px; } }
+@media (max-width: 900px) {
+  .s-about .row { grid-template-columns: 1fr; gap: 40px; }
+  .s-about .body { padding: 24px 22px 22px; }
+}
 
 /* ---- MENU ---- */
 .s-menu {
