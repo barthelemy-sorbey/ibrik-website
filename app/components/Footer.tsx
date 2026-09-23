@@ -51,10 +51,6 @@ export default function Footer() {
               {t("follow2")}
             </a>
           </div>
-          <div className="col">
-            <h2>{t("careOf")}</h2>
-            <a>{t("care1")}</a>
-          </div>
         </div>
         <div className="bottom">
           <span>{t("copy")}</span>
