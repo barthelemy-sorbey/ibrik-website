@@ -52,13 +52,13 @@
     transparent 64px 130px,
     rgba(15, 77, 51, 0.14) 130px 132px
   );
-  /* cercles quadrillés */
-  --checks:
-    radial-gradient(circle at 0 0, rgba(251, 247, 232, 0.95) 46%, transparent 47%),
-    radial-gradient(circle at 100% 0, rgba(251, 247, 232, 0.95) 46%, transparent 47%),
-    radial-gradient(circle at 0 100%, rgba(251, 247, 232, 0.95) 46%, transparent 47%),
-    radial-gradient(circle at 100% 100%, rgba(251, 247, 232, 0.95) 46%, transparent 47%),
-    radial-gradient(circle at 50% 50%, rgba(251, 247, 232, 0.95) 46%, transparent 47%);
+  /* cercles quadrillés, colorway sauge sur vert profond (planche 9 du brandbook) */
+  --checks-sage:
+    radial-gradient(circle at 0 0, rgba(143, 188, 168, 0.13) 46%, transparent 47%),
+    radial-gradient(circle at 100% 0, rgba(143, 188, 168, 0.13) 46%, transparent 47%),
+    radial-gradient(circle at 0 100%, rgba(143, 188, 168, 0.13) 46%, transparent 47%),
+    radial-gradient(circle at 100% 100%, rgba(143, 188, 168, 0.13) 46%, transparent 47%),
+    radial-gradient(circle at 50% 50%, rgba(143, 188, 168, 0.13) 46%, transparent 47%);
   /* moulin à vent (quadrants alternés) */
   --pinwheel: conic-gradient(
     from 0deg at 50% 50%,
@@ -499,7 +499,14 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 .section .lead em { font-style: italic; }
 
 /* ---- ABOUT ---- */
-.s-about { background: var(--green); color: var(--cream-light); }
+.s-about {
+  /* colorway vert du brandbook : cercles sauge sur vert profond.
+     Assez sourd pour garder le texte crème au-dessus de 7:1. */
+  background-color: var(--green);
+  background-image: var(--checks-sage);
+  background-size: 48px 48px;
+  color: var(--cream-light);
+}
 .s-about h2.display { color: var(--cream-light); }
 .s-about .row {
   display: grid; grid-template-columns: 1.1fr .9fr; gap: 80px;
