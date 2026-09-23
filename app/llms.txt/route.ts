@@ -24,8 +24,8 @@ const body = `# IBRIK KITCHEN
 >
 > ${en.Hero.blurb}
 
-IBRIK KITCHEN est le restaurant ; IBRIK est le café de la même cheffe, dans le 9e arrondissement. Deux adresses distinctes.
-IBRIK KITCHEN is the restaurant; IBRIK is the café run by the same chef, in the 9th arrondissement. Two separate places.
+IBRIK KITCHEN est le restaurant, 9 rue de Mulhouse, Paris 2e ; IBRIK, le café de la même cheffe dans le 9e arrondissement, a fermé.
+IBRIK KITCHEN is the restaurant, 9 rue de Mulhouse, Paris 2nd; IBRIK, the same chef's café in the 9th arrondissement, has closed.
 
 ## Informations pratiques · Key facts
 

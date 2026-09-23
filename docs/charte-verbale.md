@@ -106,7 +106,8 @@ concept · branché · « cuisine du monde »
   rich text) et orthographiés : *sarmale* (pluriel), *mici*, *mamaliga*, *papanasi*.
   Les noms imprimés sur la carte (ex. « Mititei ») restent tels quels dans `MenusPage`.
 - Deux adresses à ne jamais confondre : **IBRIK KITCHEN** (restaurant, 9 rue de
-  Mulhouse, Paris 2e) et **IBRIK** (café, Paris 9e).
+  Mulhouse, Paris 2e) et **IBRIK** (café, Paris 9e), aujourd'hui fermé. Au présent,
+  ne parler que du restaurant.
 - Le fond mystique se dit comme l'âme culturelle des Balkans, pas comme une
   croyance personnelle.
 
