@@ -217,7 +217,7 @@
     },
     "budget": {
       "q": "Quel budget prévoir pour un repas ?",
-      "a": "Le midi, les formules vont de 25 € (mezze + plat, ou plat + dessert) à 33 € (mezze + plat + dessert). Le soir, à la carte : mezze de 11 à 17 €, plats de 14 à 33 €, desserts de 11 à 14 €. Comptez 40 à 55 € par personne, hors boissons."
+      "a": "Le midi, les formules vont de 25 € (mezze + plat, ou plat + dessert) à 33 € (mezze + plat + dessert). Le soir, à la carte : mezze de 11 à 17 €, plats de 14 à 33 €, desserts de 11 à 14 €. Comptez 40 à 55 € par personne."
     },
     "groups": {
       "q": "Peut-on venir en groupe ou privatiser le restaurant ?",
