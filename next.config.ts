@@ -34,7 +34,7 @@ const LEGACY_REDIRECTS: { source: string; destination: string }[] = [
   // Le café du 9e a fermé : la FAQ l'explique et lève la confusion des deux adresses.
   { source: "/ibrik-cafe-coffee-paris-9", destination: "/fr#faq" },
   { source: "/credits", destination: "/fr" },
-  { source: "/mentions-legales", destination: "/fr" },
+  { source: "/mentions-legales", destination: "/fr/legal" },
   { source: "/cgv", destination: "/fr" },
 
   // Boutique WooCommerce, fermée avec l'ancien site

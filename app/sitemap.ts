@@ -2,9 +2,10 @@ import type { MetadataRoute } from "next";
 import { routing } from "../i18n/routing";
 import { languageAlternates, localizedUrl } from "./lib/seo";
 
-const PAGES: { path: string; changeFrequency: "weekly" | "monthly"; priority: number }[] = [
+const PAGES: { path: string; changeFrequency: "weekly" | "monthly" | "yearly"; priority: number }[] = [
   { path: "", changeFrequency: "weekly", priority: 1 },
   { path: "/menus", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/legal", changeFrequency: "yearly", priority: 0.1 },
 ];
 
 // One entry per localised URL, each listing every language version, as

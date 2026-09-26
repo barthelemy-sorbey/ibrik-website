@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { routing } from "../../i18n/routing";
 import { buildPageMetadata } from "../lib/seo";
 import ZenchefFrameTitle from "../components/ZenchefFrameTitle";
+import CookieConsent from "../components/CookieConsent";
 import "../globals.css";
 
 // WOFF2 subsets (Latin + Latin Extended, for Romanian diacritics). Only the
@@ -75,6 +76,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           {children}
           <ZenchefFrameTitle />
+          <CookieConsent />
         </NextIntlClientProvider>
         <Analytics />
       </body>

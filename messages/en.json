@@ -519,6 +519,78 @@
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",
     "copy": "© MMXXVI IBRIK KITCHEN · made with poftă in Paris",
-    "tag": "Balkan cooking · Paris 2nd"
+    "tag": "Balkan cooking · Paris 2nd",
+    "legal": "Legal notice"
+  },
+  "CookieConsent": {
+    "label": "Cookies",
+    "text": "With your consent, we measure visits to this site with Google Analytics, which sets cookies. The site works just as well without it.",
+    "decline": "Decline",
+    "accept": "Accept",
+    "settings": "Cookies",
+    "more": "Learn more"
+  },
+  "LegalPage": {
+    "metaTitle": "Legal notice and privacy · IBRIK KITCHEN Paris 2nd",
+    "metaDescription": "Publisher, host, personal data and cookies for the website of IBRIK KITCHEN, Balkan restaurant at 9 rue de Mulhouse, Paris 2nd.",
+    "title": "Legal notice and privacy",
+    "updated": "Last updated: 26 September 2026",
+    "legal": {
+      "title": "Legal notice"
+    },
+    "privacy": {
+      "title": "Privacy",
+      "intro": "This site collects little data. Here is what, why, and how to refuse it."
+    },
+    "blocks": {
+      "publisher": {
+        "title": "Publisher",
+        "text": "ibrik.fr is published by <strong>FEEL</strong>, a French simplified joint-stock company (SAS) that runs the IBRIK KITCHEN restaurant. Registered office: 9 rue de Mulhouse, 75002 Paris. RCS Paris 838 378 008 · SIRET 838 378 008 00026 · EU VAT FR84838378008. Phone: <tel>+33 1 70 69 42 50</tel> · email: <mail>bureau@ibrik.fr</mail>."
+      },
+      "director": {
+        "title": "Publication director",
+        "text": "Catherine Poirson."
+      },
+      "host": {
+        "title": "Hosting",
+        "text": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States · vercel.com."
+      },
+      "ip": {
+        "title": "Intellectual property",
+        "text": "The texts, photographs, logos and graphics on this site belong to IBRIK KITCHEN or to their authors. IBRIK is a trademark registered with the INPI under number 4517667. No reproduction without written consent."
+      },
+      "controller": {
+        "title": "Data controller",
+        "text": "FEEL (IBRIK KITCHEN), 9 rue de Mulhouse, 75002 Paris · <mail>bureau@ibrik.fr</mail>."
+      },
+      "analytics": {
+        "title": "Audience measurement: Google Analytics",
+        "text": "Only if you accept it. Google Analytics counts page views, visit length, device type and approximate city. It sets the <code>_ga</code> and <code>_ga_EJPQFPLDVS</code> cookies, kept for 13 months at most. The data is processed by Google Ireland Limited and may be transferred to the United States under the Data Privacy Framework. <google>Google's privacy policy</google>."
+      },
+      "vercel": {
+        "title": "Audience measurement: Vercel",
+        "text": "No cookies. Vercel Web Analytics counts page views, country and device type, in aggregate. Nothing in it can identify you. This data, like the host's technical logs (IP address, date, page requested), is used to run and secure the site. <vercel>Vercel's privacy policy</vercel>."
+      },
+      "booking": {
+        "title": "Booking",
+        "text": "The booking module is provided by Zenchef. What you enter there (name, phone, email, party size) is used to manage your booking, and Zenchef processes it on behalf of IBRIK KITCHEN. <zenchef>Zenchef's privacy policy</zenchef>."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "If you email or call us, your details are used to answer you, and for nothing else."
+      },
+      "embeds": {
+        "title": "Embedded content",
+        "text": "The map in the “Visit” section is provided by Google Maps, which may set its own cookies. The video goes through youtube-nocookie.com: YouTube sets nothing until you play it."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "text": "The site keeps your language in the <code>NEXT_LOCALE</code> cookie and your cookie choice in your browser. Only Google Analytics asks for your consent. You can change your mind at any time: <cookies>manage cookies</cookies>."
+      },
+      "rights": {
+        "title": "Your rights",
+        "text": "You can access your data, have it corrected or erased, object to its processing or ask for its portability. Write to <mail>bureau@ibrik.fr</mail> or to 9 rue de Mulhouse, 75002 Paris. If something goes wrong, you can <cnil>file a complaint with the CNIL</cnil>."
+      }
+    }
   }
 }

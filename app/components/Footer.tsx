@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "../../i18n/navigation";
 import LogoMark from "./LogoMark";
+import CookieSettingsButton from "./CookieSettingsButton";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -55,6 +56,10 @@ export default function Footer() {
         <div className="bottom">
           <span>{t("copy")}</span>
           <span>{t("tag")}</span>
+          <span className="foot-legal">
+            <Link href="/legal">{t("legal")}</Link>
+            <CookieSettingsButton />
+          </span>
         </div>
       </div>
     </footer>
