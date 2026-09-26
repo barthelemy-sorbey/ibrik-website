@@ -519,6 +519,78 @@
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",
     "copy": "© MMXXVI IBRIK KITCHEN · fait avec poftă à Paris",
-    "tag": "La cuisine des Balkans · Paris 2e"
+    "tag": "La cuisine des Balkans · Paris 2e",
+    "legal": "Mentions légales"
+  },
+  "CookieConsent": {
+    "label": "Cookies",
+    "text": "Avec votre accord, nous mesurons les visites du site avec Google Analytics, qui dépose des cookies. Sans lui, le site fonctionne tout aussi bien.",
+    "decline": "Refuser",
+    "accept": "Accepter",
+    "settings": "Cookies",
+    "more": "En savoir plus"
+  },
+  "LegalPage": {
+    "metaTitle": "Mentions légales et confidentialité · IBRIK KITCHEN Paris 2e",
+    "metaDescription": "Éditeur, hébergeur, données personnelles et cookies du site d'IBRIK KITCHEN, restaurant des Balkans au 9 rue de Mulhouse, Paris 2e.",
+    "title": "Mentions légales et confidentialité",
+    "updated": "Mise à jour : 26 septembre 2026",
+    "legal": {
+      "title": "Mentions légales"
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "intro": "Ce site recueille peu de données. Voici lesquelles, pourquoi, et comment les refuser."
+    },
+    "blocks": {
+      "publisher": {
+        "title": "Éditeur",
+        "text": "Le site ibrik.fr est édité par <strong>FEEL</strong>, société par actions simplifiée qui exploite le restaurant IBRIK KITCHEN. Siège : 9 rue de Mulhouse, 75002 Paris. RCS Paris 838 378 008 · SIRET 838 378 008 00026 · TVA intracommunautaire FR84838378008. Téléphone : <tel>+33 1 70 69 42 50</tel> · e-mail : <mail>bureau@ibrik.fr</mail>."
+      },
+      "director": {
+        "title": "Direction de la publication",
+        "text": "Catherine Poirson."
+      },
+      "host": {
+        "title": "Hébergement",
+        "text": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis · vercel.com."
+      },
+      "ip": {
+        "title": "Propriété intellectuelle",
+        "text": "Les textes, photographies, logos et éléments graphiques de ce site appartiennent à IBRIK KITCHEN ou à leurs auteurs. IBRIK est une marque déposée à l'INPI sous le numéro 4517667. Toute reproduction sans accord écrit est interdite."
+      },
+      "controller": {
+        "title": "Responsable du traitement",
+        "text": "FEEL (IBRIK KITCHEN), 9 rue de Mulhouse, 75002 Paris · <mail>bureau@ibrik.fr</mail>."
+      },
+      "analytics": {
+        "title": "Mesure d'audience : Google Analytics",
+        "text": "Seulement si vous l'acceptez. Google Analytics compte les pages vues, la durée des visites, le type d'appareil et la ville approximative. Il dépose les cookies <code>_ga</code> et <code>_ga_EJPQFPLDVS</code>, conservés 13 mois au plus. Les données sont traitées par Google Ireland Limited et peuvent être transférées aux États-Unis, dans le cadre du Data Privacy Framework. <google>Politique de confidentialité de Google</google>."
+      },
+      "vercel": {
+        "title": "Mesure d'audience : Vercel",
+        "text": "Sans cookie. Vercel Web Analytics compte les pages vues, le pays et le type d'appareil, sous forme agrégée. Rien ne permet de vous identifier. Ces données, comme les journaux techniques de l'hébergeur (adresse IP, date, page demandée), servent à faire fonctionner et à sécuriser le site. <vercel>Politique de confidentialité de Vercel</vercel>."
+      },
+      "booking": {
+        "title": "Réservation",
+        "text": "Le module de réservation est fourni par Zenchef. Ce que vous y saisissez (nom, téléphone, e-mail, nombre de couverts) sert à gérer votre réservation, et Zenchef le traite pour le compte d'IBRIK KITCHEN. <zenchef>Politique de confidentialité de Zenchef</zenchef>."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "Si vous nous écrivez ou nous appelez, vos coordonnées servent à vous répondre, et à rien d'autre."
+      },
+      "embeds": {
+        "title": "Contenus intégrés",
+        "text": "La carte de la section « Nous trouver » est fournie par Google Maps, qui peut déposer ses propres cookies. La vidéo passe par youtube-nocookie.com : YouTube ne dépose rien tant que vous ne la lancez pas."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "text": "Le site garde votre langue dans le cookie <code>NEXT_LOCALE</code> et votre choix sur les cookies dans votre navigateur. Seul Google Analytics demande votre accord. Vous pouvez changer d'avis à tout moment : <cookies>gérer les cookies</cookies>."
+      },
+      "rights": {
+        "title": "Vos droits",
+        "text": "Vous pouvez accéder à vos données, les faire rectifier ou effacer, vous opposer à leur traitement ou en demander la portabilité. Écrivez à <mail>bureau@ibrik.fr</mail> ou au 9 rue de Mulhouse, 75002 Paris. En cas de difficulté, vous pouvez <cnil>saisir la CNIL</cnil>."
+      }
+    }
   }
 }
