@@ -4,6 +4,7 @@ import { DM_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 import { routing } from "../../i18n/routing";
 import { buildPageMetadata } from "../lib/seo";
 import ZenchefFrameTitle from "../components/ZenchefFrameTitle";
@@ -75,6 +76,7 @@ export default async function LocaleLayout({
           {children}
           <ZenchefFrameTitle />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
