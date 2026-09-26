@@ -500,11 +500,7 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 
 /* ---- ABOUT ---- */
 .s-about {
-  /* colorway vert du brandbook : cercles sauge sur vert profond.
-     Assez sourd pour garder le texte crème au-dessus de 7:1. */
   background-color: var(--green);
-  background-image: var(--checks-sage);
-  background-size: 48px 48px;
   color: var(--cream-light);
 }
 .s-about h2.display { color: var(--cream-light); }
