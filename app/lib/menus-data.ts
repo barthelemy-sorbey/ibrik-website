@@ -20,6 +20,13 @@ export type MenuData = {
   formulas?: { id: string; price: number }[];
 };
 
+// Self-hosted from public/menus so the links survive changes on ibrik.fr.
+export const MENU_PDF: Record<MenuData["id"], string> = {
+  lunch: "/menus/ibrik-menu-midi-printemps-2026.pdf",
+  dinner: "/menus/ibrik-menu-soir-printemps-2026.pdf",
+  saturday: "/menus/ibrik-menu-samedi-midi-printemps-2026.pdf",
+};
+
 export const LUNCH_MENU: MenuData = {
   id: "lunch",
   sections: [

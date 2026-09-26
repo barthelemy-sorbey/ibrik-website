@@ -20,7 +20,7 @@ export default function Press() {
   ];
 
   return (
-    <section className="section s-press">
+    <section className="section s-press" id="press">
       <div className="wrap">
         <h2 className="display reveal" style={{ whiteSpace: "pre-line" }}>
           {t("title")}

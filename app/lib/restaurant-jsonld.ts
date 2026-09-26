@@ -3,8 +3,9 @@
  * and answer engines read the same name, address, hours and chef everywhere
  * (NAP consistency). Keep these facts in sync with the Location section.
  */
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ibrik.fr";
+import { SITE_URL } from "./seo";
+
+const BOOKING_URL = "https://bookings.zenchef.com/results?rid=352129&pid=1001";
 
 const WEEKDAYS = [
   "Monday",
@@ -28,9 +29,15 @@ export function buildRestaurantJsonLd({
     "@id": `${SITE_URL}/#restaurant`,
     name: "IBRIK KITCHEN",
     description,
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     telephone: "+33170694250",
-    image: `${SITE_URL}/brand/logo.png`,
+    email: "bureau@ibrik.fr",
+    logo: `${SITE_URL}/brand/logo.png`,
+    image: [
+      `${SITE_URL}/brand/og-ibrik-kitchen.jpg`,
+      `${SITE_URL}/brand/cathy.jpg`,
+      `${SITE_URL}/brand/ibrik-hero-poster.jpg`,
+    ],
     priceRange: "€€",
     servesCuisine: ["Balkan", "Romanian", "Eastern European", "Greek", "Turkish"],
     founder: {
@@ -65,13 +72,21 @@ export function buildRestaurantJsonLd({
         closes: "00:30",
       },
     ],
+    hasMap: "https://maps.app.goo.gl/M96VNxVcr9pbNgHx9",
     acceptsReservations: true,
-    ...(hasMenu ? { hasMenu } : { hasMenu: `${SITE_URL}/menus` }),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.6",
-      reviewCount: 990,
+    potentialAction: {
+      "@type": "ReserveAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: BOOKING_URL,
+        actionPlatform: [
+          "https://schema.org/DesktopWebPlatform",
+          "https://schema.org/MobileWebPlatform",
+        ],
+      },
+      result: { "@type": "FoodEstablishmentReservation", name: "Table" },
     },
+    ...(hasMenu ? { hasMenu } : { hasMenu: `${SITE_URL}/menus` }),
     sameAs: [
       "https://www.instagram.com/ibrikparis",
       "https://www.facebook.com/ibrikkitchen",

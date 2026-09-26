@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { useTranslations } from "next-intl";
 import { SpinSeal } from "./Decor";
 
@@ -36,6 +37,13 @@ export default function Reserve() {
                 data-primary-color="0f4d33"
                 data-open="false"
                 data-pax="2"
+              />
+              {/* Loaded only where the widget lives: on other pages the SDK
+                  throws "Missing element to configure the widget". */}
+              <Script
+                id="zenchef-sdk"
+                src="https://sdk.zenchef.com/v1/sdk.min.js"
+                strategy="lazyOnload"
               />
             </div>
 

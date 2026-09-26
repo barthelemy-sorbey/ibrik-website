@@ -14,7 +14,8 @@ import {
   type MenuItemData,
   type MenuSectionData,
 } from "../../lib/menus-data";
-import { SITE_URL, buildRestaurantJsonLd } from "../../lib/restaurant-jsonld";
+import { buildRestaurantJsonLd } from "../../lib/restaurant-jsonld";
+import { buildPageMetadata, localizedUrl } from "../../lib/seo";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -26,28 +27,12 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: "MenusPage" });
-
-  const isDefault = locale === routing.defaultLocale;
-  const canonical = isDefault ? "/menus" : `/${locale}/menus`;
-  const languages: Record<string, string> = { "x-default": "/menus" };
-  for (const l of routing.locales) {
-    languages[l] = l === routing.defaultLocale ? "/menus" : `/${l}/menus`;
-  }
-
-  return {
-    metadataBase: new URL(SITE_URL),
+  return buildPageMetadata({
+    locale,
+    path: "/menus",
     title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: { canonical, languages },
-    openGraph: {
-      title: t("metaTitle"),
-      description: t("metaDescription"),
-      url: canonical,
-      siteName: "IBRIK KITCHEN",
-      locale: locale === "fr" ? "fr_FR" : "en_GB",
-      type: "website",
-    },
-  };
+  });
 }
 
 type ItemTranslator = (key: string) => string;
@@ -160,16 +145,13 @@ export default async function MenusPage({
         "@type": "ListItem",
         position: 1,
         name: "IBRIK KITCHEN",
-        item: locale === routing.defaultLocale ? `${SITE_URL}/` : `${SITE_URL}/${locale}`,
+        item: localizedUrl(locale),
       },
       {
         "@type": "ListItem",
         position: 2,
         name: tPage("metaTitle"),
-        item:
-          locale === routing.defaultLocale
-            ? `${SITE_URL}/menus`
-            : `${SITE_URL}/${locale}/menus`,
+        item: localizedUrl(locale, "/menus"),
       },
     ],
   };

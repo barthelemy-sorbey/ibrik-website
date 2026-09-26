@@ -50,17 +50,19 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
     <>
       <Reveal />
       <Nav />
-      <Hero />
-      <About />
-      <Menu />
-      <Press />
-      <Events />
-      <Reserve />
-      <CrystalBall />
-      <Video />
-      {/* <Gallery /> */}
-      <Faq />
-      <Location />
+      <main>
+        <Hero />
+        <About />
+        <Menu />
+        <Press />
+        <Events />
+        <Reserve />
+        <CrystalBall />
+        <Video />
+        {/* <Gallery /> */}
+        <Faq />
+        <Location />
+      </main>
       <Footer />
       <script
         type="application/ld+json"

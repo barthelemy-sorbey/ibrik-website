@@ -28,6 +28,7 @@ export default function Events() {
 
   return (
     <section className="section s-events" id="events">
+      <div className="pattern-strip top" aria-hidden="true" />
       <div className="wrap">
         <div className="events-row">
           <div>
@@ -38,6 +39,11 @@ export default function Events() {
             <div className="body reveal d1" style={{ marginTop: 24 }}>
               <p>{t.rich("p1", { i: (c) => <i>{c}</i> })}</p>
               <p>{t("p2")}</p>
+            </div>
+
+            <div className="events-private reveal d2">
+              <span className="eyebrow">{t("privateEyebrow")}</span>
+              <p>{t("privateBody")}</p>
               <div className="events-actions">
                 <a href="mailto:bureau@ibrik.fr" className="events-cta">
                   {t("enquireCta")}
@@ -56,14 +62,15 @@ export default function Events() {
                 key={e.num}
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
+                <span className="events-card__motif" aria-hidden="true" />
                 <div className="events-card__head">
                   <span className="num">{e.num}</span>
                   <span className="rule" aria-hidden="true" />
                 </div>
-                <h4>
+                <h3>
                   {e.name}
                   <span className="ro"> — {e.ro}</span>
-                </h4>
+                </h3>
                 <div className="meta">{e.meta}</div>
                 <div className="cap">{e.cap}</div>
               </div>
@@ -71,6 +78,7 @@ export default function Events() {
           </div>
         </div>
       </div>
+      <div className="pattern-strip bottom" aria-hidden="true" />
     </section>
   );
 }

@@ -4,23 +4,21 @@ import { DM_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { routing } from "../../i18n/routing";
+import { buildPageMetadata } from "../lib/seo";
+import ZenchefFrameTitle from "../components/ZenchefFrameTitle";
 import "../globals.css";
 
+// WOFF2 subsets (Latin + Latin Extended, for Romanian diacritics). Only the
+// faces the site actually renders are declared: next/font preloads each one.
 const antwerp = localFont({
   src: [
-    { path: "../../public/fonts/Antwerp-Light.otf", weight: "300", style: "normal" },
-    { path: "../../public/fonts/Antwerp-LightItalic.otf", weight: "300", style: "italic" },
-    { path: "../../public/fonts/Antwerp-Regular.otf", weight: "400", style: "normal" },
-    { path: "../../public/fonts/Antwerp-Italic.otf", weight: "400", style: "italic" },
-    { path: "../../public/fonts/Antwerp-Medium.otf", weight: "500", style: "normal" },
-    { path: "../../public/fonts/Antwerp-MediumItalic.otf", weight: "500", style: "italic" },
-    { path: "../../public/fonts/Antwerp-SemiBold.otf", weight: "600", style: "normal" },
-    { path: "../../public/fonts/Antwerp-SemiBoldItalic.otf", weight: "600", style: "italic" },
-    { path: "../../public/fonts/Antwerp-Bold.otf", weight: "700", style: "normal" },
-    { path: "../../public/fonts/Antwerp-BoldItalic.otf", weight: "700", style: "italic" },
+    { path: "../../public/fonts/Antwerp-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../../public/fonts/Antwerp-Italic.woff2", weight: "400", style: "italic" },
+    { path: "../../public/fonts/Antwerp-Medium.woff2", weight: "500", style: "normal" },
+    { path: "../../public/fonts/Antwerp-MediumItalic.woff2", weight: "500", style: "italic" },
+    { path: "../../public/fonts/Antwerp-SemiBold.woff2", weight: "600", style: "normal" },
   ],
   variable: "--font-antwerp",
   display: "swap",
@@ -28,25 +26,19 @@ const antwerp = localFont({
 
 const formulaCondensed = localFont({
   src: [
-    { path: "../../public/fonts/FormulaCondensed-Ultralight.otf", weight: "200", style: "normal" },
-    { path: "../../public/fonts/FormulaCondensed-Light.otf", weight: "300", style: "normal" },
-    { path: "../../public/fonts/FormulaCondensed-Regular.otf", weight: "400", style: "normal" },
-    { path: "../../public/fonts/FormulaCondensed-Bold.otf", weight: "700", style: "normal" },
-    { path: "../../public/fonts/FormulaCondensed-Black.otf", weight: "900", style: "normal" },
+    { path: "../../public/fonts/FormulaCondensed-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../../public/fonts/FormulaCondensed-Bold.woff2", weight: "700", style: "normal" },
   ],
   variable: "--font-formula-condensed",
   display: "swap",
 });
 
 const dmMono = DM_Mono({
-  weight: ["300", "400", "500"],
+  weight: ["400", "500"],
   subsets: ["latin"],
   variable: "--font-mono-dm",
   display: "swap",
 });
-
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ibrik.fr";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -59,31 +51,11 @@ export async function generateMetadata({
   if (!hasLocale(routing.locales, locale)) return {};
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
-  const isDefault = locale === routing.defaultLocale;
-  const canonical = isDefault ? "/" : `/${locale}`;
-
-  const languages: Record<string, string> = { "x-default": "/" };
-  for (const l of routing.locales) {
-    languages[l] = l === routing.defaultLocale ? "/" : `/${l}`;
-  }
-
-  return {
-    metadataBase: new URL(SITE_URL),
+  return buildPageMetadata({
+    locale,
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical,
-      languages,
-    },
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: canonical,
-      siteName: "IBRIK KITCHEN",
-      locale: locale === "fr" ? "fr_FR" : "en_GB",
-      type: "website",
-    },
-  };
+  });
 }
 
 export default async function LocaleLayout({
@@ -100,13 +72,11 @@ export default async function LocaleLayout({
       className={`${antwerp.variable} ${formulaCondensed.variable} ${dmMono.variable}`}
     >
       <body suppressHydrationWarning>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          {children}
+          <ZenchefFrameTitle />
+        </NextIntlClientProvider>
         <Analytics />
-        <Script
-          id="zenchef-sdk"
-          src="https://sdk.zenchef.com/v1/sdk.min.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );

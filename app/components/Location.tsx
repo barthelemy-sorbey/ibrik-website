@@ -15,7 +15,7 @@ export default function Location() {
 
         <div className="loc-row" style={{ marginTop: 50 }}>
           <div className="loc-block reveal">
-            <h4>{t("addressTitle")}</h4>
+            <h3>{t("addressTitle")}</h3>
             <div className="lines" style={{ whiteSpace: "pre-line" }}>
               {t("addressLines")}
             </div>
@@ -40,7 +40,7 @@ export default function Location() {
           </div>
 
           <div className="loc-block reveal d1">
-            <h4>{t("hoursTitle")}</h4>
+            <h3>{t("hoursTitle")}</h3>
             <table className="hours-table">
               <tbody>
                 <tr className="closed">

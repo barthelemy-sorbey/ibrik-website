@@ -86,14 +86,16 @@
     "p2": "Twelve around the long table or sixty across the whole room: we cook the way Balkan families cook for their own. Plenty, all at once, and nobody quite leaves on time.",
     "enquireCta": "Email bureau@ibrik.fr",
     "phone": "+33 1 70 69 42 50",
+    "privateEyebrow": "Private hire",
+    "privateBody": "Up to 60 guests: the whole restaurant, a menu written with the kitchen. Tell us the date and the numbers, and we will come back to you.",
     "card1Name": "Masa mare",
     "card1Ro": "the long table",
     "card1Meta": "12–24 guests · back room · 3 courses, shared",
-    "card1Cap": "From €58 / pers",
-    "card2Name": "Buyout",
-    "card2Ro": "all of us",
-    "card2Meta": "Up to 60 guests · full restaurant · custom menu with the kitchen",
-    "card2Cap": "From €4 200",
+    "card1Cap": "By quote",
+    "card2Name": "Vinuri",
+    "card2Ro": "wines from the East",
+    "card2Meta": "Over 40 natural wines · Eastern Europe · a wine of the month",
+    "card2Cap": "Paired with the table",
     "card3Name": "Botez & Nuntă",
     "card3Ro": "christening & wedding",
     "card3Meta": "Off-site catering · sarmale by the hundred · țuică by the case",
@@ -102,17 +104,18 @@
   "Reserve": {
     "titlePre": "Book\n",
     "titleAccent": "a table.",
-    "lead": "Everyone is welcome. The room often looks full; it rarely is. Ask — there is nearly always a table.",
+    "lead": "Everyone is welcome.",
     "onlineEyebrow": "Online · online",
     "onlineCta": "Book via Zenchef",
+    "widgetTitle": "Zenchef online booking — IBRIK KITCHEN",
     "or": "or",
     "directEyebrow": "Or get in touch · scrieți-ne",
     "callLabel": "Call · sunați",
     "emailLabel": "Email · scrieți",
     "takeawayEyebrow": "Takeaway · la pachet",
-    "takeawayText": "Eating at home tonight? The whole menu is also available to take away — drop by or give us a call to order.",
+    "takeawayText": "Eating at home or at the office? The whole menu is also available to take away — drop by or give us a call to order.",
     "asideStamp": "Always\na seat.",
-    "asideP1": "Looks full? Call anyway: there is nearly always room for you.",
+    "asideP1": "Looks full? Call anyway: we will always find you a seat.",
     "asideP2": "Large parties, last minute, a birthday nobody planned: tell us, we'll make it work."
   },
   "Video": {
@@ -208,7 +211,7 @@
     },
     "booking": {
       "q": "Do I need to book at IBRIK KITCHEN?",
-      "a": "It is a good idea, especially for dinner and on Saturdays. Book online through Zenchef, by phone on +33 1 70 69 42 50, or by email at bureau@ibrik.fr. The room often looks full when it isn't: call, there is nearly always a table."
+      "a": "It is a good idea, especially for dinner and on Saturdays. Book online through Zenchef, by phone on +33 1 70 69 42 50, or by email at bureau@ibrik.fr. Looks full? Call anyway: we will always find you a seat."
     },
     "vegetarian": {
       "q": "Are there vegetarian dishes on the menu?",
@@ -216,11 +219,11 @@
     },
     "budget": {
       "q": "How much does a meal cost?",
-      "a": "At lunch, set menus run from €25 (mezze + main, or main + dessert) to €33 (mezze + main + dessert). At dinner, à la carte: mezze €11 to €17, mains €14 to €33, desserts €11 to €14. Expect €40 to €55 per person, before drinks."
+      "a": "At lunch, set menus run from €25 (mezze + main, or main + dessert) to €33 (mezze + main + dessert). At dinner, à la carte: mezze €11 to €17, mains €14 to €33, desserts €11 to €14. Expect €40 to €55 per person."
     },
     "groups": {
       "q": "Can we come as a group or hire the restaurant?",
-      "a": "Yes. The long table, masa mare, seats 12 to 24 guests from €58 per person, three courses to share. The whole restaurant can be hired for up to 60 people from €4,200. IBRIK KITCHEN also caters christenings and weddings. Write to bureau@ibrik.fr or call +33 1 70 69 42 50."
+      "a": "Yes. The long table, masa mare, seats 12 to 24 guests, three courses to share. The whole restaurant can be hired for up to 60 people. IBRIK KITCHEN also caters christenings and weddings. Write to bureau@ibrik.fr or call +33 1 70 69 42 50."
     },
     "chef": {
       "q": "Who is the chef at IBRIK KITCHEN?",
@@ -228,7 +231,7 @@
     },
     "cafe": {
       "q": "Are IBRIK KITCHEN and the IBRIK café the same place?",
-      "a": "No. IBRIK KITCHEN is the restaurant, at 9 rue de Mulhouse, Paris 2nd: lunch and dinner, Monday to Saturday. IBRIK is the café, in the 9th arrondissement. Two separate addresses, from the same chef, Cathy Paraschiv."
+      "a": "No. IBRIK KITCHEN is the restaurant, at 9 rue de Mulhouse, Paris 2nd: lunch and dinner, Monday to Saturday. IBRIK, the same chef's café in the 9th arrondissement, has closed. Only rue de Mulhouse remains."
     },
     "order": {
       "q": "What should I order on a first visit?",
@@ -510,13 +513,11 @@
     "visit": "Visit",
     "menu": "Menu",
     "follow": "Follow",
-    "careOf": "Care of",
     "menuStarters": "Lunch menu",
     "menuMains": "Dinner menu",
     "menuSweets": "Saturday lunch",
     "follow1": "Instagram · @ibrikparis",
     "follow2": "Facebook · ibrikkitchen",
-    "care1": "Private events",
     "copy": "© MMXXVI IBRIK KITCHEN · made with poftă in Paris",
     "tag": "Balkan cooking · Paris 2nd"
   }
