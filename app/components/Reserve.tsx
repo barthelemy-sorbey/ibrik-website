@@ -84,6 +84,16 @@ export default function Reserve() {
             </div>
             <p>{t("asideP1")}</p>
             <p style={{ marginTop: 18 }}>{t("asideP2")}</p>
+
+            <div className="reserve-private">
+              <span className="reserve-private__eyebrow">
+                {t("privateEyebrow")}
+              </span>
+              <p>{t("privateBody")}</p>
+              <a href="mailto:bureau@ibrik.fr" className="reserve-private__cta">
+                {t("privateCta")}
+              </a>
+            </div>
           </aside>
         </div>
       </div>

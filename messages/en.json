@@ -80,26 +80,142 @@
     "q3Loc": "Critic's Pick"
   },
   "Events": {
-    "titlePre": "Welcoming you\n",
-    "titleAccent": "as if at home.",
+    "titlePre": "We take you\n",
+    "titleAccent": "travelling.",
     "p1": "In Romanian, <i>petrecere</i> means a party, a feast and the time spent together, all at once. That is how we welcome people.",
-    "p2": "Twelve around the long table or sixty across the whole room: we cook the way Balkan families cook for their own. Plenty, all at once, and nobody quite leaves on time.",
-    "enquireCta": "Email bureau@ibrik.fr",
-    "phone": "+33 1 70 69 42 50",
-    "privateEyebrow": "Private hire",
-    "privateBody": "Up to 60 guests: the whole restaurant, a menu written with the kitchen. Tell us the date and the numbers, and we will come back to you.",
-    "card1Name": "Masa mare",
-    "card1Ro": "the long table",
-    "card1Meta": "12–24 guests · back room · 3 courses, shared",
-    "card1Cap": "By quote",
-    "card2Name": "Vinuri",
-    "card2Ro": "wines from the East",
-    "card2Meta": "Over 40 natural wines · Eastern Europe · a wine of the month",
-    "card2Cap": "Paired with the table",
-    "card3Name": "Botez & Nuntă",
-    "card3Ro": "christening & wedding",
-    "card3Meta": "Off-site catering · sarmale by the hundred · țuică by the case",
-    "card3Cap": "By quote"
+    "p2": "Twelve around the long table or eighty across the whole room: we cook the way Balkan families cook for their own. Plenty, all at once, and nobody quite leaves on time.",
+    "wine": {
+      "eyebrow": "Vinuri · the wine list",
+      "title": "Balkan wines, in four routes",
+      "intro": "From vineyard to glass: Austria, the Danube, the Adriatic and the South. The numbers link each place to its grapes.",
+      "legend": "R = red grape · W = white grape",
+      "map": {
+        "alt": "IBRIK KITCHEN's map of Balkan wines: fifteen wine regions, from Austria to Greece, in four routes.",
+        "caption": "Dots: landmark towns of wine regions, not appellation boundaries.",
+        "adriatic": "Adriatic Sea",
+        "blackSea": "Black Sea",
+        "aegean": "Aegean Sea",
+        "danube": "Danube",
+        "austria": "Austria",
+        "serbia": "Serbia",
+        "romania": "Romania",
+        "bulgaria": "Bulgaria",
+        "greece": "Greece",
+        "italy": "Italy",
+        "slovakia": "Slovakia",
+        "hungary": "Hungary",
+        "ukraine": "Ukraine",
+        "moldova": "Moldova",
+        "slovenia": "Slovenia",
+        "croatia": "Croatia",
+        "bosnia": "Bosnia and Herzegovina",
+        "montenegro": "Montenegro",
+        "kosovo": "Kosovo",
+        "macedonia": "North Macedonia",
+        "albania": "Albania",
+        "turkey": "Turkey",
+        "scale": "approx. {km} km"
+      },
+      "routes": {
+        "a": {
+          "name": "A · Austria",
+          "note": "The northern reference, at the gates of the Balkans."
+        },
+        "b": {
+          "name": "B · The Danube and the East",
+          "note": "Varied soils, often a strong continental influence."
+        },
+        "c": {
+          "name": "C · Adriatic and Dinarides",
+          "note": "Karst is common. Coast, plateaus and valleys, each distinct."
+        },
+        "d": {
+          "name": "D · The South: mountains, lakes and valleys",
+          "note": "Contrasting climates, not a single high-altitude zone."
+        }
+      },
+      "stops": {
+        "1": {
+          "place": "Leithaberg / Burgenland",
+          "short": "Leithaberg",
+          "note": "Limestone and schist. Blaufränkisch (R), Chardonnay (W)."
+        },
+        "2": {
+          "place": "Southern Styria",
+          "short": "Southern Styria",
+          "note": "Opok (calcareous marl), other soils. Sauvignon Blanc (W)."
+        },
+        "3": {
+          "place": "Rogljevo / Negotin · Serbia",
+          "short": "Rogljevo",
+          "note": "Local limestone. Prokupac (R). The Bongiraud village."
+        },
+        "4": {
+          "place": "Mehedinți · Romania",
+          "short": "Mehedinți",
+          "note": "Landmark: Corcova. Fetească Neagră (R), international varieties."
+        },
+        "5": {
+          "place": "Dealu Mare · Romania",
+          "short": "Dealu Mare",
+          "note": "Muntenia. Clay, marl, pockets of limestone. Fetească Neagră (R)."
+        },
+        "6": {
+          "place": "Murfatlar / Dobruja · Romania",
+          "short": "Murfatlar",
+          "note": "Limestone, chalk and loess. Whites and reds, dry or sweet."
+        },
+        "7": {
+          "place": "Asenovgrad / Thrace · Bulgaria",
+          "short": "Asenovgrad",
+          "note": "Rhodope foothills. Mavrud (R)."
+        },
+        "8": {
+          "place": "Istria · Croatia",
+          "short": "Istria",
+          "note": "Malvazija Istarska (W), Teran (R). Red soils and flysch."
+        },
+        "9": {
+          "place": "Pelješac and Korčula · Dalmatia, Croatia",
+          "short": "Pelješac / Korčula",
+          "note": "Limestone, maritime climate. Plavac Mali (R), Pošip (W)."
+        },
+        "10": {
+          "place": "Herzegovina · Bosnia and Herzegovina",
+          "short": "Herzegovina",
+          "note": "Landmark: Čitluk. Žilavka (W), Blatina (R)."
+        },
+        "11": {
+          "place": "Podgorica and Lake Skadar · Montenegro",
+          "short": "Podgorica / Skadar",
+          "note": "Vranac (R), Krstač (W). Plain and hills, varied soils."
+        },
+        "12": {
+          "place": "Lezhë · Albania",
+          "short": "Lezhë",
+          "note": "A northern Albanian landmark. Kallmet (R)."
+        },
+        "13": {
+          "place": "Ohrid · North Macedonia",
+          "short": "Ohrid",
+          "note": "Lake and altitude, cooler nights. Several grapes and styles."
+        },
+        "14": {
+          "place": "Tikveš · North Macedonia",
+          "short": "Tikveš",
+          "note": "The warmer Vardar valley. Vranec (R), Temjanika (W)."
+        },
+        "15": {
+          "place": "Naoussa · Greece",
+          "short": "Naoussa",
+          "note": "Slopes of Mount Vermio, clay and limestone soils. Xinomavro (R)."
+        }
+      },
+      "startTitle": "Where it starts: Rogljevo",
+      "startBody": "<b>Slava</b> = Prokupac. <b>Istina</b> = a field blend of Balkan grapes. <b>Obecanje</b> = Gamay; separate cuvées exist in Pinot Noir and Frankovka.",
+      "tasteTitle": "From soil to taste",
+      "tasteBody": "Climate + soil + grape + harvest + winemaking. Limestone alone guarantees neither acidity nor saltiness. Xinomavro can join acidity and tannin; a Vranac can be rounder."
+    }
   },
   "Reserve": {
     "titlePre": "Book\n",
@@ -116,7 +232,10 @@
     "takeawayText": "Eating at home or at the office? The whole menu is also available to take away — drop by or give us a call to order.",
     "asideStamp": "Always\na seat.",
     "asideP1": "Looks full? Call anyway: we will always find you a seat.",
-    "asideP2": "Large parties, last minute, a birthday nobody planned: tell us, we'll make it work."
+    "asideP2": "Large parties, last minute, a birthday nobody planned: tell us, we'll make it work.",
+    "privateEyebrow": "Private hire",
+    "privateBody": "Up to 80 guests: the whole restaurant, for a christening, a wedding or a family celebration. The menu is written with the kitchen. Tell us the date and the numbers, and we will come back to you.",
+    "privateCta": "Email bureau@ibrik.fr"
   },
   "Video": {
     "titlePre": "In Cathy's\n",
@@ -223,7 +342,7 @@
     },
     "groups": {
       "q": "Can we come as a group or hire the restaurant?",
-      "a": "Yes. The long table, masa mare, seats 12 to 24 guests, three courses to share. The whole restaurant can be hired for up to 60 people. IBRIK KITCHEN also caters christenings and weddings. Write to bureau@ibrik.fr or call +33 1 70 69 42 50."
+      "a": "Yes. The long table, masa mare, seats 12 to 24 guests, three courses to share. The whole restaurant can be hired for up to 80 people. IBRIK KITCHEN also caters christenings and weddings. Write to bureau@ibrik.fr or call +33 1 70 69 42 50."
     },
     "chef": {
       "q": "Who is the chef at IBRIK KITCHEN?",

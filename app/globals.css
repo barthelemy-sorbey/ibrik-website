@@ -706,152 +706,182 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
 .s-events h2.display { color: var(--ink); }
 .s-events h2.display .accent { color: var(--tomato); font-style: italic; }
 .events-row {
-  display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px;
-  align-items: start;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+  align-items: end;
 }
 .events-row .body { font-size: 18px; line-height: 1.6; max-width: 50ch; }
 .events-row .body p { margin: 0 0 18px; }
+.events-row .body p:last-child { margin-bottom: 0; }
 
-/* bloc « privatisation : c'est possible, écrivez-nous » */
-.events-private {
-  position: relative;
-  margin-top: 34px;
-  padding: 26px 28px 24px 34px;
+/* carte des vins : quatre parcours, du vignoble au verre */
+.wine-card {
+  --route-a: var(--orange-deep);
+  --route-b: var(--tomato);
+  --route-c: var(--navy);
+  --route-d: var(--green);
+  --map-sea: #d3e0e0;
+  --map-sea-ink: #3f6b7c;
+  margin-top: 64px;
+  padding: 40px 44px 34px;
   background: var(--cream-light);
-  border: 1.5px solid rgba(15, 77, 51, 0.28);
+  border: 1.5px solid rgba(21, 17, 11, 0.14);
+  border-top: 4px solid var(--tomato);
   border-radius: 4px;
   box-shadow: 0 10px 28px rgba(21, 17, 11, 0.07);
 }
-.events-private::before {
-  content: ""; position: absolute; top: -1.5px; bottom: -1.5px; left: -1.5px;
-  width: 14px;
-  border-radius: 4px 0 0 4px;
-  background-color: var(--green);
-  background-image: var(--pinwheel);
-  background-size: 14px 14px;
-}
-.events-private .eyebrow {
+.wine-card .eyebrow {
   display: block;
   font-family: var(--font-mono); font-size: 11px;
   letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--green);
+  color: var(--tomato);
   margin-bottom: 10px;
 }
-.events-private p { margin: 0; font-size: 17px; line-height: 1.55; max-width: 44ch; }
-.events-actions {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
-  margin-top: 22px;
+.wine-card__head {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 24px 40px; flex-wrap: wrap;
 }
-.events-cta, .events-phone {
-  display: inline-flex; align-items: center; justify-content: center;
-  min-height: 44px;
-  padding: 15px 26px;
-  border-radius: 999px;
-  font-family: var(--font-mono); font-size: 12px;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  transition: background .25s var(--ease-out), color .25s var(--ease-out),
-              border-color .25s var(--ease-out), transform .25s var(--ease-out);
-}
-.events-cta {
-  background: var(--green); color: var(--cream-light);
-  border: 1px solid var(--green);
-}
-.events-cta:hover, .events-cta:focus-visible {
-  background: var(--tomato); border-color: var(--tomato); transform: translateY(-2px);
-}
-.events-phone {
-  background: transparent; color: var(--ink);
-  border: 1px solid rgba(21, 17, 11, 0.35);
-}
-.events-phone:hover, .events-phone:focus-visible {
-  border-color: var(--ink);
-  background: rgba(21, 17, 11, 0.05);
-  transform: translateY(-2px);
-}
-.events-cta:focus-visible, .events-phone:focus-visible {
-  outline: 2px solid var(--ink); outline-offset: 4px;
-}
-
-.events-cards { display: flex; flex-direction: column; gap: 18px; }
-.events-card {
-  --card-accent: var(--green);
-  --card-ink: var(--green);
-  position: relative;
-  border: 1.5px solid rgba(21, 17, 11, 0.14);
-  border-top: 4px solid var(--card-accent);
-  background: var(--cream-light);
-  border-radius: 4px;
-  padding: 24px 28px 22px;
-  display: flex; flex-direction: column; gap: 14px;
-  box-shadow: 0 10px 28px rgba(21, 17, 11, 0.07);
-  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
-}
-.events-card:nth-child(2) { --card-accent: var(--tomato); --card-ink: var(--tomato); }
-.events-card:nth-child(3) { --card-accent: var(--orange); --card-ink: var(--orange-deep); }
-.events-card:hover {
-  border-color: rgba(21, 17, 11, 0.28);
-  box-shadow: 0 16px 38px rgba(21, 17, 11, 0.12);
-  transform: translateY(-2px);
-}
-/* pastille motif « moulin à vent » du brandbook, en colorway par carte */
-.events-card__motif {
-  position: absolute; top: 18px; right: 22px;
-  width: 48px; height: 48px; border-radius: 3px;
-  background-color: var(--card-accent);
-  background-image: var(--pinwheel);
-  background-size: 24px 24px;
-}
-.events-card__head {
-  display: flex; align-items: center; gap: 16px;
-  padding-right: 58px;
-}
-.events-card .num {
-  font-family: var(--font-display);
-  font-size: 44px; line-height: 1;
-  color: var(--card-ink);
-  letter-spacing: -0.02em;
-}
-/* motif « rayures » du brandbook en guise de filet */
-.events-card .rule {
-  flex: 1; height: 7px;
-  background-image: repeating-linear-gradient(
-    90deg,
-    var(--card-ink) 0 3px,
-    transparent 3px 8px
-  );
-  opacity: .55;
-}
-.events-card h3 {
+.wine-card h3 {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: 24px; line-height: 1.2; font-weight: 500;
+  font-size: 34px; line-height: 1.12; font-weight: 500;
 }
-.events-card .ro { font-style: italic; color: var(--card-ink); }
-.events-card .meta {
-  font-family: var(--font-mono);
-  font-size: 10.5px; letter-spacing: 0.18em;
-  text-transform: uppercase;
+.wine-card__head p { margin: 10px 0 0; font-size: 17px; line-height: 1.55; max-width: 60ch; }
+.wine-card__head .wine-card__legend {
+  margin: 0;
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--ink-soft);
-  opacity: .85;
-  line-height: 1.7;
+  white-space: nowrap;
 }
-.events-card .cap {
-  align-self: flex-start;
-  font-family: var(--font-mono);
-  font-size: 11px; letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--cream-light);
-  background: var(--card-ink);
-  border-radius: 999px;
-  padding: 7px 15px;
-  margin-top: 2px;
+
+/* la carte, en grand */
+.wine-map { margin: 28px 0 0; }
+.wine-map svg {
+  display: block; width: 100%; height: auto;
+  border: 1px solid rgba(21, 17, 11, 0.16);
+  border-radius: 3px;
+  background: var(--map-sea);
+}
+.wine-map__sea { fill: var(--map-sea); }
+.wine-map__land {
+  fill: #e7e1cd;
+  stroke: rgba(21, 17, 11, 0.28); stroke-width: 0.8; stroke-linejoin: round;
+}
+.wine-map__land.is-focus { fill: #f6efdb; stroke: rgba(21, 17, 11, 0.4); }
+.wine-map__lake { fill: var(--map-sea); stroke: rgba(63, 107, 124, 0.5); stroke-width: 0.6; }
+.wine-map__river {
+  fill: none; stroke: #6d9aab; stroke-width: 2.4;
+  stroke-linejoin: round; stroke-linecap: round;
+}
+.wine-map__label {
+  font-family: var(--font-mono); font-size: 11.5px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  text-anchor: middle;
+  paint-order: stroke; stroke: var(--cream-light); stroke-width: 3px; stroke-opacity: .6;
+}
+.wine-map__label.is-land { fill: var(--ink-soft); fill-opacity: .72; font-weight: 500; }
+.wine-map__label.is-minor { fill-opacity: .48; font-size: 10.5px; font-weight: 400; }
+.wine-map__label.is-sea, .wine-map__label.is-river {
+  fill: var(--map-sea-ink); font-style: italic; font-size: 13px;
+  stroke: var(--map-sea); stroke-opacity: .8;
+}
+.wine-map__label.is-river { font-size: 11.5px; stroke: none; }
+.wine-map__compass text {
+  fill: var(--ink-soft); font-family: var(--font-mono); font-size: 12px; text-anchor: middle;
+}
+.wine-map__compass line, .wine-map__compass path { fill: none; stroke: var(--ink-soft); stroke-width: 1.2; }
+.wine-map__scale line { stroke: var(--ink-soft); stroke-width: 1.4; }
+.wine-map__scale text { fill: var(--ink-soft); font-family: var(--font-mono); font-size: 10.5px; }
+.wine-map figcaption {
+  margin-top: 8px;
+  font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.06em;
+  color: var(--ink-soft); opacity: .75;
+}
+
+.wine-route.is-a, .wine-route-list.is-a { --route: var(--route-a); }
+.wine-route.is-b, .wine-route-list.is-b { --route: var(--route-b); }
+.wine-route.is-c, .wine-route-list.is-c { --route: var(--route-c); }
+.wine-route.is-d, .wine-route-list.is-d { --route: var(--route-d); }
+.wine-route__path {
+  fill: none; stroke: var(--route); stroke-width: 1.8;
+  stroke-dasharray: 5 6; stroke-linecap: round; opacity: .75;
+}
+.wine-route__dot { fill: var(--route); stroke: var(--cream-light); stroke-width: 2.5; }
+.wine-route__n {
+  fill: var(--cream-light);
+  font-family: var(--font-mono); font-size: 12px; font-weight: 500;
+  text-anchor: middle;
+}
+.wine-route__start { fill: none; stroke: var(--route); stroke-width: 1.8; }
+.wine-route__leader { stroke: var(--route); stroke-width: 1.2; }
+.wine-route__place {
+  fill: var(--ink);
+  font-family: var(--font-serif); font-size: 16px; font-weight: 600;
+  paint-order: stroke; stroke: var(--cream-light); stroke-width: 4px; stroke-linejoin: round;
+}
+
+/* les parcours, en colonnes sous la carte */
+.wine-routes {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px;
+  margin-top: 34px;
+}
+.wine-route-list {
+  padding-left: 16px;
+  border-left: 3px solid var(--route);
+}
+.wine-route-list h4 {
+  margin: 0;
+  font-family: var(--font-mono); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--route);
+}
+.wine-route-list__note { margin: 6px 0 14px; font-size: 14px; font-style: italic; line-height: 1.45; opacity: .8; }
+.wine-route-list ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.wine-route-list li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; }
+.wine-stop__n {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--route); color: var(--cream-light);
+  font-family: var(--font-mono); font-size: 10.5px;
+}
+.wine-route-list li strong { display: block; font-size: 15px; font-weight: 600; line-height: 1.3; }
+.wine-route-list li span:not(.wine-stop__n) { display: block; margin-top: 2px; font-size: 14px; line-height: 1.45; opacity: .82; }
+
+.wine-card__foot {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+  margin-top: 34px; padding-top: 22px;
+  border-top: 1px solid rgba(21, 17, 11, 0.14);
+}
+.wine-card__foot h4 {
+  margin: 0 0 6px;
+  font-family: var(--font-mono); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--tomato);
+}
+.wine-card__foot div + div h4 { color: var(--ink); }
+.wine-card__foot p { margin: 0; font-size: 15px; line-height: 1.55; }
+
+@media (max-width: 1100px) {
+  .wine-routes { grid-template-columns: repeat(2, 1fr); gap: 30px 36px; }
 }
 @media (max-width: 900px) {
-  .events-row { grid-template-columns: 1fr; gap: 30px; }
-  .events-card { padding: 22px 22px 20px; }
-  .events-card .num { font-size: 38px; }
-  .events-card h3 { font-size: 21px; }
-  .events-private { padding: 22px 22px 20px 28px; }
+  .events-row { grid-template-columns: 1fr; gap: 24px; }
+  .wine-card { margin-top: 44px; padding: 26px 20px 22px; }
+  .wine-card h3 { font-size: 26px; }
+  .wine-card__foot { grid-template-columns: 1fr; gap: 26px; }
+}
+/* petit écran : la carte garde les numéros, la liste donne les noms */
+@media (max-width: 640px) {
+  .wine-map { margin-left: -8px; margin-right: -8px; }
+  .wine-routes { grid-template-columns: 1fr; gap: 26px; }
+  .wine-route__place, .wine-route__leader,
+  .wine-map__label.is-minor, .wine-map__label.is-dense,
+  .wine-map__compass, .wine-map__scale { display: none; }
+  .wine-map__label { font-size: 20px; letter-spacing: 0.08em; }
+  .wine-map__label.is-sea { font-size: 21px; }
+  .wine-map__label.is-river { font-size: 19px; }
+  .wine-route__dot { r: 15px; }
+  .wine-route__n { font-size: 15px; }
 }
 
 /* ---- RESERVE ---- */
@@ -945,6 +975,50 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   margin-bottom: 16px;
 }
 .reserve-aside p { margin: 0 0 14px; max-width: 32ch; }
+
+/* bloc « privatiser la salle » : c'est possible, écrivez-nous */
+.reserve-private {
+  position: relative;
+  margin-top: 30px;
+  padding: 24px 26px 24px 34px;
+  background: var(--cream-light);
+  color: var(--ink);
+  border-radius: 4px;
+  box-shadow: 0 10px 28px rgba(21, 17, 11, 0.12);
+  max-width: 440px;
+}
+.reserve-private::before {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 0;
+  width: 14px;
+  border-radius: 4px 0 0 4px;
+  background-color: var(--green);
+  background-image: var(--pinwheel);
+  background-size: 14px 14px;
+}
+.reserve-private__eyebrow {
+  display: block;
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+.reserve-aside .reserve-private p { margin: 0; font-size: 16px; line-height: 1.55; max-width: 40ch; }
+.reserve-private__cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  background: var(--green); color: var(--cream-light);
+  border: 1px solid var(--green);
+  font-family: var(--font-mono); font-size: 12px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  transition: background .25s var(--ease-out), border-color .25s var(--ease-out), transform .25s var(--ease-out);
+}
+.reserve-private__cta:hover, .reserve-private__cta:focus-visible {
+  background: var(--tomato); border-color: var(--tomato); transform: translateY(-2px);
+}
+.reserve-private__cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 
 /* ---- VIDEO ---- */
 .s-video { background: var(--ink); color: var(--cream-light); }

@@ -80,26 +80,142 @@
     "q3Loc": "Choix de la critique"
   },
   "Events": {
-    "titlePre": "Recevoir\n",
-    "titleAccent": "comme à la maison.",
+    "titlePre": "On vous fait\n",
+    "titleAccent": "voyager.",
     "p1": "En roumain, <i>petrecere</i> veut dire à la fois la fête, le festin et le temps passé ensemble. C'est ainsi que nous recevons.",
-    "p2": "Douze autour de la grande table ou soixante dans toute la salle : nous cuisinons comme les familles des Balkans cuisinent pour les leurs. Beaucoup, tout en même temps, et personne ne part vraiment à l'heure.",
-    "enquireCta": "Écrire à bureau@ibrik.fr",
-    "phone": "+33 1 70 69 42 50",
-    "privateEyebrow": "Privatiser la salle",
-    "privateBody": "Jusqu'à 60 convives : le restaurant entier, une carte écrite avec la cuisine. Dites-nous la date et le nombre, nous vous répondons.",
-    "card1Name": "Masa mare",
-    "card1Ro": "la grande table",
-    "card1Meta": "12–24 convives · salle du fond · 3 services à partager",
-    "card1Cap": "Sur devis",
-    "card2Name": "Vinuri",
-    "card2Ro": "les vins de l'Est",
-    "card2Meta": "Plus de 40 références naturelles · Europe de l'Est · un vin du mois",
-    "card2Cap": "Accord à la table",
-    "card3Name": "Botez & Nuntă",
-    "card3Ro": "baptême & mariage",
-    "card3Meta": "Traiteur · sarmale par centaines · țuică à la caisse",
-    "card3Cap": "Sur devis"
+    "p2": "Douze autour de la grande table ou quatre-vingts dans toute la salle : nous cuisinons comme les familles des Balkans cuisinent pour les leurs. Beaucoup, tout en même temps, et personne ne part vraiment à l'heure.",
+    "wine": {
+      "eyebrow": "Vinuri · la carte des vins",
+      "title": "Les vins des Balkans, en quatre parcours",
+      "intro": "Du vignoble au verre : Autriche, Danube, Adriatique et Sud. Les numéros relient les lieux aux cépages.",
+      "legend": "R = cépage rouge · B = cépage blanc",
+      "map": {
+        "alt": "Carte des vins des Balkans d'IBRIK KITCHEN : quinze régions viticoles, de l'Autriche à la Grèce, en quatre parcours.",
+        "caption": "Points : villes-repères de régions viticoles, pas des limites d'appellation.",
+        "adriatic": "Mer Adriatique",
+        "blackSea": "Mer Noire",
+        "aegean": "Mer Égée",
+        "danube": "Danube",
+        "austria": "Autriche",
+        "serbia": "Serbie",
+        "romania": "Roumanie",
+        "bulgaria": "Bulgarie",
+        "greece": "Grèce",
+        "italy": "Italie",
+        "slovakia": "Slovaquie",
+        "hungary": "Hongrie",
+        "ukraine": "Ukraine",
+        "moldova": "Moldavie",
+        "slovenia": "Slovénie",
+        "croatia": "Croatie",
+        "bosnia": "Bosnie-Herzégovine",
+        "montenegro": "Monténégro",
+        "kosovo": "Kosovo",
+        "macedonia": "Macédoine du Nord",
+        "albania": "Albanie",
+        "turkey": "Turquie",
+        "scale": "{km} km env."
+      },
+      "routes": {
+        "a": {
+          "name": "A · Autriche",
+          "note": "La référence du nord, aux portes des Balkans."
+        },
+        "b": {
+          "name": "B · Danube et Est",
+          "note": "Sols variés, influence continentale souvent marquée."
+        },
+        "c": {
+          "name": "C · Adriatique et Dinarides",
+          "note": "Karst fréquent. Littoral, plateaux et vallées distincts."
+        },
+        "d": {
+          "name": "D · Sud : reliefs, lacs et vallées",
+          "note": "Des climats contrastés, pas une seule zone d'altitude."
+        }
+      },
+      "stops": {
+        "1": {
+          "place": "Leithaberg / Burgenland",
+          "short": "Leithaberg",
+          "note": "Calcaires et schistes. Blaufränkisch (R), Chardonnay (B)."
+        },
+        "2": {
+          "place": "Sud-Styrie",
+          "short": "Sud-Styrie",
+          "note": "Opok (marnes calcaires), autres sols. Sauvignon blanc (B)."
+        },
+        "3": {
+          "place": "Rogljevo / Negotin · Serbie",
+          "short": "Rogljevo",
+          "note": "Calcaire local. Prokupac (R). Le village des Bongiraud."
+        },
+        "4": {
+          "place": "Mehedinți · Roumanie",
+          "short": "Mehedinți",
+          "note": "Repère : Corcova. Fetească Neagră (R), variétés internationales."
+        },
+        "5": {
+          "place": "Dealu Mare · Roumanie",
+          "short": "Dealu Mare",
+          "note": "Munténie. Argiles, marnes, calcaires localisés. Fetească Neagră (R)."
+        },
+        "6": {
+          "place": "Murfatlar / Dobrogée · Roumanie",
+          "short": "Murfatlar",
+          "note": "Calcaire, craie et loess. Blancs et rouges, secs ou doux."
+        },
+        "7": {
+          "place": "Asenovgrad / Thrace · Bulgarie",
+          "short": "Asenovgrad",
+          "note": "Piémont des Rhodopes. Mavrud (R)."
+        },
+        "8": {
+          "place": "Istrie · Croatie",
+          "short": "Istrie",
+          "note": "Malvazija Istarska (B), Teran (R). Sols rouges et sols sur flysch."
+        },
+        "9": {
+          "place": "Pelješac et Korčula · Dalmatie, Croatie",
+          "short": "Pelješac / Korčula",
+          "note": "Calcaires, climat maritime. Plavac Mali (R), Pošip (B)."
+        },
+        "10": {
+          "place": "Herzégovine · Bosnie-Herzégovine",
+          "short": "Herzégovine",
+          "note": "Repère : Čitluk. Žilavka (B), Blatina (R)."
+        },
+        "11": {
+          "place": "Podgorica et lac de Skadar · Monténégro",
+          "short": "Podgorica / Skadar",
+          "note": "Vranac (R), Krstač (B). Plaine et collines, sols variés."
+        },
+        "12": {
+          "place": "Lezhë · Albanie",
+          "short": "Lezhë",
+          "note": "Repère du nord albanais. Kallmet (R)."
+        },
+        "13": {
+          "place": "Ohrid · Macédoine du Nord",
+          "short": "Ohrid",
+          "note": "Lac et altitude, nuits plus fraîches. Plusieurs cépages et styles."
+        },
+        "14": {
+          "place": "Tikveš · Macédoine du Nord",
+          "short": "Tikveš",
+          "note": "Vallée plus chaude du Vardar. Vranec (R), Temjanika (B)."
+        },
+        "15": {
+          "place": "Naoussa · Grèce",
+          "short": "Naoussa",
+          "note": "Versants du Vermio, sols argileux et calcaires. Xinomavro (R)."
+        }
+      },
+      "startTitle": "Le point de départ : Rogljevo",
+      "startBody": "<b>Slava</b> = Prokupac. <b>Istina</b> = complantation de cépages balkaniques. <b>Obecanje</b> = Gamay ; des cuvées distinctes existent en Pinot Noir et Frankovka.",
+      "tasteTitle": "Du terroir au goût",
+      "tasteBody": "Climat + sol + cépage + vendange + vinification. Le calcaire seul ne garantit ni acidité ni goût salé. Le Xinomavro peut allier acidité et tanins ; un Vranac peut être plus ample."
+    }
   },
   "Reserve": {
     "titlePre": "Réserver\n",
@@ -116,7 +232,10 @@
     "takeawayText": "Envie de manger chez vous ou au bureau ? Toute la carte est aussi à emporter — passez au restaurant ou appelez-nous pour commander.",
     "asideStamp": "Toujours\nune place.",
     "asideP1": "La salle a l'air pleine ? Appelez quand même : on vous trouve toujours une place.",
-    "asideP2": "Grandes tablées, dernière minute, anniversaire improvisé : dites-le-nous, on s'arrange."
+    "asideP2": "Grandes tablées, dernière minute, anniversaire improvisé : dites-le-nous, on s'arrange.",
+    "privateEyebrow": "Privatiser la salle",
+    "privateBody": "Jusqu'à 80 convives : le restaurant entier, pour un baptême, un mariage ou une fête de famille. La carte s'écrit avec la cuisine. Dites-nous la date et le nombre, nous vous répondons.",
+    "privateCta": "Écrire à bureau@ibrik.fr"
   },
   "Video": {
     "titlePre": "Dans la cuisine\n",
@@ -223,7 +342,7 @@
     },
     "groups": {
       "q": "Peut-on venir en groupe ou privatiser le restaurant ?",
-      "a": "Oui. La grande table, masa mare, reçoit 12 à 24 convives, en trois services à partager. Le restaurant entier se privatise jusqu'à 60 personnes. IBRIK KITCHEN cuisine aussi pour les baptêmes et les mariages. Écrivez à bureau@ibrik.fr ou appelez le +33 1 70 69 42 50."
+      "a": "Oui. La grande table, masa mare, reçoit 12 à 24 convives, en trois services à partager. Le restaurant entier se privatise jusqu'à 80 personnes. IBRIK KITCHEN cuisine aussi pour les baptêmes et les mariages. Écrivez à bureau@ibrik.fr ou appelez le +33 1 70 69 42 50."
     },
     "chef": {
       "q": "Qui est la cheffe d'IBRIK KITCHEN ?",
