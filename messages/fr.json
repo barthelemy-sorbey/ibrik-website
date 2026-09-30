@@ -79,6 +79,15 @@
     "q3": "Un papanași si tendre qu'il a brièvement guéri une gueule de bois et un chagrin d'amour d'une seule bouchée.",
     "q3Loc": "Choix de la critique"
   },
+  "Reviews": {
+    "title": "Vos avis,\nnos réponses.",
+    "lead": "Ce que nos hôtes écrivent sur Google après un repas chez IBRIK KITCHEN, restaurant des Balkans à Paris 2e. Et ce que nous leur répondons.",
+    "rating": "{rating} / 5 · {count} avis Google",
+    "stars": "{rating} étoiles sur 5",
+    "reply": "Réponse d'IBRIK KITCHEN",
+    "anonymous": "Un hôte",
+    "all": "Lire tous les avis sur Google →"
+  },
   "Events": {
     "titlePre": "On vous fait\n",
     "titleAccent": "voyager.",
@@ -293,13 +302,39 @@
     "openInMaps": "Ouvrir dans Maps →",
     "hoursTitle": "Horaires · Program",
     "closed": "Fermé",
-    "sundayClosed": "Dimanche · duminică",
-    "weekRange": "Lundi — Samedi",
     "lunch": "Déjeuner · prânz",
     "dinner": "Dîner · cină",
-    "lunchHours": "12:00 — 15:30",
-    "dinnerHours": "19:00 — 00:30",
+    "specialTitle": "Horaires exceptionnels",
     "mapAlt": "Plan · IBRIK KITCHEN, 9 rue de Mulhouse, Paris 2e"
+  },
+  "Hours": {
+    "days": {
+      "monday": "lundi",
+      "tuesday": "mardi",
+      "wednesday": "mercredi",
+      "thursday": "jeudi",
+      "friday": "vendredi",
+      "saturday": "samedi",
+      "sunday": "dimanche"
+    },
+    "daysRo": {
+      "monday": "luni",
+      "tuesday": "marți",
+      "wednesday": "miercuri",
+      "thursday": "joi",
+      "friday": "vineri",
+      "saturday": "sâmbătă",
+      "sunday": "duminică"
+    },
+    "lunch": "déjeuner",
+    "dinner": "dîner",
+    "time": "{h}h{m}",
+    "single": "le {day}",
+    "range": "du {from} au {to}",
+    "closedDay": "le {day}",
+    "service": "{meal} de {opens} à {closes}",
+    "group": "{days} : {services}",
+    "groupSeparator": " ; "
   },
   "Faq": {
     "eyebrow": "Bon à savoir · întrebări",
@@ -318,7 +353,7 @@
     },
     "hours": {
       "q": "Quels sont les horaires d'IBRIK KITCHEN ?",
-      "a": "IBRIK KITCHEN est ouvert du lundi au samedi : déjeuner de 12h00 à 15h30, dîner de 19h00 à 00h30. Le restaurant est fermé le dimanche."
+      "a": "IBRIK KITCHEN est ouvert {open}.{closed, select, none {} other { Le restaurant est fermé {closed}.}}"
     },
     "cuisine": {
       "q": "Quelle cuisine sert IBRIK KITCHEN ?",
@@ -376,7 +411,7 @@
     "back": "← Retour à l'accueil",
     "lunch": {
       "label": "Menu midi",
-      "subtitle": "Lun — Ven · 12:00 — 15:30",
+      "subtitle": "Lun — Ven · {hours}",
       "sectionMezze": "Mezze",
       "sectionMains": "Plats",
       "sectionDesserts": "Desserts",
@@ -445,7 +480,7 @@
     },
     "dinner": {
       "label": "Menu dîner",
-      "subtitle": "Lun — Sam · 19:00 — 00:30 · Printemps/Été 2026",
+      "subtitle": "Lun — Sam · {hours} · Printemps/Été 2026",
       "sectionBreadWine": "Du pain et du vin",
       "sectionWildSharp": "Sauvages, acides",
       "sectionEmbers": "La braise",
@@ -531,7 +566,7 @@
     },
     "saturday": {
       "label": "Menu samedi midi",
-      "subtitle": "Samedi · 12:00 — 15:30 · à la carte",
+      "subtitle": "Samedi · {hours} · à la carte",
       "sectionMezze": "Mezze",
       "sectionMains": "Plats",
       "sectionDesserts": "Desserts",

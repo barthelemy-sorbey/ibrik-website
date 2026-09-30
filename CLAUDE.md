@@ -9,11 +9,16 @@ Paraschiv, 9 rue de Mulhouse, 75002 Paris (Sentier). Production : https://ibrik.
 
 - **Deux adresses à ne jamais confondre** : IBRIK KITCHEN (restaurant, Paris 2e)
   et IBRIK (café, Paris 9e). Ce site est celui du restaurant.
-- Ouvert du lundi au samedi, 12:00–15:30 et 19:00–00:30. Fermé le dimanche.
+- Ouvert du lundi au samedi, 12:00–15:00 et 19:00–23:00. Fermé le dimanche.
+  **La fiche Google fait foi** : le site lit horaires, jours d'exception et avis
+  via le back-end Sorbey (`app/lib/sorbey.ts`, requêtes Convex publiques,
+  relues toutes les heures). Pour changer un horaire, on change la fiche Google,
+  pas le code. `FALLBACK_HOURS` ne sert que si Sorbey ne répond pas.
 - Téléphone +33 1 70 69 42 50 · réservations via Zenchef (rid `352129`) ·
   événements : bureau@ibrik.fr.
-- Ces faits (NAP, horaires) doivent rester identiques partout : `Location`,
-  `Faq`, `MobileMenu`, `Footer`, `app/lib/restaurant-jsonld.ts`.
+- Ces faits (NAP) doivent rester identiques partout : `Location`, `Faq`,
+  `MobileMenu`, `Footer`, `app/lib/restaurant-jsonld.ts`. Les horaires passent
+  tous par `app/lib/opening-hours.ts` : ne jamais les réécrire en dur.
 
 ## Écrire pour IBRIK — obligatoire
 
@@ -55,13 +60,16 @@ app/
   [locale]/menus/page.tsx    /menus : metadata, JSON-LD Restaurant+Menu, Breadcrumb
   [locale]/not-found.tsx, error.tsx, global-error.tsx  → OopsScreen
   components/                une section = un composant = un namespace de messages
-    Hero (H1) · About · Menu (extrait carte) · Press · Events · Reserve
+    Hero (H1) · About · Menu (extrait carte) · Press · Reviews (avis Google)
+    Events · Reserve
     CrystalBall · Video · Faq · Location · Footer · Nav/MobileMenu
     Gallery (construit mais masqué, cf. commentaire dans page.tsx)
     MenusContent             rendu HTML complet des trois cartes
   lib/menus-data.ts          structure et prix des cartes (textes dans MenusPage.*)
   lib/faq-data.ts            ids FAQ → accordéon + JSON-LD FAQPage
   lib/restaurant-jsonld.ts   nœud schema.org Restaurant partagé, SITE_URL
+  lib/sorbey.ts              fiche Google via Sorbey : horaires, avis 4-5★
+  lib/opening-hours.ts       horaires → tableau, phrase FAQ, JSON-LD, cartes
   sitemap.ts, robots.ts
 public/menus/*.pdf           PDF des cartes, auto-hébergés
 docs/charte-verbale.md       éléments de langage (voix, lexique, SEO)

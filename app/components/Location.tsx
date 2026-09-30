@@ -1,7 +1,30 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import {
+  closedDays,
+  dayRangeLabel,
+  formatPeriod,
+  hoursRows,
+  upcomingSpecialRows,
+  type OpeningHours,
+  type Translator,
+} from "../lib/opening-hours";
 
-export default function Location() {
+export default function Location({ hours }: { hours: OpeningHours }) {
   const t = useTranslations("Location");
+  const tHours = useTranslations("Hours") as Translator;
+  const locale = useLocale();
+  const closed = closedDays(hours);
+  const special = upcomingSpecialRows(hours);
+
+  // Dates "YYYY-MM-DD" lues en UTC pour ne pas glisser d'un jour.
+  const formatDay = (date: string, withWeekday = false) =>
+    new Intl.DateTimeFormat(locale, {
+      weekday: withWeekday ? "long" : undefined,
+      day: "numeric",
+      month: "long",
+      timeZone: "UTC",
+    }).format(new Date(`${date}T00:00:00Z`));
+
   return (
     <section className="section s-location" id="visit">
       <div className="wrap">
@@ -43,24 +66,49 @@ export default function Location() {
             <h3>{t("hoursTitle")}</h3>
             <table className="hours-table">
               <tbody>
-                <tr className="closed">
-                  <td>{t("sundayClosed")}</td>
-                  <td>{t("closed")}</td>
-                </tr>
-                <tr>
-                  <td>
-                    {t("weekRange")} · {t("lunch")}
-                  </td>
-                  <td>{t("lunchHours")}</td>
-                </tr>
-                <tr>
-                  <td>
-                    {t("weekRange")} · {t("dinner")}
-                  </td>
-                  <td>{t("dinnerHours")}</td>
-                </tr>
+                {closed.length > 0 && (
+                  <tr className="closed">
+                    <td>
+                      {dayRangeLabel(closed, tHours)}
+                      {closed.length === 1 && ` · ${tHours(`daysRo.${closed[0]}`)}`}
+                    </td>
+                    <td>{t("closed")}</td>
+                  </tr>
+                )}
+                {hoursRows(hours).map((row) => (
+                  <tr key={`${row.meal}-${row.days.join()}`}>
+                    <td>
+                      {dayRangeLabel(row.days, tHours)} · {t(row.meal)}
+                    </td>
+                    <td>{formatPeriod(row.period)}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
+
+            {special.length > 0 && (
+              <>
+                <h3 style={{ marginTop: 36 }}>{t("specialTitle")}</h3>
+                <table className="hours-table">
+                  <tbody>
+                    {special.map((row) => (
+                      <tr key={row.from} className={row.closed ? "closed" : undefined}>
+                        <td>
+                          {row.from === row.to
+                            ? formatDay(row.from, true)
+                            : `${formatDay(row.from)} — ${formatDay(row.to)}`}
+                        </td>
+                        <td>
+                          {row.closed || !row.period
+                            ? t("closed")
+                            : formatPeriod(row.period)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </>
+            )}
           </div>
         </div>
 
