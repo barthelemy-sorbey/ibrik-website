@@ -88,14 +88,16 @@ export async function getOpeningHours(): Promise<OpeningHours> {
 }
 
 type SorbeyReview = {
+  _id: string;
   authorName: string;
   rating: number;
-  text?: string;
+  text: string;
   publishedAt: number;
   googleOwnerReplyText?: string;
 };
 
 export type Review = {
+  id: string;
   author: string;
   rating: number;
   text: string;
@@ -109,22 +111,6 @@ export type ReviewsData = {
   count?: number;
 };
 
-const TRANSLATED = "(Translated by Google)";
-const ORIGINAL = "(Original)";
-
-/**
- * Google colle sa traduction au texte : « (Translated by Google) … (Original) … ».
- * On ne garde que les mots de l'auteur, dans sa langue.
- */
-export function originalText(text: string) {
-  const translated = text.indexOf(TRANSLATED);
-  if (translated === -1) return text.trim();
-  const original = text.indexOf(ORIGINAL);
-  if (original !== -1) return text.slice(original + ORIGINAL.length).trim();
-  // Texte d'origine d'abord, traduction ensuite.
-  return text.slice(0, translated).trim() || text.slice(translated + TRANSLATED.length).trim();
-}
-
 /** « CAROLINE CORMIER » → « Caroline C. » : un prénom, une initiale. */
 function shortName(name: string) {
   const [first, ...rest] = name.trim().split(/\s+/);
@@ -136,29 +122,29 @@ function shortName(name: string) {
   return last ? `${firstName} ${last.charAt(0).toUpperCase()}.` : firstName;
 }
 
-/** Derniers avis 4 et 5 étoiles avec un texte, et leur réponse. */
+/**
+ * Derniers avis 4 et 5 étoiles avec un texte, et leur réponse. Sorbey filtre,
+ * trie et retire les mentions « (Translated by Google) … (Original) … ».
+ */
 export async function getReviews(count = 3): Promise<ReviewsData> {
   const [location, raw] = await Promise.all([
     getLocation(),
     sorbeyQuery<SorbeyReview[]>("reviews:getPublicByLocation", {
       locationId: LOCATION_ID,
-      limit: 50,
+      limit: count,
+      minRating: 4,
+      withText: true,
     }),
   ]);
 
-  const reviews = (raw ?? [])
-    .filter((r) => r.rating >= 4 && r.text && originalText(r.text))
-    .sort((a, b) => b.publishedAt - a.publishedAt)
-    .slice(0, count)
-    .map((r) => ({
-      author: shortName(r.authorName),
-      rating: r.rating,
-      text: originalText(r.text!),
-      publishedAt: r.publishedAt,
-      reply: r.googleOwnerReplyText
-        ? originalText(r.googleOwnerReplyText)
-        : undefined,
-    }));
+  const reviews = (raw ?? []).map((r) => ({
+    id: r._id,
+    author: shortName(r.authorName),
+    rating: r.rating,
+    text: r.text,
+    publishedAt: r.publishedAt,
+    reply: r.googleOwnerReplyText,
+  }));
 
   return {
     reviews,

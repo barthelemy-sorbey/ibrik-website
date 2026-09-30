@@ -28,7 +28,7 @@ export default function Reviews({ reviews, rating, count }: ReviewsData) {
 
         <div className="reviews-grid">
           {reviews.map((review) => (
-            <figure className="review reveal" key={`${review.author}-${review.publishedAt}`}>
+            <figure className="review reveal" key={review.id}>
               <div
                 className="stars"
                 role="img"

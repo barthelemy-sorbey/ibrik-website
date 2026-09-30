@@ -16,14 +16,17 @@ export default function Location({ hours }: { hours: OpeningHours }) {
   const closed = closedDays(hours);
   const special = upcomingSpecialRows(hours);
 
-  // Dates "YYYY-MM-DD" lues en UTC pour ne pas glisser d'un jour.
-  const formatDay = (date: string, withWeekday = false) =>
-    new Intl.DateTimeFormat(locale, {
+  // Dates "YYYY-MM-DD" lues en UTC pour ne pas glisser d'un jour ; majuscule
+  // initiale comme les autres lignes du tableau (« Samedi 31 octobre »).
+  const formatDay = (date: string, withWeekday = false) => {
+    const label = new Intl.DateTimeFormat(locale, {
       weekday: withWeekday ? "long" : undefined,
       day: "numeric",
       month: "long",
       timeZone: "UTC",
     }).format(new Date(`${date}T00:00:00Z`));
+    return label.charAt(0).toUpperCase() + label.slice(1);
+  };
 
   return (
     <section className="section s-location" id="visit">
