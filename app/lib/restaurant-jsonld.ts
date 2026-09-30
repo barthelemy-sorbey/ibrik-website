@@ -1,26 +1,21 @@
 /**
  * schema.org Restaurant node shared by the home page and /menus, so Google
  * and answer engines read the same name, address, hours and chef everywhere
- * (NAP consistency). Keep these facts in sync with the Location section.
+ * (NAP consistency). Keep these facts in sync with the Location section; the
+ * hours come from the Google listing via `getOpeningHours()`.
  */
 import { SITE_URL } from "./seo";
+import { hoursJsonLd, type OpeningHours } from "./opening-hours";
 
 const BOOKING_URL = "https://bookings.zenchef.com/results?rid=352129&pid=1001";
 
-const WEEKDAYS = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
 export function buildRestaurantJsonLd({
   description,
+  hours,
   hasMenu,
 }: {
   description: string;
+  hours: OpeningHours;
   hasMenu?: unknown[];
 }) {
   return {
@@ -58,20 +53,7 @@ export function buildRestaurantJsonLd({
       latitude: 48.8686723,
       longitude: 2.3465837,
     },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: WEEKDAYS,
-        opens: "12:00",
-        closes: "15:30",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: WEEKDAYS,
-        opens: "19:00",
-        closes: "00:30",
-      },
-    ],
+    ...hoursJsonLd(hours),
     hasMap: "https://maps.app.goo.gl/M96VNxVcr9pbNgHx9",
     acceptsReservations: true,
     potentialAction: {

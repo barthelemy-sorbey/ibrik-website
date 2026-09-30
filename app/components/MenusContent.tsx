@@ -8,6 +8,19 @@ import {
   type MenuItemData,
   type MenuSectionData,
 } from "../lib/menus-data";
+import {
+  serviceHours,
+  type Meal,
+  type OpeningHours,
+  type Weekday,
+} from "../lib/opening-hours";
+
+// Le service dont chaque carte affiche les horaires dans son sous-titre.
+const MENU_SERVICE: Record<MenuData["id"], [Weekday, Meal]> = {
+  lunch: ["monday", "lunch"],
+  dinner: ["monday", "dinner"],
+  saturday: ["saturday", "lunch"],
+};
 
 function priceForItem(section: MenuSectionData, item: MenuItemData): number | null {
   if (item.price != null) return item.price;
@@ -144,7 +157,7 @@ const SECTION_LABEL: Record<string, string> = {
   "saturday.desserts": "saturday.sectionDesserts",
 };
 
-async function renderMenu(menu: MenuData, locale: string) {
+async function renderMenu(menu: MenuData, locale: string, hours: OpeningHours) {
   const t = await getTranslations(`MenusPage.${menu.id}`);
   const tPage = await getTranslations("MenusPage");
 
@@ -153,7 +166,9 @@ async function renderMenu(menu: MenuData, locale: string) {
       <header className="menu-block-head">
         <div>
           <h2 className="menu-block-title">{t("label")}</h2>
-          <p className="menu-block-subtitle">{t("subtitle")}</p>
+          <p className="menu-block-subtitle">
+            {t("subtitle", { hours: serviceHours(hours, ...MENU_SERVICE[menu.id]) })}
+          </p>
         </div>
         <a
           href={MENU_PDF[menu.id]}
@@ -186,7 +201,13 @@ async function renderMenu(menu: MenuData, locale: string) {
   );
 }
 
-export default async function MenusContent({ locale }: { locale: string }) {
+export default async function MenusContent({
+  locale,
+  hours,
+}: {
+  locale: string;
+  hours: OpeningHours;
+}) {
   const t = await getTranslations("MenusPage");
 
   return (
@@ -222,9 +243,9 @@ export default async function MenusContent({ locale }: { locale: string }) {
       </div>
 
       <div className="wrap menus-wrap">
-        {await renderMenu(LUNCH_MENU, locale)}
-        {await renderMenu(DINNER_MENU, locale)}
-        {await renderMenu(SATURDAY_MENU, locale)}
+        {await renderMenu(LUNCH_MENU, locale, hours)}
+        {await renderMenu(DINNER_MENU, locale, hours)}
+        {await renderMenu(SATURDAY_MENU, locale, hours)}
       </div>
     </main>
   );

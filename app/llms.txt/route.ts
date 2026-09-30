@@ -1,24 +1,40 @@
+import { createTranslator } from "next-intl";
 import fr from "../../messages/fr.json";
 import en from "../../messages/en.json";
 import { FAQ_IDS } from "../lib/faq-data";
+import {
+  describeHours,
+  type OpeningHours,
+  type Translator,
+} from "../lib/opening-hours";
+import { getOpeningHours } from "../lib/sorbey";
 import { MENU_PDF } from "../lib/menus-data";
 import { SITE_URL, localizedUrl } from "../lib/seo";
 
 /**
  * /llms.txt — plain facts for answer engines (https://llmstxt.org). Built from
  * the same messages as the site so the FAQ never drifts from what is rendered.
- * Keep NAP and hours in sync with Location, Faq, Footer and restaurant-jsonld.
+ * Keep NAP in sync with Location, Faq, Footer and restaurant-jsonld; hours come
+ * from the Google listing via `getOpeningHours()`, re-read every hour.
  */
-export const dynamic = "force-static";
+export const revalidate = 3600;
 
-function faq(messages: typeof fr) {
-  return FAQ_IDS.map((id) => {
-    const { q, a } = messages.Faq[id];
-    return `### ${q}\n\n${a}`;
-  }).join("\n\n");
+function translators(locale: "fr" | "en", hours: OpeningHours) {
+  const messages = locale === "fr" ? fr : en;
+  const tFaq = createTranslator({ locale, messages, namespace: "Faq" });
+  const tHours = createTranslator({ locale, messages, namespace: "Hours" });
+  const values = describeHours(hours, tHours as Translator, locale);
+  const answer = (id: (typeof FAQ_IDS)[number]) => tFaq(`${id}.a`, values);
+  return {
+    hours: answer("hours"),
+    faq: FAQ_IDS.map((id) => `### ${tFaq(`${id}.q`)}\n\n${answer(id)}`).join("\n\n"),
+  };
 }
 
-const body = `# IBRIK KITCHEN
+const body = (hours: OpeningHours) => {
+  const tFr = translators("fr", hours);
+  const tEn = translators("en", hours);
+  return `# IBRIK KITCHEN
 
 > ${fr.Hero.blurb}
 >
@@ -33,7 +49,8 @@ IBRIK KITCHEN is the restaurant, 9 rue de Mulhouse, Paris 2nd; IBRIK, the same c
 - Cheffe · Chef : Cathy Paraschiv
 - Adresse · Address : 9 rue de Mulhouse, 75002 Paris, France (Sentier)
 - Métro : Sentier (3), Bonne Nouvelle (8, 9), Réaumur — Sébastopol (3, 4)
-- Horaires · Hours : lundi–samedi · Monday–Saturday, 12:00–15:30 et 19:00–00:30. Fermé le dimanche · Closed on Sundays.
+- Horaires : ${tFr.hours}
+- Hours: ${tEn.hours}
 - Téléphone · Phone : +33 1 70 69 42 50
 - E-mail (réservations de groupe, événements · groups, events) : bureau@ibrik.fr
 - Réserver · Book : https://bookings.zenchef.com/results?rid=352129&pid=1001
@@ -56,15 +73,16 @@ IBRIK KITCHEN is the restaurant, 9 rue de Mulhouse, Paris 2nd; IBRIK, the same c
 
 ## Questions fréquentes
 
-${faq(fr)}
+${tFr.faq}
 
 ## Frequently asked questions
 
-${faq(en)}
+${tEn.faq}
 `;
+};
 
-export function GET() {
-  return new Response(body, {
+export async function GET() {
+  return new Response(body(await getOpeningHours()), {
     headers: { "Content-Type": "text/plain; charset=utf-8" },
   });
 }

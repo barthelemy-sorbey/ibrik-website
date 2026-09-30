@@ -16,6 +16,10 @@ import {
 } from "../../lib/menus-data";
 import { buildRestaurantJsonLd } from "../../lib/restaurant-jsonld";
 import { buildPageMetadata, localizedUrl } from "../../lib/seo";
+import { getOpeningHours } from "../../lib/sorbey";
+
+// Horaires lus sur la fiche Google (via Sorbey) : relus toutes les heures.
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -115,6 +119,7 @@ export default async function MenusPage({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
+  const hours = await getOpeningHours();
   const tPage = await getTranslations("MenusPage");
   const tLunch = await getTranslations("MenusPage.lunch");
   const tDinner = await getTranslations("MenusPage.dinner");
@@ -122,6 +127,7 @@ export default async function MenusPage({
 
   const restaurantJsonLd = buildRestaurantJsonLd({
     description: tPage("metaDescription"),
+    hours,
     hasMenu: [
       buildMenuJsonLd(LUNCH_MENU, tLunch as ItemTranslator, tLunch("label")),
       buildMenuJsonLd(
@@ -160,7 +166,7 @@ export default async function MenusPage({
     <>
       <Reveal />
       <Nav />
-      <MenusContent locale={locale} />
+      <MenusContent locale={locale} hours={hours} />
       <Footer />
       <script
         type="application/ld+json"

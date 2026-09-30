@@ -1,9 +1,17 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "../../i18n/navigation";
 import { FAQ_IDS } from "../lib/faq-data";
+import {
+  describeHours,
+  type OpeningHours,
+  type Translator,
+} from "../lib/opening-hours";
 
-export default function Faq() {
+export default function Faq({ hours }: { hours: OpeningHours }) {
   const t = useTranslations("Faq");
+  const tHours = useTranslations("Hours") as Translator;
+  // Only `hours.a` uses these values; the other answers ignore them.
+  const values = describeHours(hours, tHours, useLocale());
 
   return (
     <section className="section s-faq" id="faq">
@@ -26,7 +34,7 @@ export default function Faq() {
                 <span className="faq-sign" aria-hidden="true" />
               </summary>
               <div className="faq-answer">
-                <p>{t(`${id}.a`)}</p>
+                <p>{t(`${id}.a`, values)}</p>
               </div>
             </details>
           ))}
