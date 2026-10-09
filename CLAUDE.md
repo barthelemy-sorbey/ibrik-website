@@ -9,7 +9,8 @@ Paraschiv, 9 rue de Mulhouse, 75002 Paris (Sentier). Production : https://ibrik.
 
 - **Deux adresses à ne jamais confondre** : IBRIK KITCHEN (restaurant, Paris 2e)
   et IBRIK (café, Paris 9e). Ce site est celui du restaurant.
-- Ouvert du lundi au samedi, 12:00–15:00 et 19:00–23:00. Fermé le dimanche.
+- Ouverture le 1er décembre 2018, jour de la fête nationale roumaine.
+- Ouvert du lundi au samedi, 12:00–15:30 et 19:00–00:00. Fermé le dimanche.
   **La fiche Google fait foi** : le site lit horaires, jours d'exception et avis
   via le back-end Sorbey (`app/lib/sorbey.ts`, requêtes Convex publiques,
   relues toutes les heures). Pour changer un horaire, on change la fiche Google,

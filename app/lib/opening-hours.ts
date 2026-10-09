@@ -29,8 +29,8 @@ export type OpeningHours = {
   special: SpecialDay[];
 };
 
-const LUNCH: Period = { opens: "12:00", closes: "15:00" };
-const DINNER: Period = { opens: "19:00", closes: "23:00" };
+const LUNCH: Period = { opens: "12:00", closes: "15:30" };
+const DINNER: Period = { opens: "19:00", closes: "00:00" };
 
 export const FALLBACK_HOURS: OpeningHours = {
   week: {
@@ -108,7 +108,7 @@ export type HoursRow = { days: Weekday[]; meal: Meal; period: Period };
 
 /**
  * Une ligne par service et par plage horaire, déjeuners d'abord :
- * « Lundi — Samedi · Déjeuner | 12:00 — 15:00 ».
+ * « Lundi — Samedi · Déjeuner | 12:00 — 15:30 ».
  */
 export function hoursRows(hours: OpeningHours): HoursRow[] {
   return (["lunch", "dinner"] as const).flatMap((meal) =>
@@ -128,12 +128,13 @@ export function serviceHours(hours: OpeningHours, day: Weekday, meal: Meal) {
 
 /**
  * Valeurs `{open}` et `{closed}` de la réponse FAQ `Faq.hours.a` :
- * « du lundi au samedi : déjeuner de 12h00 à 15h00, dîner de 19h00 à 23h00 ».
+ * « du lundi au samedi : déjeuner de 12h00 à 15h30, dîner de 19h00 à minuit ».
  * `t` est le traducteur du namespace `Hours`.
  */
 export function describeHours(hours: OpeningHours, t: Translator, locale: string) {
   const list = new Intl.ListFormat(locale, { type: "conjunction" });
   const time = (hhmm: string) => {
+    if (hhmm === "00:00") return t("midnight");
     const [h, m] = hhmm.split(":");
     return t("time", { h, m });
   };

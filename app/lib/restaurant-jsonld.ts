@@ -34,6 +34,8 @@ export function buildRestaurantJsonLd({
       `${SITE_URL}/brand/ibrik-hero-poster.jpg`,
     ],
     priceRange: "€€",
+    // 1er décembre 2018, jour de la fête nationale roumaine.
+    foundingDate: "2018-12-01",
     servesCuisine: ["Balkan", "Romanian", "Eastern European", "Greek", "Turkish"],
     founder: {
       "@type": "Person",
