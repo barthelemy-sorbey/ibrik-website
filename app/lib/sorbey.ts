@@ -59,7 +59,9 @@ type SorbeyLocation = {
 const getLocation = () =>
   sorbeyQuery<SorbeyLocation>("locations:getPublicBySlug", { slug: LOCATION_SLUG });
 
-const toPeriod = (p: SorbeyPeriod): Period => ({ opens: p.openTime, closes: p.closeTime });
+// Google peut écrire minuit « 24:00 » ; le site l'écrit « 00:00 ».
+const time = (hhmm: string) => (hhmm === "24:00" ? "00:00" : hhmm);
+const toPeriod = (p: SorbeyPeriod): Period => ({ opens: time(p.openTime), closes: time(p.closeTime) });
 
 function dayPeriods(day: SorbeyDay | undefined): Period[] {
   if (!day) return [];
@@ -81,7 +83,7 @@ export async function getOpeningHours(): Promise<OpeningHours> {
   const special = (location.specialHours ?? []).flatMap((d): SpecialDay[] => {
     if (d.isClosed) return [{ date: d.date, closed: true }];
     if (!d.openTime || !d.closeTime) return [];
-    return [{ date: d.date, closed: false, period: { opens: d.openTime, closes: d.closeTime } }];
+    return [{ date: d.date, closed: false, period: toPeriod({ openTime: d.openTime, closeTime: d.closeTime }) }];
   });
 
   return { week, special };
