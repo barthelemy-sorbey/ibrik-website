@@ -1,23 +1,19 @@
 import { useTranslations } from "next-intl";
 
-const PRESS_NAMES = [
-  "The Guardian",
-  "Eater",
-  "Time Out",
-  "Condé Nast",
-  "Financial Times",
-  "Saveur",
-  "Bon Appétit",
-  "Monocle",
-];
+// Distinctions (guides, classements) puis citations de presse. Le texte de
+// chaque entrée vit dans `Press.<id>` ; les guillemets font partie du message
+// pour suivre la typographie de chaque langue.
+const PRESS = [
+  { id: "gaultmillau", by: "Gault&Millau", award: true },
+  { id: "laliste", by: "LaListe", award: true },
+  { id: "lemonde", by: "Le Monde", award: false },
+  { id: "telerama", by: "Télérama", award: false },
+  { id: "figaroscope", by: "Le Figaroscope", award: false },
+  { id: "lobrano", by: "Alexander Lobrano", award: false },
+] as const;
 
 export default function Press() {
   const t = useTranslations("Press");
-  const quotes = [
-    { text: t("q1"), by: "The Guardian", loc: t("q1Loc") },
-    { text: t("q2"), by: "Eater", loc: t("q2Loc") },
-    { text: t("q3"), by: "Time Out", loc: t("q3Loc") },
-  ];
 
   return (
     <section className="section s-press" id="press">
@@ -29,9 +25,9 @@ export default function Press() {
 
       <div className="press-band">
         <div className="wrap press-band-inner">
-          {PRESS_NAMES.map((p) => (
-            <span className="press-logo" key={p}>
-              {p}
+          {PRESS.map((p) => (
+            <span className="press-logo" key={p.id}>
+              {p.by}
             </span>
           ))}
         </div>
@@ -39,13 +35,15 @@ export default function Press() {
 
       <div className="wrap">
         <div className="press-quotes">
-          {quotes.map((q) => (
-            <div className="press-quote reveal" key={q.by}>
-              <div className="stars">★★★★★</div>
-              <p>&ldquo;{q.text}&rdquo;</p>
+          {PRESS.map((p) => (
+            <div
+              className={`press-quote reveal${p.award ? " is-award" : ""}`}
+              key={p.id}
+            >
+              <p>{t(`${p.id}.text`)}</p>
               <div className="by">
-                <span>{q.by}</span>
-                <span>{q.loc}</span>
+                <span>{p.by}</span>
+                <span>{t(`${p.id}.loc`)}</span>
               </div>
             </div>
           ))}

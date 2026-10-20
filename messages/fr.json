@@ -72,12 +72,30 @@
   },
   "Press": {
     "title": "Ils\nreviennent.",
-    "q1": "Le sarmale est une lettre d'amour écrite au chou et à la fumée. Nous n'avons pas cessé de manger.",
-    "q1Loc": "Londres",
-    "q2": "Un acte de mémoire. Ibrik rend la table d'une grand-mère bucarestoise inévitable, presque indispensable.",
-    "q2Loc": "Meilleurs nouveaux restaurants 2025",
-    "q3": "Un papanași si tendre qu'il a brièvement guéri une gueule de bois et un chagrin d'amour d'une seule bouchée.",
-    "q3Loc": "Choix de la critique"
+    "gaultmillau": {
+      "text": "Table gourmande",
+      "loc": "Guide"
+    },
+    "laliste": {
+      "text": "Sélection LaListe1000",
+      "loc": "Classement"
+    },
+    "lemonde": {
+      "text": "« Faire découvrir la cuisine des Balkans en la modernisant »",
+      "loc": "Quotidien"
+    },
+    "telerama": {
+      "text": "« Foncez »",
+      "loc": "Hebdomadaire"
+    },
+    "figaroscope": {
+      "text": "« Tout est soigné »",
+      "loc": "Hebdomadaire"
+    },
+    "lobrano": {
+      "text": "« One of the best meal I had »",
+      "loc": "Critique gastronomique"
+    }
   },
   "Reviews": {
     "title": "Vos avis,\nnos réponses.",

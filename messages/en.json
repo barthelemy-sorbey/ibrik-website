@@ -72,12 +72,30 @@
   },
   "Press": {
     "title": "They keep\ncoming back.",
-    "q1": "The sarmale is a love letter written in cabbage and smoke. We did not stop eating.",
-    "q1Loc": "London",
-    "q2": "An act of memory. Ibrik makes a Bucharest grandmother's table feel inevitable, even necessary.",
-    "q2Loc": "Best New Restaurants 2025",
-    "q3": "A papanași so tender it briefly cured a hangover and a heartbreak in the same bite.",
-    "q3Loc": "Critic's Pick"
+    "gaultmillau": {
+      "text": "Table gourmande",
+      "loc": "Guide"
+    },
+    "laliste": {
+      "text": "LaListe1000 selection",
+      "loc": "Ranking"
+    },
+    "lemonde": {
+      "text": "“Bringing Balkan cuisine to new tables by making it modern”",
+      "loc": "Daily"
+    },
+    "telerama": {
+      "text": "“Go for it”",
+      "loc": "Weekly"
+    },
+    "figaroscope": {
+      "text": "“Everything is done with care”",
+      "loc": "Weekly"
+    },
+    "lobrano": {
+      "text": "“One of the best meal I had”",
+      "loc": "Food writer"
+    }
   },
   "Reviews": {
     "title": "Your words,\nour replies.",
