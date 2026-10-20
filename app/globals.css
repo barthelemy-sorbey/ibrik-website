@@ -671,14 +671,17 @@ button { font: inherit; cursor: pointer; border: 0; background: 0; color: inheri
   margin-top: 80px;
 }
 @media (max-width: 900px) { .press-quotes { grid-template-columns: 1fr; gap: 30px; } }
-.press-quote .stars { font-family: var(--font-display); color: var(--tomato); font-size: 22px; margin-bottom: 14px; letter-spacing: .1em; }
+.press-quote { display: flex; flex-direction: column; }
 .press-quote p {
   font-family: var(--font-serif);
   font-size: 22px;
   line-height: 1.35;
   margin: 0 0 16px;
   font-style: italic;
+  flex: 1;
 }
+/* Distinction, pas citation : en droit, couleur d'accent. */
+.press-quote.is-award p { font-style: normal; color: var(--tomato); }
 .press-quote .by {
   font-family: var(--font-mono);
   font-size: 11px;
