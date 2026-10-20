@@ -8,59 +8,89 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 const LONG_CACHE = "public, max-age=2592000, stale-while-revalidate=86400";
 
 /**
- * Anciennes URL du site WordPress, indexées par Google depuis 2021 et encore
- * visibles dans les résultats de recherche après la bascule. Elles répondaient
- * en français : elles pointent donc vers `/fr`.
+ * Anciennes URL des sites précédents (Wix jusqu'en 2021, puis WordPress),
+ * encore visibles dans les résultats de Google et de Bing après la bascule.
+ * Elles répondaient en français, comme la racine du site aujourd'hui.
  *
  * Une redirection transmet au nouveau site l'ancienneté et les liens entrants
- * des anciennes pages, là où le 404 actuel les perd. Inventaire relevé dans
- * l'ancien `sitemap_index.xml` (Yoast) et dans les archives du domaine.
+ * des anciennes pages, là où un 404 les perd. Inventaire relevé dans l'ancien
+ * `sitemap_index.xml` (Yoast) et dans les archives du domaine (Wayback Machine) ;
+ * la liste exacte des URL indexées est dans `app/lib/legacy-urls.ts`.
  *
  * Next normalise d'abord la barre oblique finale, puis applique ces règles :
  * `/presse/` devient `/presse`, qui suit la ligne correspondante.
  * `permanent: true` renvoie un 308, que Google traite comme un 301.
  */
 const LEGACY_REDIRECTS: { source: string; destination: string }[] = [
+  // Jusqu'en octobre 2026, le français vivait sous /fr et l'anglais à la racine.
+  { source: "/fr", destination: "/" },
+  { source: "/fr/:path*", destination: "/:path*" },
+
   // Pages et articles
-  { source: "/decouvrir-ibrik", destination: "/fr#about" },
-  { source: "/ibrik-kitchen-restaurant-paris-2", destination: "/fr" },
-  { source: "/ibrik-ma-cuisine-des-balkans", destination: "/fr#about" },
-  { source: "/voyage-a-bucarest", destination: "/fr#about" },
-  { source: "/nous-trouver", destination: "/fr#visit" },
-  { source: "/presse", destination: "/fr#press" },
-  { source: "/le-figaro-a-table-avec-la-creatrice-dibrik", destination: "/fr#press" },
-  { source: "/hot-news", destination: "/fr#events" },
-  { source: "/ibrik-delivery", destination: "/fr#visit" },
+  { source: "/decouvrir-ibrik", destination: "/#about" },
+  { source: "/ibrik-kitchen-restaurant-paris-2", destination: "/" },
+  { source: "/ibrik-ma-cuisine-des-balkans", destination: "/#about" },
+  { source: "/voyage-a-bucarest", destination: "/#about" },
+  { source: "/nous-trouver", destination: "/#visit" },
+  { source: "/presse", destination: "/#press" },
+  { source: "/le-figaro-a-table-avec-la-creatrice-dibrik", destination: "/#press" },
+  { source: "/hot-news", destination: "/#events" },
+  { source: "/ibrik-delivery", destination: "/#visit" },
   // Le café du 9e a fermé : la FAQ l'explique et lève la confusion des deux adresses.
-  { source: "/ibrik-cafe-coffee-paris-9", destination: "/fr#faq" },
-  { source: "/credits", destination: "/fr" },
-  { source: "/mentions-legales", destination: "/fr/legal" },
-  { source: "/cgv", destination: "/fr" },
+  { source: "/ibrik-cafe-coffee-paris-9", destination: "/#faq" },
+  { source: "/credits", destination: "/" },
+  { source: "/mentions-legales", destination: "/legal" },
+  { source: "/cgv", destination: "/" },
 
   // Boutique WooCommerce, fermée avec l'ancien site
-  { source: "/boutique", destination: "/fr" },
-  { source: "/bazar", destination: "/fr" },
-  { source: "/mon-panier", destination: "/fr" },
-  { source: "/mon-compte", destination: "/fr" },
-  { source: "/valider-ma-commande", destination: "/fr" },
-  { source: "/product/:slug*", destination: "/fr" },
+  { source: "/boutique", destination: "/" },
+  { source: "/bazar", destination: "/" },
+  { source: "/mon-panier", destination: "/" },
+  { source: "/mon-compte", destination: "/" },
+  { source: "/valider-ma-commande", destination: "/" },
+  { source: "/product/:slug*", destination: "/" },
 
   // Taxonomies WordPress (« Uncategorized » remonte encore dans les résultats)
-  { source: "/category/:slug*", destination: "/fr" },
-  { source: "/page_category/:slug*", destination: "/fr" },
-  { source: "/author/:slug*", destination: "/fr" },
-  { source: "/tag/:slug*", destination: "/fr" },
+  { source: "/category/:slug*", destination: "/" },
+  { source: "/page_category/:slug*", destination: "/" },
+  { source: "/author/:slug*", destination: "/" },
+  { source: "/tag/:slug*", destination: "/" },
 
   // Médias : les PDF de cartes mènent à la carte, le reste à l'accueil.
   {
     source: "/wp-content/uploads/:year/:month/:file(.*[Mm][Ee][Nn][Uu].*)",
-    destination: "/fr/menus",
+    destination: "/menus",
   },
-  { source: "/wp-content/:path*", destination: "/fr" },
+  { source: "/wp-content/:path*", destination: "/" },
+
+  // Site Wix (avant 2021) : pages et boutique en ligne
+  { source: "/home", destination: "/" },
+  { source: "/ibrik", destination: "/" },
+  { source: "/ibrik-kitchen", destination: "/" },
+  { source: "/nous", destination: "/#about" },
+  { source: "/l-histoire-d-ibrik", destination: "/#about" },
+  { source: "/contact", destination: "/#visit" },
+  { source: "/menu-ibrik-kitchen-midi", destination: "/menus" },
+  { source: "/copie-de-menu-ibrik-kitchen-midi", destination: "/menus" },
+  { source: "/ibrik-coffee", destination: "/#faq" },
+  { source: "/ibrik-deli", destination: "/" },
+  { source: "/shop", destination: "/" },
+  { source: "/cart-page", destination: "/" },
+  { source: "/online-ordering", destination: "/" },
+  { source: "/product-page/:slug*", destination: "/" },
+  { source: "/product-category/:slug*", destination: "/" },
+
+  // Cartes PDF datées du nouveau site, remplacées par des noms fixes
+  { source: "/menus/ibrik-menu-midi-printemps-2026.pdf", destination: "/menus/ibrik-menu-midi.pdf" },
+  { source: "/menus/ibrik-menu-soir-printemps-2026.pdf", destination: "/menus/ibrik-menu-soir.pdf" },
+  {
+    source: "/menus/ibrik-menu-samedi-midi-printemps-2026.pdf",
+    destination: "/menus/ibrik-menu-samedi-midi.pdf",
+  },
 
   // Flux RSS et anciens sitemaps Yoast
-  { source: "/feed", destination: "/fr" },
-  { source: "/comments/feed", destination: "/fr" },
+  { source: "/feed", destination: "/" },
+  { source: "/comments/feed", destination: "/" },
   { source: "/sitemap_index.xml", destination: "/sitemap.xml" },
   {
     source: "/:type(post|page|category|page_category|author)-sitemap.xml",
@@ -70,7 +100,16 @@ const LEGACY_REDIRECTS: { source: string; destination: string }[] = [
 
 const nextConfig: NextConfig = {
   async redirects() {
-    return LEGACY_REDIRECTS.map((rule) => ({ ...rule, permanent: true }));
+    return [
+      // L'adresse de production Vercel sert le même site : tout renvoie au domaine.
+      {
+        source: "/:path*",
+        has: [{ type: "host" as const, value: "ibrik-website.vercel.app" }],
+        destination: "https://ibrik.fr/:path*",
+        permanent: true,
+      },
+      ...LEGACY_REDIRECTS.map((rule) => ({ ...rule, permanent: true })),
+    ];
   },
   async headers() {
     return [

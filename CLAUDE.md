@@ -45,8 +45,9 @@ Toute modification de texte (messages, metadata, alt, JSON-LD) suit
 - Next.js 16 (App Router) + React 19, TypeScript. **Lire `node_modules/next/dist/docs/`
   avant d'écrire du code Next** — l'API diffère de la mémoire du modèle
   (ex. `proxy.ts` remplace `middleware.ts`, `PageProps<"/[locale]">` / `LayoutProps` globaux).
-- i18n : `next-intl` 4. Locales `en` (défaut, sans préfixe) et `fr` (`/fr`) —
-  voir `i18n/routing.ts`. Textes dans `messages/{fr,en}.json` : **toujours
+- i18n : `next-intl` 4. Locales `fr` (défaut, sans préfixe) et `en` (`/en`) —
+  voir `i18n/routing.ts`. Jusqu'en octobre 2026 c'était l'inverse : `/fr/*`
+  redirige en 308 vers la racine. Textes dans `messages/{fr,en}.json` : **toujours
   modifier les deux fichiers avec les mêmes clés**.
 - Styles : un seul `app/globals.css` (pas de Tailwind). Polices locales
   Antwerp + Formula Condensed, DM Mono via `next/font/google`.
@@ -70,17 +71,24 @@ app/
   lib/faq-data.ts            ids FAQ → accordéon + JSON-LD FAQPage
   lib/restaurant-jsonld.ts   nœud schema.org Restaurant partagé, SITE_URL
   lib/sorbey.ts              fiche Google via Sorbey : horaires, avis 4-5★
+  lib/legacy-urls.ts         anciennes URL indexées → sitemap-legacy.xml (temporaire)
   lib/opening-hours.ts       horaires → tableau, phrase FAQ, JSON-LD, cartes
-  sitemap.ts, robots.ts
-public/menus/*.pdf           PDF des cartes, auto-hébergés
+  sitemap.ts, robots.ts, sitemap-legacy.xml/, llms.txt/
+next.config.ts               redirections des anciens sites (Wix, WordPress)
+public/menus/*.pdf           PDF des cartes, auto-hébergés, noms fixes
+scripts/indexnow.mjs         signale les URL à Bing (npm run indexnow)
 docs/charte-verbale.md       éléments de langage (voix, lexique, SEO)
 ```
 
 ## Recettes courantes
 
 - **Changer un plat ou un prix** : prix/tags dans `app/lib/menus-data.ts`,
-  nom/description dans `MenusPage.<menu>.items.<id>` des deux JSON. Mettre à
-  jour le PDF dans `public/menus/` si la carte imprimée change.
+  nom/description dans `MenusPage.<menu>.items.<id>` des deux JSON. Si la
+  carte imprimée change, remplacer le PDF de `public/menus/` **sous le même
+  nom** (pas de saison ni de date dans le nom : une ancienne carte ne doit
+  jamais rester en ligne à côté de la nouvelle).
+- **Après un changement d'URL** (page ajoutée, renommée, redirigée) : déployer,
+  puis `npm run indexnow` pour que Bing — donc ChatGPT — recrawle tout de suite.
 - **Ajouter une question FAQ** : ajouter l'id dans `FAQ_IDS`, puis `Faq.<id>.q/a`
   en FR et EN. Réponses factuelles, autonomes (lisibles hors contexte par une IA).
 - **Nouvelle section** : composant dans `app/components`, namespace de messages

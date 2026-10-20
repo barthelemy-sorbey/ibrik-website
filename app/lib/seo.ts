@@ -10,13 +10,13 @@ export const SITE_URL = "https://ibrik.fr";
 
 const OG_IMAGE_URL = "/brand/og-ibrik-kitchen.jpg";
 
-/** Localised absolute URL: `en` has no prefix, `fr` lives under `/fr`. */
+/** Localised absolute URL: `fr` has no prefix, `en` lives under `/en`. */
 export function localizedUrl(locale: string, path = ""): string {
   const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;
   return `${SITE_URL}${prefix}${path || (prefix ? "" : "/")}`;
 }
 
-/** hreflang map for a path, including x-default (the English version). */
+/** hreflang map for a path, including x-default (the French version). */
 export function languageAlternates(path = ""): Record<string, string> {
   const languages: Record<string, string> = {};
   for (const locale of routing.locales) {

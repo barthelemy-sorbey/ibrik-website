@@ -21,10 +21,12 @@ export type MenuData = {
 };
 
 // Self-hosted from public/menus so the links survive changes on ibrik.fr.
+// Fixed names, no season: a new carte replaces the file under the same name,
+// so no outdated PDF stays online (or indexed) next to the current one.
 export const MENU_PDF: Record<MenuData["id"], string> = {
-  lunch: "/menus/ibrik-menu-midi-printemps-2026.pdf",
-  dinner: "/menus/ibrik-menu-soir-printemps-2026.pdf",
-  saturday: "/menus/ibrik-menu-samedi-midi-printemps-2026.pdf",
+  lunch: "/menus/ibrik-menu-midi.pdf",
+  dinner: "/menus/ibrik-menu-soir.pdf",
+  saturday: "/menus/ibrik-menu-samedi-midi.pdf",
 };
 
 export const LUNCH_MENU: MenuData = {
