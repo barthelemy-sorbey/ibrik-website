@@ -52,11 +52,15 @@ export async function generateMetadata({
   if (!hasLocale(routing.locales, locale)) return {};
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
-  return buildPageMetadata({
-    locale,
-    title: t("title"),
-    description: t("description"),
-  });
+  return {
+    ...buildPageMetadata({
+      locale,
+      title: t("title"),
+      description: t("description"),
+    }),
+    // Bing Webmaster Tools — à garder même après validation.
+    verification: { other: { "msvalidate.01": "C0478752B6AF8DF7D2610A3E1237001D" } },
+  };
 }
 
 export default async function LocaleLayout({
