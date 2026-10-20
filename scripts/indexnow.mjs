@@ -5,7 +5,7 @@
 // Usage, après un déploiement en production : node scripts/indexnow.mjs
 // La clé est publique par conception : public/<clé>.txt la prouve au moteur.
 const SITE = "https://ibrik.fr";
-const KEY = "8b7955d8942b0d90728c72a1d3f1a166";
+const KEY = "e58f8ea33c94436ea8498943d18fd5fb";
 const SITEMAPS = ["/sitemap.xml", "/sitemap-legacy.xml"];
 
 async function locs(path) {
