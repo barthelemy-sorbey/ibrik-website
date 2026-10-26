@@ -718,7 +718,7 @@
     "blocks": {
       "publisher": {
         "title": "Éditeur",
-        "text": "Le site ibrik.fr est édité par <strong>FEEL</strong>, société par actions simplifiée qui exploite le restaurant IBRIK KITCHEN. Siège : 9 rue de Mulhouse, 75002 Paris. RCS Paris 838 378 008 · SIRET 838 378 008 00026 · TVA intracommunautaire FR84838378008. Téléphone : <tel>+33 1 70 69 42 50</tel> · e-mail : <mail>bureau@ibrik.fr</mail>."
+        "text": "Le site ibrik.fr est édité par <strong>KALES DIAKOPES</strong>, société par actions simplifiée qui exploite le restaurant IBRIK KITCHEN. Siège : 9 rue de Mulhouse, 75002 Paris. RCS Paris 988 968 525 · SIRET 988 968 525 00010 · TVA intracommunautaire FR52988968525. Téléphone : <tel>+33 1 70 69 42 50</tel> · e-mail : <mail>bureau@ibrik.fr</mail>."
       },
       "director": {
         "title": "Direction de la publication",
@@ -734,7 +734,7 @@
       },
       "controller": {
         "title": "Responsable du traitement",
-        "text": "FEEL (IBRIK KITCHEN), 9 rue de Mulhouse, 75002 Paris · <mail>bureau@ibrik.fr</mail>."
+        "text": "KALES DIAKOPES (IBRIK KITCHEN), 9 rue de Mulhouse, 75002 Paris · <mail>bureau@ibrik.fr</mail>."
       },
       "analytics": {
         "title": "Mesure d'audience : Google Analytics",
