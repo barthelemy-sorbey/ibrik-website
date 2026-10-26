@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 import CookieSettingsButton from "../../components/CookieSettingsButton";
 import { buildPageMetadata } from "../../lib/seo";
 
-// Company facts from the RCS (SIREN 838 378 008) and the former ibrik.fr legal page.
+// Company facts from the RCS (SIREN 988 968 525) and the former ibrik.fr legal page.
 const SECTIONS = [
   { id: "legal", blocks: ["publisher", "director", "host", "ip"] },
   {
